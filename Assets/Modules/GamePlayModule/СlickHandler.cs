@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,8 +6,17 @@ using UnityEngine.EventSystems;
 
 public class СlickHandler : MonoBehaviour
 {
-    [SerializeField] private Crystal _selectedCrystal;
-    [SerializeField] private Field _selectedField;
+    [SerializeField] private Field _selectedFirstField;
+    [SerializeField] private Field _selectedSecondField;
+    private LevelStateMachine _levelStateMachine;
+    public event Action<Field,Field> FieldsReceived;
+    
+    private void Awake()
+    {
+        _levelStateMachine = new LevelStateMachine();
+        
+        _levelStateMachine.EnterIn<StateWaitingFields>();
+    }
 
     private void Update()
     {
@@ -17,37 +27,31 @@ public class СlickHandler : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                SwitchSearchStages(hit);
+                FindFields(hit);
             }
         }
     }
 
-    private void SwitchSearchStages(RaycastHit hit)
+    private void FindFields(RaycastHit hit)
     {
         Debug.Log(hit.collider.gameObject.name);
-        if (_selectedCrystal == null)
-        {
-            SearchCrystal(hit);
-        }
-        else if (_selectedCrystal != null)
-        { 
-            SearchField(hit);
-        }
-    }
 
-    private void SearchCrystal(RaycastHit hit)
-    {
-        if (hit.collider.TryGetComponent(out Crystal crystal))
-            _selectedCrystal = crystal;
-        else
-            _selectedCrystal = null;    
-    }
-
-    private void SearchField(RaycastHit hit)
-    {
         if (hit.collider.TryGetComponent(out Field field))
-            _selectedField = field;
+        {
+            if (_selectedFirstField == null)
+            {
+                _selectedFirstField = field;
+            }
+            else
+            {
+                _selectedSecondField = field;
+                FieldsReceived?.Invoke(_selectedFirstField,_selectedSecondField);
+            }
+        }
         else
-            _selectedCrystal = null;
+        {
+            _selectedFirstField = null;
+            _selectedSecondField = null;
+        }
     }
 }
