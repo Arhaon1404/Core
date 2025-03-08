@@ -3,24 +3,23 @@ using UnityEngine;
 public class LevelManager 
 {
     private readonly FieldsHandler _fieldsHandler;
-    private readonly CrystalMover _crystalMover;
+    private readonly CrystalHandler _crystalHandler;
     private Connection _rightWayConnection;
     private Field _firstField;
     private Field _secondField;
 
+    public CrystalHandler CrystalHandler => _crystalHandler;
+
     public LevelManager()
     {
         _fieldsHandler = new FieldsHandler();
-        _crystalMover = new CrystalMover();
+        _crystalHandler = new CrystalHandler();
     }
 
     public void ReceiveFields(Field firstField, Field secondField)
     {
         _firstField = firstField;
         _secondField = secondField;
-        Debug.Log("LevelManager received fields: ");
-        Debug.Log(_firstField);
-        Debug.Log(_secondField);
     }
 
     public bool ProcessFields()
@@ -32,7 +31,7 @@ public class LevelManager
 
     public void ProcessCrystal()
     {
-        _crystalMover.CollectCoordinates(_rightWayConnection,_firstField,_secondField);
+        _crystalHandler.CollectCoordinates(_rightWayConnection,_firstField,_secondField);
     }
 }
     
