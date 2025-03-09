@@ -1,9 +1,9 @@
-using UnityEngine;
 
 public class LevelManager 
 {
     private readonly FieldsHandler _fieldsHandler;
     private readonly CrystalHandler _crystalHandler;
+    private readonly FieldsFeaturesHandler _fieldsFeaturesHandler;
     private Connection _rightWayConnection;
     private Field _firstField;
     private Field _secondField;
@@ -14,6 +14,7 @@ public class LevelManager
     {
         _fieldsHandler = new FieldsHandler();
         _crystalHandler = new CrystalHandler();
+        _fieldsFeaturesHandler = new FieldsFeaturesHandler();
     }
 
     public void ReceiveFields(Field firstField, Field secondField)
@@ -32,6 +33,11 @@ public class LevelManager
     public void ProcessCrystal()
     {
         _crystalHandler.CollectCoordinates(_rightWayConnection,_firstField,_secondField);
+    }
+
+    public void ProcessFieldsFeatures()
+    {
+        _fieldsFeaturesHandler.ProcessFieldsFeatures(_rightWayConnection,_firstField, _secondField);
     }
 }
     

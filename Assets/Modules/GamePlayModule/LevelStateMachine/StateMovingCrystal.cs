@@ -36,7 +36,8 @@ public class StateMovingCrystal : ILevelState
 
     private void EnterNextState()
     {
-        _levelStateMachine.EnterIn<StateWaitingFields>();
+        _levelStateMachine.EnterIn<StateProccesingFieldsFeatures>();
+        //_levelStateMachine.EnterIn<StateWaitingFields>();
     }
 }
     

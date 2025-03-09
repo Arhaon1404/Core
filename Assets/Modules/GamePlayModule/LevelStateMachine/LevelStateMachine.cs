@@ -21,7 +21,8 @@ public class LevelStateMachine
         {
             [typeof(StateWaitingFields)] = new StateWaitingFields(this,_levelManager,_clickHandler),
             [typeof(StateProccesingFields)] = new StateProccesingFields(this,_levelManager),
-            [typeof(StateMovingCrystal)] = new StateMovingCrystal(this,_levelManager)
+            [typeof(StateMovingCrystal)] = new StateMovingCrystal(this,_levelManager),
+            [typeof(StateProccesingFieldsFeatures)] = new StateProccesingFieldsFeatures(this,_levelManager)
         };
     }
 
