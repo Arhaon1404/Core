@@ -10,7 +10,7 @@ public class FieldsHandler
             
         if(!endField)
             throw new ArgumentNullException(nameof(endField));
-            
+        
         if (!startField.CrystalOnField)
         {
             Debug.Log("StartField is not crystal");
@@ -23,15 +23,21 @@ public class FieldsHandler
             return null;    
         }
 
-        foreach (Connection connect in startField.Connections)
+        foreach (Connection connect in startField.ActiveConnections)
         {
             if (!connect)
                 throw new ArgumentNullException(nameof(connect));
-                
+            
             Field verifiableField = connect.ConnectionAnotherField.MotherField;
-
+            
             if (verifiableField == endField)
             {
+                if (!connect.ConnectionLine.isActiveAndEnabled)
+                {
+                    Debug.Log("ConnectionLine is not enabled");
+                    return null;
+                }
+                
                 return connect;
             }
         }

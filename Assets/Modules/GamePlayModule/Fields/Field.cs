@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Field : MonoBehaviour
 {
-    [SerializeField] private List<Connection> _connections;
+    [SerializeField] private List<Connection> _activeConnections;
     [SerializeField] private Crystal _crystalOnField;
     [SerializeField] private CenterPoint _centerPoint;
     
-    public List<Connection> Connections => _connections;
+    public List<Connection> ActiveConnections => _activeConnections;
     public Crystal CrystalOnField => _crystalOnField;
     public CenterPoint CenterPoint => _centerPoint;
 
@@ -15,11 +15,6 @@ public class Field : MonoBehaviour
     {
         if(verifiableCrystal == _crystalOnField)
             _crystalOnField = null;
-    }
-
-    public void ReleaseConnection(Connection connection)
-    {
-        _connections.Remove(connection);
     }
 
     public void SetCrystal(Crystal crystal)

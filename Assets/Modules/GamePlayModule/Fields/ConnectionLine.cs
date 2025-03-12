@@ -5,6 +5,11 @@ public class ConnectionLine : MonoBehaviour
     public void TurnOff(ConnectionLine verifiableConnectionLine)
     {
         if(verifiableConnectionLine == this)
-            this.gameObject.SetActive(false);
+            gameObject.SetActive(false);
+    }
+    
+    public void TurnOn()
+    {
+        gameObject.SetActive(true);
     }
 }

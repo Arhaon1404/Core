@@ -11,9 +11,4 @@ public class Connection : MonoBehaviour
     public Connection ConnectionAnotherField => _connectionAnotherField;
     public CenterPoint CenterPoint => _centerPoint;
     public ConnectionLine ConnectionLine => _connectionLine;
-
-    public void ReleaseConnection()
-    {
-        
-    }
 }
