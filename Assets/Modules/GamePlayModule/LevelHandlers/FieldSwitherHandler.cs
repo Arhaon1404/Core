@@ -1,45 +1,39 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
 
 public class FieldSwitherHandler 
 {
-    public void SwitchFieldConnections(RotateField startField)
+    public void  SwitchFieldConnections(RotateField startField)
     {
-        int countActiveConnections = 0;
-
+        List<Connection> currentActiveConnections = new List<Connection>();
+        List<Connection> nextConnections = new List<Connection>();
+        
         foreach (Connection activeConnection in startField.ActiveConnections)
         {
             if (activeConnection.ConnectionLine.isActiveAndEnabled)
             {
-                countActiveConnections++;
+                currentActiveConnections.Add(activeConnection);
             }
         }
-        
-        
-        
-        for (int i = 0; i < countActiveConnections; i++)
-        {
-            ConnectionLine connectionLineAnotherField = startField.ActiveConnections[i].ConnectionAnotherField.ConnectionLine;
-                
-            startField.ActiveConnections[i].ConnectionAnotherField.ConnectionLine.TurnOff(connectionLineAnotherField);
-                
-            ConnectionLine startFieldConnectionLine = startField.ActiveConnections[i].ConnectionLine;
-                
-            startField.ActiveConnections[i].ConnectionLine.TurnOff(startFieldConnectionLine);
-            
-            int nextElement = (i + 1) % startField.ActiveConnections.Count;
-            
-            startField.ActiveConnections[nextElement].ConnectionLine.TurnOn();
-            
-            startField.ActiveConnections[nextElement].ConnectionAnotherField.ConnectionLine.TurnOn();
 
-            Connection ActiveConnection = startField.ActiveConnections[i];
-            
-            startField.ActiveConnections.Remove(ActiveConnection);
-            
-            startField.ActiveConnections.Add(ActiveConnection);
+        if (currentActiveConnections.Count < startField.ActiveConnections.Count)
+        {
+            foreach (Connection disableConnection in currentActiveConnections)
+            {
+                disableConnection.ConnectionLine.TurnOff(disableConnection.ConnectionLine);
+
+                disableConnection.ConnectionAnotherField.ConnectionLine.TurnOff(disableConnection.ConnectionAnotherField.ConnectionLine);
+                
+                int nextElementIndex = (startField.OrderAdjacentConnections.IndexOf(disableConnection) + 1) % startField.OrderAdjacentConnections.Count;
+                
+                nextConnections.Add(startField.OrderAdjacentConnections[nextElementIndex]);
+            }
+
+            foreach (Connection inclusionConnection in nextConnections)
+            {
+                inclusionConnection.ConnectionLine.TurnOn();
+                
+                inclusionConnection.ConnectionAnotherField.ConnectionLine.TurnOn();
+            }
         }
     }
 }

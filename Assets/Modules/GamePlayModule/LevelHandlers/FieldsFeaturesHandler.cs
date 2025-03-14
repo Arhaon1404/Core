@@ -18,6 +18,11 @@ public class FieldsFeaturesHandler
             _disapearearConnectionsHandler.DisapearConnection(rightWayConnection, startField, endField);
         }
 
+        if (startField is DisapearConnectRotateField)
+        {
+            _disapearearConnectionsHandler.DisapearConnection(rightWayConnection, startField, endField);
+        }
+        
         if (startField is RotateField)
         {
             _fieldSwitherHandler.SwitchFieldConnections((RotateField)startField);

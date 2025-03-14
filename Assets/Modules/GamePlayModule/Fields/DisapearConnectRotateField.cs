@@ -1,6 +1,4 @@
 using UnityEngine;
 
-public class DisapearConnectRotateField : MonoBehaviour
-{
-    
-}
+public class DisapearConnectRotateField : RotateField
+{ }
