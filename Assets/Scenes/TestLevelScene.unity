@@ -693,8 +693,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 2117630976}
-  _crystalOnField: {fileID: 231587578}
   _centerPoint: {fileID: 1121325290}
+  _crystalOnField: {fileID: 231587578}
 --- !u!65 &49876787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &56479461
 Transform:
   m_ObjectHideFlags: 0
@@ -1076,15 +1076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.516
+      value: 10.72
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8412647
+      value: -3.778
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.258
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1120,8 +1120,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81550928}
+    - targetCorrespondingSourceObject: {fileID: -5870812912161451244, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 857398748}
+    - targetCorrespondingSourceObject: {fileID: -5870812912161451244, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1008889442}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1904114763}
     - targetCorrespondingSourceObject: {fileID: 4736315236896337202, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 237108344}
@@ -1466,8 +1478,8 @@ MonoBehaviour:
   - {fileID: 428521262}
   - {fileID: 969187110}
   - {fileID: 913439123}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1717616644}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &78259849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1489,6 +1501,50 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.234808, y: 1.4128008, z: 4.051869}
   m_Center: {x: 0.02986113, y: 0.2064002, z: 0.023502508}
+--- !u!1 &81550926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 81550928}
+  - component: {fileID: 81550927}
+  m_Layer: 0
+  m_Name: CenterPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &81550927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81550926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &81550928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81550926}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1.0029233, y: 1.0029235, z: 1.0029233}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 599033838}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81761242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,8 +1595,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 359039533}
-  _crystalOnField: {fileID: 619807720}
   _centerPoint: {fileID: 384502336}
+  _crystalOnField: {fileID: 619807720}
 --- !u!65 &81761245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1662,8 +1718,8 @@ MonoBehaviour:
   - {fileID: 705301951}
   - {fileID: 62940827}
   - {fileID: 663858337}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1414353494}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &85292779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2586,6 +2642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectedFirstField: {fileID: 0}
   _selectedSecondField: {fileID: 0}
+  _levelAStarProcceder: {fileID: 1913594166}
 --- !u!1 &168806432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,6 +3324,11 @@ MonoBehaviour:
   _connectionAnotherField: {fileID: 2025531460}
   _centerPoint: {fileID: 0}
   _connectionLine: {fileID: 0}
+--- !u!4 &237108347 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5870812912161451244, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
+  m_PrefabInstance: {fileID: 65956097}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &238015420
 GameObject:
   m_ObjectHideFlags: 0
@@ -3405,8 +3467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 1134327390}
-  _crystalOnField: {fileID: 1776859773}
   _centerPoint: {fileID: 35467799}
+  _crystalOnField: {fileID: 1776859773}
 --- !u!65 &254794073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3630,8 +3692,8 @@ MonoBehaviour:
   - {fileID: 1832154326}
   - {fileID: 1096486849}
   - {fileID: 940534179}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1571095693}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &262286233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4218,8 +4280,8 @@ MonoBehaviour:
   - {fileID: 709578822}
   - {fileID: 552850522}
   - {fileID: 2126845547}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 105866589}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &346296388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4926,8 +4988,8 @@ MonoBehaviour:
   - {fileID: 450634811}
   - {fileID: 430084361}
   - {fileID: 380005699}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1484689650}
+  _crystalOnField: {fileID: 1430590425}
 --- !u!65 &402367695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5196,7 +5258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &426803736
 Transform:
   m_ObjectHideFlags: 0
@@ -6088,8 +6150,8 @@ MonoBehaviour:
   - {fileID: 1246309354}
   - {fileID: 18138155}
   - {fileID: 467309112}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1073102144}
+  _crystalOnField: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 18138155}
   - {fileID: 1246309354}
@@ -6455,8 +6517,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1262067791}
   - {fileID: 257626289}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1055882569}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &506844114
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7199,8 +7261,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 116089867}
   - {fileID: 1545561342}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 71006082}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &561305775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7717,8 +7779,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 591300814}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 767364161}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &607867659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8046,8 +8108,8 @@ MonoBehaviour:
   - {fileID: 1235877595}
   - {fileID: 918241875}
   - {fileID: 946828125}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1913468585}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &636257402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8215,8 +8277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 1070469983}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1576284258}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &637475049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8536,7 +8598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &656460412
 Transform:
   m_ObjectHideFlags: 0
@@ -9717,8 +9779,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1863580384}
   - {fileID: 351937359}
-  _crystalOnField: {fileID: 1430590425}
   _centerPoint: {fileID: 1040053458}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &708205629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10380,8 +10442,8 @@ MonoBehaviour:
   - {fileID: 1686093490}
   - {fileID: 1399026267}
   - {fileID: 2098171523}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1746454821}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &742844895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10626,8 +10688,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1027858731}
   - {fileID: 1623088448}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 854120805}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &797318165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11122,8 +11184,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1444206554}
   - {fileID: 1240845601}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 615862559}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &829318451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11280,9 +11342,8 @@ MonoBehaviour:
   - {fileID: 711383450}
   - {fileID: 1525176755}
   - {fileID: 698852347}
-  - {fileID: 2025531460}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 879524516}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &844834999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11431,6 +11492,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &857398747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857398748}
+  - component: {fileID: 857398751}
+  - component: {fileID: 857398750}
+  - component: {fileID: 857398749}
+  m_Layer: 0
+  m_Name: ConnectionLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &857398748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857398747}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.50000006, y: 0.4999999, z: 0.50000006, w: 0.4999999}
+  m_LocalPosition: {x: -0.0007, y: 0.0459, z: 0.00042}
+  m_LocalScale: {x: 0.08733237, y: 0.0010639061, z: 0.007559815}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237108347}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &857398749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857398747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &857398750
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857398747}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &857398751
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857398747}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &875267935
 GameObject:
   m_ObjectHideFlags: 0
@@ -12065,8 +12222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 1088670366}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 224981247}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &933490915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12640,7 +12797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &967838529
 Transform:
   m_ObjectHideFlags: 0
@@ -12949,8 +13106,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1948901765}
   - {fileID: 1766079616}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 138368486}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &986611215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13093,6 +13250,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995700574}
   m_Mesh: {fileID: 3602197911790286676, guid: 0f44ad79482304b40b610fb60d6f12da, type: 3}
+--- !u!1 &1008889441
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1008889442}
+  - component: {fileID: 1008889443}
+  m_Layer: 0
+  m_Name: ConnectionCenterPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1008889442
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008889441}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5000001, y: -0.49999994, z: -0.5000001, w: 0.49999994}
+  m_LocalPosition: {x: 0.004, y: 0.001, z: 0.014}
+  m_LocalScale: {x: 0.033430774, y: 0.006916713, z: 0.033430774}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 237108347}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008889443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008889441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1019951895
 GameObject:
   m_ObjectHideFlags: 0
@@ -13760,7 +13961,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1069744174
 Transform:
   m_ObjectHideFlags: 0
@@ -14382,8 +14583,8 @@ MonoBehaviour:
   - {fileID: 719964030}
   - {fileID: 1091911699}
   - {fileID: 404857335}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 942666776}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1092034555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16168,8 +16369,8 @@ MonoBehaviour:
   - {fileID: 1870493040}
   - {fileID: 2065327460}
   - {fileID: 1805167159}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1782834418}
+  _crystalOnField: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 2065327460}
   - {fileID: 1870493040}
@@ -16250,8 +16451,8 @@ MonoBehaviour:
   - {fileID: 995700576}
   - {fileID: 348938056}
   - {fileID: 9338659}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 2103304918}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1293512991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16648,8 +16849,8 @@ MonoBehaviour:
   - {fileID: 86875752}
   - {fileID: 71263678}
   - {fileID: 87883024}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 650184754}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1310270789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17902,7 +18103,7 @@ Transform:
   m_GameObject: {fileID: 1430590422}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -5.34, y: -2.51, z: 6.19}
+  m_LocalPosition: {x: -5.44, y: -2.51, z: -1.83}
   m_LocalScale: {x: 30.081339, y: 30.08132, z: 30.08132}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18177,8 +18378,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1738839724}
   - {fileID: 1335592153}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 937231617}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1436646440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19779,7 +19980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1564211167
 Transform:
   m_ObjectHideFlags: 0
@@ -20039,8 +20240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 1881300587}
-  _crystalOnField: {fileID: 236206462}
   _centerPoint: {fileID: 1865419178}
+  _crystalOnField: {fileID: 236206462}
 --- !u!65 &1596025055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20095,8 +20296,8 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1878641183}
   - {fileID: 149648973}
-  _crystalOnField: {fileID: 168806435}
   _centerPoint: {fileID: 269589988}
+  _crystalOnField: {fileID: 168806435}
 --- !u!65 &1600268659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22204,8 +22405,8 @@ MonoBehaviour:
   - {fileID: 2143557081}
   - {fileID: 808893434}
   - {fileID: 579423215}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1407341821}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1780406870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22737,6 +22938,102 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832154324}
   m_Mesh: {fileID: -3944245691126379725, guid: 23b41fca1852a4544b376dc8bf60f5c8, type: 3}
+--- !u!1 &1842284316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842284317}
+  - component: {fileID: 1842284320}
+  - component: {fileID: 1842284319}
+  - component: {fileID: 1842284318}
+  m_Layer: 0
+  m_Name: Core
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842284317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842284316}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.734, y: -2.584, z: 2.218}
+  m_LocalScale: {x: 0.4078, y: 0.4078, z: 0.4078}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913594165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1842284318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842284316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b382d60d353dfa94a93ad85640f7b07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!23 &1842284319
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842284316}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1842284320
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842284316}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1843104516
 GameObject:
   m_ObjectHideFlags: 0
@@ -23382,8 +23679,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 1941066956}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 239086258}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1881129496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23507,6 +23804,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881300585}
   m_Mesh: {fileID: 3602197911790286676, guid: ebe870037b8d5af419bb0b78f36f8589, type: 3}
+--- !u!1 &1904114762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
+  m_PrefabInstance: {fileID: 65956097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1904114763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904114762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ff833d639445c42a63f1c27bf12943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _activeConnections:
+  - {fileID: 237108344}
+  _centerPoint: {fileID: 81550927}
+  _coreOnField: {fileID: 1842284318}
 --- !u!1 &1911327271
 GameObject:
   m_ObjectHideFlags: 0
@@ -23656,6 +23974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1913594165}
+  - component: {fileID: 1913594166}
   m_Layer: 0
   m_Name: TestAlgoritmFindWay
   m_TagString: Untagged
@@ -23672,7 +23991,7 @@ Transform:
   m_GameObject: {fileID: 1913594164}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.99, y: -9.289499, z: 8.18}
+  m_LocalPosition: {x: -0.6, y: -9.289499, z: 8.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23694,8 +24013,24 @@ Transform:
   - {fileID: 1293512989}
   - {fileID: 797318163}
   - {fileID: 1430590423}
+  - {fileID: 1842284317}
   m_Father: {fileID: 1609898702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1913594166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913594164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3f7ffaddda5fc47b2043bb62041e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _crystalsOnLevel:
+  - {fileID: 1430590425}
+  _startField: {fileID: 1904114763}
 --- !u!1 &1930792579
 GameObject:
   m_ObjectHideFlags: 0
@@ -23746,8 +24081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 942129485}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1218109419}
+  _crystalOnField: {fileID: 0}
 --- !u!65 &1930792582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24418,8 +24753,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _activeConnections:
   - {fileID: 1943604629}
-  _crystalOnField: {fileID: 0}
   _centerPoint: {fileID: 1211062372}
+  _crystalOnField: {fileID: 0}
 --- !u!4 &1979006229
 Transform:
   m_ObjectHideFlags: 0
@@ -24807,7 +25142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2025715496
 Transform:
   m_ObjectHideFlags: 0
@@ -25456,7 +25791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2098161194
 Transform:
   m_ObjectHideFlags: 0

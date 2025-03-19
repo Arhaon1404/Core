@@ -5,13 +5,14 @@ public class СlickHandler : MonoBehaviour
     {
         [SerializeField] private Field _selectedFirstField;
         [SerializeField] private Field _selectedSecondField;
-        
+        [SerializeField] private LevelAStarProcceder _levelAStarProcceder;
+
         private LevelStateMachine _levelStateMachine;
         public event Action<Field,Field> FieldsReceived;
     
         private void Awake()
         {
-            _levelStateMachine = new LevelStateMachine(this);
+            _levelStateMachine = new LevelStateMachine(this,_levelAStarProcceder);
         
             _levelStateMachine.EnterIn<StateWaitingFields>();
         }

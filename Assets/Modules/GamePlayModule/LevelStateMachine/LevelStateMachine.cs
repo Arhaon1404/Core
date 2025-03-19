@@ -7,13 +7,18 @@ public class LevelStateMachine
     private ILevelState _currentState;
     private LevelManager _levelManager;
     private СlickHandler _clickHandler;
+    private LevelAStarProcceder _levelAStarProcceder;
     
-    public LevelStateMachine(СlickHandler clickHandler)
+    public LevelStateMachine(СlickHandler clickHandler, LevelAStarProcceder levelAStarProcceder)
     {
         if(clickHandler == null)
             throw new ArgumentNullException(nameof(clickHandler));
+        
+        if(levelAStarProcceder == null)
+            throw new ArgumentNullException(nameof(levelAStarProcceder));
             
         _clickHandler = clickHandler;
+        _levelAStarProcceder = levelAStarProcceder;
         
         _levelManager = new LevelManager();
         
@@ -22,7 +27,8 @@ public class LevelStateMachine
             [typeof(StateWaitingFields)] = new StateWaitingFields(this,_levelManager,_clickHandler),
             [typeof(StateProccesingFields)] = new StateProccesingFields(this,_levelManager),
             [typeof(StateMovingCrystal)] = new StateMovingCrystal(this,_levelManager),
-            [typeof(StateProccesingFieldsFeatures)] = new StateProccesingFieldsFeatures(this,_levelManager)
+            [typeof(StateProccesingFieldsFeatures)] = new StateProccesingFieldsFeatures(this,_levelManager),
+            [typeof(StateMovingCore)] = new StateMovingCore(this,_levelManager,_levelAStarProcceder)
         };
     }
 

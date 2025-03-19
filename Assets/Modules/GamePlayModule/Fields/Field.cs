@@ -1,15 +1,19 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Field : MonoBehaviour
+public class Field : AbstractField
 {
-    [SerializeField] private List<Connection> _activeConnections;
     [SerializeField] private Crystal _crystalOnField;
-    [SerializeField] private CenterPoint _centerPoint;
+    private FieldNode _fieldNode;
     
-    public List<Connection> ActiveConnections => _activeConnections;
     public Crystal CrystalOnField => _crystalOnField;
-    public CenterPoint CenterPoint => _centerPoint;
+    public FieldNode FieldNode => _fieldNode;
+
+    private void Awake()
+    {
+        _fieldNode = gameObject.AddComponent<FieldNode>();
+    }
 
     public void ReleaseCrystal(Crystal verifiableCrystal)
     {

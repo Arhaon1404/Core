@@ -4,6 +4,7 @@ public class LevelManager
     private readonly FieldsHandler _fieldsHandler;
     private readonly CrystalHandler _crystalHandler;
     private readonly FieldsFeaturesHandler _fieldsFeaturesHandler;
+    private readonly AlgorithmAStar _algorithmAStar;
     private Connection _rightWayConnection;
     private Field _firstField;
     private Field _secondField;

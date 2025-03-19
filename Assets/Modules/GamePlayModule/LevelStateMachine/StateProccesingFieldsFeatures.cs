@@ -22,7 +22,7 @@ public class StateProccesingFieldsFeatures : ILevelState
     {
         Debug.Log("Enter StateProccesingFieldsFeatures");
         _levelManager.ProcessFieldsFeatures();
-        _levelStateMachine.EnterIn<StateWaitingFields>();
+        _levelStateMachine.EnterIn<StateMovingCore>();
     }
 
     public void Exit()
