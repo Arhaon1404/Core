@@ -28,14 +28,17 @@ public class StateMovingCore : ILevelState
     public void Enter()
     {
         Debug.Log("Enter StateMovingCore");
+
+        Field targetField = _levelAStarProcceder.SearchCrystals();
         
-        if (_levelAStarProcceder.SearchCrystals())
+        if (targetField)
         {
-            
+            List<AbstractField> path = _levelAStarProcceder.LaunchAStar(targetField);
+            _levelManager.ProcessCore(path);
         }
         else
         {
-            _levelStateMachine.EnterIn<StateWaitingFields>();
+            //_levelStateMachine.EnterIn<StateWaitingFields>();
         }
     }
 

@@ -20,28 +20,22 @@ public class LevelAStarProcceder : MonoBehaviour
         _preliminaryCrystalSearcher = new PreliminaryCrystalSearcher();
     }
 
-    public bool SearchCrystals()
+    public Field SearchCrystals()
     {
         Field targetField = _preliminaryCrystalSearcher.Search(_startField);
         
         if (targetField)
-        {
-            LaunchAStar(targetField);
-            return true;
-        }
+            return targetField;
         
-        return false;
+        return null;
     }
     
-    private void LaunchAStar(Field targetField)
+    public List<AbstractField> LaunchAStar(Field targetField)
     {
-        List<AbstractField> list = _algorithmAStar.Launch(_startField, targetField);
-
-        Debug.Log("---------------------------");
+        List<AbstractField> path = _algorithmAStar.Launch(_startField, targetField);
         
-        foreach (var field in list)
-        {
-            Debug.Log(field);
-        }
+        path.Reverse();
+        
+        return path;
     }
 }

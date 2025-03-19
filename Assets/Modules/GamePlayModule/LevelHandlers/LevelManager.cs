@@ -1,10 +1,10 @@
-
+using System.Collections.Generic;
 public class LevelManager 
 {
     private readonly FieldsHandler _fieldsHandler;
     private readonly CrystalHandler _crystalHandler;
     private readonly FieldsFeaturesHandler _fieldsFeaturesHandler;
-    private readonly AlgorithmAStar _algorithmAStar;
+    private readonly CoreHandler _coreHandler;
     private Connection _rightWayConnection;
     private Field _firstField;
     private Field _secondField;
@@ -15,6 +15,7 @@ public class LevelManager
     {
         _fieldsHandler = new FieldsHandler();
         _crystalHandler = new CrystalHandler();
+        _coreHandler = new CoreHandler();
         _fieldsFeaturesHandler = new FieldsFeaturesHandler();
     }
 
@@ -39,6 +40,11 @@ public class LevelManager
     public void ProcessFieldsFeatures()
     {
         _fieldsFeaturesHandler.ProcessFieldsFeatures(_rightWayConnection,_firstField, _secondField);
+    }
+
+    public void ProcessCore(List<AbstractField> path)
+    {
+        _coreHandler.CollectCoordinates(path);
     }
 }
     

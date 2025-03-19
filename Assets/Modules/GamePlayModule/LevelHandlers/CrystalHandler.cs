@@ -44,8 +44,6 @@ public class CrystalHandler
             _startField.ReleaseCrystal(crystal);
             _endField.SetCrystal(crystal);
             
-            Debug.Log("MoveComplited");
-            
             MoveСompleted?.Invoke();
         }
         else
