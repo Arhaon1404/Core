@@ -20,7 +20,6 @@ public class StateProccesingFields : ILevelState
 
     public void Enter()
     {
-        Debug.Log("StateProcessingFields entered");
         bool isSuccess = _levelManager.ProcessFields();
 
         if (isSuccess)
@@ -34,9 +33,7 @@ public class StateProccesingFields : ILevelState
     }
 
     public void Exit()
-    {
-        Debug.Log("Proccessing end");
-    }
+    { }
 }
 
     

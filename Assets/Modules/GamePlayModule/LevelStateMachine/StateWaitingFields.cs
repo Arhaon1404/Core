@@ -27,13 +27,11 @@ public class StateWaitingFields : ILevelState
     {
         _сlickHandler.FieldsReceived += ReceivingFields;
         _сlickHandler.ClearSelectedFields();
-        Debug.Log("StateWaitingFields entered");
     }
 
     public void Exit()
     {
         _сlickHandler.FieldsReceived -= ReceivingFields;
-        Debug.Log("Fields received");
     }
 
     private void ReceivingFields(Field firstField, Field secondField)

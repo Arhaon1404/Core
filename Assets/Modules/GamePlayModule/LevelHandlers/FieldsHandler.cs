@@ -13,13 +13,11 @@ public class FieldsHandler
         
         if (!startField.CrystalOnField)
         {
-            Debug.Log("StartField is not crystal");
             return null;
         }
 
         if (endField.CrystalOnField)
         {
-            Debug.Log("Endfield Crystal block way");
             return null;    
         }
 
@@ -34,17 +32,38 @@ public class FieldsHandler
             {
                 if (!connect.ConnectionLine.isActiveAndEnabled)
                 {
-                    Debug.Log("ConnectionLine is not enabled");
+                    return null;
+                }
+
+                if (!СomparisonСolor(connect,startField))
+                {
                     return null;
                 }
                 
                 return connect;
             }
         }
-
-        Debug.Log("startField not connected on endField");
-            
+        
         return null;
+    }
+
+    private bool СomparisonСolor(Connection connect, Field startField)
+    {
+        if (connect.ConnectionLine.AisleColors.Count == 0)
+        {
+            return true;
+        }
+        else
+        {
+            ColorType crystalColor = startField.CrystalOnField.Color;
+            
+            if (connect.ConnectionLine.AisleColors.IndexOf(crystalColor) != -1)
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
 }
     

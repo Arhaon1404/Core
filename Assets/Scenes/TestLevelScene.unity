@@ -409,6 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &18138153
 GameObject:
   m_ObjectHideFlags: 0
@@ -812,6 +813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &58012819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1054,6 +1056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1001 &65956097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1424,6 +1427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &78259846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,7 +2708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalMover: {fileID: 168806434}
+  _color: 0
 --- !u!23 &168806436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2851,6 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &198755655
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,6 +2990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &211516376
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3140,7 +3146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalMover: {fileID: 231587577}
+  _color: 0
 --- !u!23 &231587579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3252,7 +3258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalMover: {fileID: 236206461}
+  _color: 0
 --- !u!23 &236206463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3693,7 +3699,7 @@ MonoBehaviour:
   - {fileID: 1096486849}
   - {fileID: 940534179}
   _centerPoint: {fileID: 1571095693}
-  _crystalOnField: {fileID: 0}
+  _crystalOnField: {fileID: 2055165079}
 --- !u!65 &262286233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3805,6 +3811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &272535766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3956,7 +3963,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &316105966
 Transform:
   m_ObjectHideFlags: 0
@@ -4034,6 +4041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &320976345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4130,6 +4138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &342469905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,7 +4193,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 38f081fb76990c94f9cfea17f246d0f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4226,6 +4235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 05000000
 --- !u!1 &346296385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,6 +4665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &365646463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5258,7 +5269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &426803736
 Transform:
   m_ObjectHideFlags: 0
@@ -5336,6 +5347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &428521260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,6 +5895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &462542091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6351,6 +6364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &497327591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6613,7 +6627,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e30693c495e0f7f49b00dd018b6566ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6655,6 +6669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 04000000
 --- !u!1 &510104029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7063,6 +7078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &532536722
 GameObject:
   m_ObjectHideFlags: 0
@@ -7628,6 +7644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &598562487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7724,11 +7741,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!4 &599033838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
   m_PrefabInstance: {fileID: 65956097}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &604252097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604252098}
+  - component: {fileID: 604252102}
+  - component: {fileID: 604252101}
+  - component: {fileID: 604252100}
+  - component: {fileID: 604252099}
+  m_Layer: 0
+  m_Name: PurpleCrystal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &604252098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604252097}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 6.66, y: -2.552, z: -1.813}
+  m_LocalScale: {x: 30.081339, y: 30.08132, z: 30.08132}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913594165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &604252099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604252097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bbeaaff90bef94dba7ec7c2ad3a5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionDistance: 0.001
+  _speed: 5
+--- !u!114 &604252100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604252097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _color: 5
+--- !u!23 &604252101
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604252097}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 38f081fb76990c94f9cfea17f246d0f8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &604252102
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604252097}
+  m_Mesh: {fileID: -1710425572717105975, guid: 18ecad350442c204cb428f1aa3f3bd7a, type: 3}
 --- !u!1 &607867656
 GameObject:
   m_ObjectHideFlags: 0
@@ -7907,7 +8037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalMover: {fileID: 619807719}
+  _color: 0
 --- !u!23 &619807721
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7989,6 +8119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &630627624
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8162,6 +8293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &636809575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8390,6 +8522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &644393976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8580,6 +8713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &656460411
 GameObject:
   m_ObjectHideFlags: 0
@@ -8676,6 +8810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &663858335
 GameObject:
   m_ObjectHideFlags: 0
@@ -9147,6 +9282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &687275605
 GameObject:
   m_ObjectHideFlags: 0
@@ -9178,6 +9314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &687275607
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9339,6 +9476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &698337066
 GameObject:
   m_ObjectHideFlags: 0
@@ -9560,6 +9698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &705015328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10292,6 +10431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &737969064
 GameObject:
   m_ObjectHideFlags: 0
@@ -10346,7 +10486,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 38f081fb76990c94f9cfea17f246d0f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10388,6 +10528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 0500000004000000
 --- !u!1 &742844892
 GameObject:
   m_ObjectHideFlags: 0
@@ -10443,7 +10584,7 @@ MonoBehaviour:
   - {fileID: 1399026267}
   - {fileID: 2098171523}
   _centerPoint: {fileID: 1746454821}
-  _crystalOnField: {fileID: 0}
+  _crystalOnField: {fileID: 604252100}
 --- !u!65 &742844895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10807,6 +10948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &803238230
 GameObject:
   m_ObjectHideFlags: 0
@@ -11132,6 +11274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &829318448
 GameObject:
   m_ObjectHideFlags: 0
@@ -11538,6 +11681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &857398750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11713,6 +11857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &877814563
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12735,6 +12880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &957783741
 GameObject:
   m_ObjectHideFlags: 0
@@ -12875,6 +13021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &969187108
 GameObject:
   m_ObjectHideFlags: 0
@@ -13031,7 +13178,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e30693c495e0f7f49b00dd018b6566ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13073,6 +13220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 04000000
 --- !u!1 &986611213
 GameObject:
   m_ObjectHideFlags: 0
@@ -13434,6 +13582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1027858729
 GameObject:
   m_ObjectHideFlags: 0
@@ -13632,6 +13781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1040053456
 GameObject:
   m_ObjectHideFlags: 0
@@ -13943,6 +14093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1069744173
 GameObject:
   m_ObjectHideFlags: 0
@@ -13961,7 +14112,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1069744174
 Transform:
   m_ObjectHideFlags: 0
@@ -14039,6 +14190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1070469981
 GameObject:
   m_ObjectHideFlags: 0
@@ -14362,6 +14514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &1089004255
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15262,6 +15415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1197312754
 GameObject:
   m_ObjectHideFlags: 0
@@ -15358,6 +15512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1204175171
 GameObject:
   m_ObjectHideFlags: 0
@@ -15454,6 +15609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1211062371
 GameObject:
   m_ObjectHideFlags: 0
@@ -16032,6 +16188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1262067790
 GameObject:
   m_ObjectHideFlags: 0
@@ -16248,6 +16405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &1285016143
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16611,7 +16769,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 38f081fb76990c94f9cfea17f246d0f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16653,6 +16811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 0500000004000000
 --- !u!1 &1308339657
 GameObject:
   m_ObjectHideFlags: 0
@@ -16749,6 +16908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1309715743
 GameObject:
   m_ObjectHideFlags: 0
@@ -17001,6 +17161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &1317222202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17147,6 +17308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1321501054
 GameObject:
   m_ObjectHideFlags: 0
@@ -17389,6 +17551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1367740387
 GameObject:
   m_ObjectHideFlags: 0
@@ -17529,6 +17692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1385796914
 GameObject:
   m_ObjectHideFlags: 0
@@ -17771,6 +17935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1407341819
 GameObject:
   m_ObjectHideFlags: 0
@@ -18135,7 +18300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalMover: {fileID: 1430590424}
+  _color: 0
 --- !u!23 &1430590426
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18326,6 +18491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1436646437
 GameObject:
   m_ObjectHideFlags: 0
@@ -18580,6 +18746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1444206552
 GameObject:
   m_ObjectHideFlags: 0
@@ -18822,6 +18989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1450267533
 GameObject:
   m_ObjectHideFlags: 0
@@ -18918,6 +19086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1451911622
 GameObject:
   m_ObjectHideFlags: 0
@@ -19268,6 +19437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1484689648
 GameObject:
   m_ObjectHideFlags: 0
@@ -19694,6 +19864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1537023800
 GameObject:
   m_ObjectHideFlags: 0
@@ -20058,6 +20229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1571095691
 GameObject:
   m_ObjectHideFlags: 0
@@ -20434,6 +20606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1609898701
 GameObject:
   m_ObjectHideFlags: 0
@@ -20712,6 +20885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1629331525
 GameObject:
   m_ObjectHideFlags: 0
@@ -20852,6 +21026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1668752761
 GameObject:
   m_ObjectHideFlags: 0
@@ -20992,6 +21167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1677846121
 GameObject:
   m_ObjectHideFlags: 0
@@ -21359,6 +21535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1698854121
 GameObject:
   m_ObjectHideFlags: 0
@@ -21538,6 +21715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1717616642
 GameObject:
   m_ObjectHideFlags: 0
@@ -21636,7 +21814,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 38f081fb76990c94f9cfea17f246d0f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21678,6 +21856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 05000000
 --- !u!1 &1720270008
 GameObject:
   m_ObjectHideFlags: 0
@@ -21818,6 +21997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1732795785
 GameObject:
   m_ObjectHideFlags: 0
@@ -22298,7 +22478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalMover: {fileID: 1776859772}
+  _color: 0
 --- !u!23 &1776859774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22568,6 +22748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1805167155
 GameObject:
   m_ObjectHideFlags: 0
@@ -22968,7 +23149,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 10.734, y: -2.584, z: 2.218}
-  m_LocalScale: {x: 0.4078, y: 0.4078, z: 0.4078}
+  m_LocalScale: {x: 0.54477996, y: 0.54477996, z: 0.54477996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1913594165}
@@ -22985,7 +23166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b382d60d353dfa94a93ad85640f7b07a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coreMover: {fileID: 1842284321}
+  _color: 0
 --- !u!23 &1842284319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23937,6 +24118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1913468583
 GameObject:
   m_ObjectHideFlags: 0
@@ -24028,6 +24210,8 @@ Transform:
   - {fileID: 346296386}
   - {fileID: 1293512989}
   - {fileID: 797318163}
+  - {fileID: 2055165077}
+  - {fileID: 604252098}
   - {fileID: 1430590423}
   - {fileID: 1842284317}
   m_Father: {fileID: 1609898702}
@@ -24362,6 +24546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &1943604628
 GameObject:
   m_ObjectHideFlags: 0
@@ -24973,6 +25158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &2011155109
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25236,6 +25422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &2035285165
 GameObject:
   m_ObjectHideFlags: 0
@@ -25267,6 +25454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!23 &2035285167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25376,6 +25564,118 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2055165076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055165077}
+  - component: {fileID: 2055165081}
+  - component: {fileID: 2055165080}
+  - component: {fileID: 2055165079}
+  - component: {fileID: 2055165078}
+  m_Layer: 0
+  m_Name: 'YellowCrystal '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2055165077
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055165076}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -1.381, y: -2.529, z: 2.142}
+  m_LocalScale: {x: 30.081339, y: 30.08132, z: 30.08132}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1913594165}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2055165078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055165076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25bbeaaff90bef94dba7ec7c2ad3a5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactionDistance: 0.001
+  _speed: 5
+--- !u!114 &2055165079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055165076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _color: 4
+--- !u!23 &2055165080
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055165076}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e30693c495e0f7f49b00dd018b6566ea, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2055165081
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055165076}
+  m_Mesh: {fileID: -1710425572717105975, guid: 18ecad350442c204cb428f1aa3f3bd7a, type: 3}
 --- !u!1 &2059405818
 GameObject:
   m_ObjectHideFlags: 0
@@ -25662,6 +25962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &2085192705
 GameObject:
   m_ObjectHideFlags: 0
@@ -25885,6 +26186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e103c1730bc444441ac3e5e28dde322e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "_aisle\u0421olors": 
 --- !u!1 &2098171521
 GameObject:
   m_ObjectHideFlags: 0
@@ -26522,6 +26824,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143557079}
   m_Mesh: {fileID: -3944245691126379725, guid: 23b41fca1852a4544b376dc8bf60f5c8, type: 3}
+--- !u!1001 &1056547788099060946
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.0821652
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -48.360638
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 119.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2858072326411911568, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445814858416053502, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
+      propertyPath: m_Name
+      value: GameObjectsSample
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
 --- !u!33 &1320327216951217796
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -26545,63 +26904,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &3105502157838000618
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1169339451078392853, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_Name
-      value: GameObjectsSample
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.0821652
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -48.360638
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 119.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7438519824289048738, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 09b45985c7fde1a4ca003955e06fbe21, type: 3}
 --- !u!1 &3366077479383407515
 GameObject:
   m_ObjectHideFlags: 0
@@ -26706,5 +27008,5 @@ SceneRoots:
   - {fileID: 2737455261590962465}
   - {fileID: 1867240513}
   - {fileID: 2097182958}
-  - {fileID: 3105502157838000618}
+  - {fileID: 1056547788099060946}
   - {fileID: 1609898702}

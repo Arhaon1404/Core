@@ -20,8 +20,6 @@ public class StateMovingCrystal : ILevelState
 
     public void Enter()
     {
-        Debug.Log("Entering StateMovingCrystal");
-
         _levelManager.CrystalHandler.MoveСompleted += EnterNextState;
         
         _levelManager.ProcessCrystal();
@@ -30,14 +28,11 @@ public class StateMovingCrystal : ILevelState
     public void Exit()
     {
         _levelManager.CrystalHandler.MoveСompleted -= EnterNextState;
-        
-        Debug.Log("Exiting StateMovingCrystal");
     }
 
     private void EnterNextState()
     {
         _levelStateMachine.EnterIn<StateProccesingFieldsFeatures>();
-        //_levelStateMachine.EnterIn<StateWaitingFields>();
     }
 }
     

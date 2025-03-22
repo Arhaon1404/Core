@@ -20,13 +20,11 @@ public class StateProccesingFieldsFeatures : ILevelState
     
     public void Enter()
     {
-        Debug.Log("Enter StateProccesingFieldsFeatures");
         _levelManager.ProcessFieldsFeatures();
         _levelStateMachine.EnterIn<StateMovingCore>();
     }
 
     public void Exit()
     {
-        Debug.Log("Exit StateProccesingFieldsFeatures");
     }
 }

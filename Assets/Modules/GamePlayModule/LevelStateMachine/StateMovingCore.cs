@@ -27,8 +27,6 @@ public class StateMovingCore : ILevelState
     
     public void Enter()
     {
-        Debug.Log("Enter StateMovingCore");
-
         Field targetField = _levelAStarProcceder.SearchCrystals();
         
         if (targetField)
@@ -38,12 +36,10 @@ public class StateMovingCore : ILevelState
         }
         else
         {
-            //_levelStateMachine.EnterIn<StateWaitingFields>();
+            _levelStateMachine.EnterIn<StateWaitingFields>();
         }
     }
 
     public void Exit()
-    {
-        Debug.Log("Exit StateMovingCore");
-    }
+    { }
 }

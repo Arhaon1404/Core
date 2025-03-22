@@ -8,6 +8,9 @@ public class AlgorithmAStar
     private readonly EnergyWastedCalculator _energyWastedCalculator;
     private List<Field> _open;
     private List<Field> _closed;
+    private StartField _startField;
+    private Field _targetField;
+    
     
     public AlgorithmAStar()
     {
@@ -19,6 +22,8 @@ public class AlgorithmAStar
     {
         _open = new List<Field>();
         _closed = new List<Field>();
+        _startField = startField;
+        _targetField = targetField;
         
         _energyWastedCalculator.Calculate(startField);
         
@@ -110,10 +115,48 @@ public class AlgorithmAStar
         foreach (Connection connection in currentField.ActiveConnections)
         {
             if(connection.ConnectionLine.isActiveAndEnabled)
-                if(_closed.IndexOf(connection.ConnectionAnotherField.MotherField) == -1)
-                    connections.Add(connection);
+                if(CheckCorrectCrystal(connection))
+                    if(СomparisonСolor(connection,_startField))
+                        if(_closed.IndexOf(connection.ConnectionAnotherField.MotherField) == -1)
+                            connections.Add(connection);
         }
         
         return connections;
+    }
+    
+    private bool CheckCorrectCrystal(Connection connection)
+    {
+        Crystal crystalOnField = connection.ConnectionAnotherField.MotherField.CrystalOnField;
+
+        if (crystalOnField)
+        {
+            if(crystalOnField == _targetField.CrystalOnField)
+                return true;
+        }
+        else
+        {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    private bool СomparisonСolor(Connection connect, StartField startField)
+    {
+        if (connect.ConnectionLine.AisleColors.Count == 0)
+        {
+            return true;
+        }
+        else
+        {
+            ColorType crystalColor = startField.CoreOnField.Color;
+            
+            if (connect.ConnectionLine.AisleColors.IndexOf(crystalColor) != -1)
+            {
+                return true;
+            }
+        }
+        
+        return false;
     }
 }
