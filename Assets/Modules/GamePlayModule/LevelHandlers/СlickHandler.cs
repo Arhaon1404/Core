@@ -6,13 +6,14 @@ public class СlickHandler : MonoBehaviour
         [SerializeField] private Field _selectedFirstField;
         [SerializeField] private Field _selectedSecondField;
         [SerializeField] private LevelAStarProcceder _levelAStarProcceder;
+        [SerializeField] private VictoryFieldStorage _victoryFieldStorage;
 
         private LevelStateMachine _levelStateMachine;
         public event Action<Field,Field> FieldsReceived;
     
         private void Awake()
         {
-            _levelStateMachine = new LevelStateMachine(this,_levelAStarProcceder);
+            _levelStateMachine = new LevelStateMachine(this,_levelAStarProcceder,_victoryFieldStorage);
         
             _levelStateMachine.EnterIn<StateWaitingFields>();
         }
@@ -39,8 +40,6 @@ public class СlickHandler : MonoBehaviour
 
         private void FindFields(RaycastHit hit)
         {
-            Debug.Log(hit.collider.gameObject.name);
-
             if (hit.collider.TryGetComponent(out Field field))
             {
                 if (_selectedFirstField == null)

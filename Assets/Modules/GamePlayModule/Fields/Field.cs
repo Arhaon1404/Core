@@ -5,10 +5,12 @@ using UnityEngine;
 public class Field : AbstractField
 {
     [SerializeField] private Crystal _crystalOnField;
+    [SerializeField] private ColorType _color;
     private FieldNode _fieldNode;
     
     public Crystal CrystalOnField => _crystalOnField;
     public FieldNode FieldNode => _fieldNode;
+    public ColorType Color => _color;
 
     private void Awake()
     {

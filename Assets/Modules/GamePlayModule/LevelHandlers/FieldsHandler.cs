@@ -16,6 +16,11 @@ public class FieldsHandler
             return null;
         }
 
+        if (startField.CrystalOnField.IsActiveCrystal == false)
+        {
+            return null;
+        }
+
         if (endField.CrystalOnField)
         {
             return null;    

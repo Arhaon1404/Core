@@ -8,17 +8,22 @@ public class LevelStateMachine
     private LevelManager _levelManager;
     private СlickHandler _clickHandler;
     private LevelAStarProcceder _levelAStarProcceder;
+    private VictoryFieldStorage _victoryFieldStorage;
     
-    public LevelStateMachine(СlickHandler clickHandler, LevelAStarProcceder levelAStarProcceder)
+    public LevelStateMachine(СlickHandler clickHandler, LevelAStarProcceder levelAStarProcceder,VictoryFieldStorage victoryFieldStorage)
     {
         if(clickHandler == null)
             throw new ArgumentNullException(nameof(clickHandler));
         
         if(levelAStarProcceder == null)
             throw new ArgumentNullException(nameof(levelAStarProcceder));
+        
+        if(victoryFieldStorage == null)
+            throw new ArgumentNullException(nameof(victoryFieldStorage));
             
         _clickHandler = clickHandler;
         _levelAStarProcceder = levelAStarProcceder;
+        _victoryFieldStorage = victoryFieldStorage;
         
         _levelManager = new LevelManager();
         
@@ -28,7 +33,8 @@ public class LevelStateMachine
             [typeof(StateProccesingFields)] = new StateProccesingFields(this,_levelManager),
             [typeof(StateMovingCrystal)] = new StateMovingCrystal(this,_levelManager),
             [typeof(StateProccesingFieldsFeatures)] = new StateProccesingFieldsFeatures(this,_levelManager),
-            [typeof(StateMovingCore)] = new StateMovingCore(this,_levelManager,_levelAStarProcceder)
+            [typeof(StateMovingCore)] = new StateMovingCore(this,_levelManager,_levelAStarProcceder),
+            [typeof(StateCheckingLevelCompletion)] = new StateCheckingLevelCompletion(this,_levelManager,_victoryFieldStorage)
         };
     }
 

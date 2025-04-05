@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8200733955519109108}
   - component: {fileID: 229102030052406446}
   m_Layer: 0
-  m_Name: Connection3
+  m_Name: Connection2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,6 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 6
+  _isActiveCrystal: 0
 --- !u!114 &1198578169111609454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,6 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 3
+  _isActiveCrystal: 0
 --- !u!114 &2448163396353067212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,6 +802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 4
+  _isActiveCrystal: 0
 --- !u!114 &5268315312952143962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1605,6 +1608,7 @@ MonoBehaviour:
   _activeConnections: []
   _centerPoint: {fileID: 6191252416132884299}
   _crystalOnField: {fileID: 0}
+  _color: 0
 --- !u!1 &933183781458069384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 1
+  _isActiveCrystal: 0
 --- !u!114 &2980173617606816309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,6 +2408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 0
+  _isActiveCrystal: 0
 --- !u!114 &7007233516141246381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3424,7 +3430,7 @@ GameObject:
   - component: {fileID: 4848922217116406239}
   - component: {fileID: 6007500455636617878}
   m_Layer: 0
-  m_Name: Connection2
+  m_Name: Connection3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4221,6 +4227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 5
+  _isActiveCrystal: 0
 --- !u!114 &2306539211457786746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4349,8 +4356,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 306319958086747588}
-  - {fileID: 1471580261540815578}
   - {fileID: 7850448009991578365}
+  - {fileID: 1471580261540815578}
   - {fileID: 4398512544180934836}
   - {fileID: 1782604849623420311}
   m_Father: {fileID: 4987030472594800765}
@@ -4370,6 +4377,7 @@ MonoBehaviour:
   _activeConnections: []
   _centerPoint: {fileID: 8389457517521838163}
   _crystalOnField: {fileID: 0}
+  _color: 0
 --- !u!1 &2878661140903721316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4468,6 +4476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 2
+  _isActiveCrystal: 0
 --- !u!114 &6544760667853081051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4532,6 +4541,7 @@ MonoBehaviour:
   _activeConnections: []
   _centerPoint: {fileID: 2775707920162815039}
   _crystalOnField: {fileID: 0}
+  _color: 0
 --- !u!1 &3113462874590498735
 GameObject:
   m_ObjectHideFlags: 0
@@ -7186,8 +7196,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9142195693418557350}
-  - {fileID: 4663288304638286492}
   - {fileID: 1660261150680198557}
+  - {fileID: 4663288304638286492}
   - {fileID: 6368989125326904725}
   - {fileID: 4967137395414537448}
   - {fileID: 3419572755104687863}
@@ -7208,6 +7218,7 @@ MonoBehaviour:
   _activeConnections: []
   _centerPoint: {fileID: 7928545307541080093}
   _crystalOnField: {fileID: 0}
+  _color: 0
 --- !u!1 &5158527138292409044
 GameObject:
   m_ObjectHideFlags: 0
@@ -10223,7 +10234,7 @@ GameObject:
   - component: {fileID: 6734621236617907219}
   - component: {fileID: 6413296092221802108}
   m_Layer: 0
-  m_Name: Connection2
+  m_Name: Connection3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11508,7 +11519,7 @@ GameObject:
   - component: {fileID: 945420265453611628}
   - component: {fileID: 4160939473864013597}
   m_Layer: 0
-  m_Name: Connection3
+  m_Name: Connection2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13077,6 +13088,7 @@ MonoBehaviour:
   _activeConnections: []
   _centerPoint: {fileID: 7133025881013331214}
   _crystalOnField: {fileID: 0}
+  _color: 0
 --- !u!1 &9067512189583363564
 GameObject:
   m_ObjectHideFlags: 0

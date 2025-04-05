@@ -32,6 +32,9 @@ public class StateMovingCore : ILevelState
         if (targetField)
         {
             List<AbstractField> path = _levelAStarProcceder.LaunchAStar(targetField);
+            
+            _levelManager.CoreHandler.MoveСompleted += TransiteToNextState;
+            
             _levelManager.ProcessCore(path);
         }
         else
@@ -42,4 +45,11 @@ public class StateMovingCore : ILevelState
 
     public void Exit()
     { }
+
+    private void TransiteToNextState()
+    {
+        _levelManager.CoreHandler.MoveСompleted -= TransiteToNextState;
+        
+        _levelStateMachine.EnterIn<StateCheckingLevelCompletion>();
+    }
 }

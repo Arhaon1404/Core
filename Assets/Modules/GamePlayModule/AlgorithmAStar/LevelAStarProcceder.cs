@@ -8,6 +8,8 @@ public class LevelAStarProcceder : MonoBehaviour
     [SerializeField] private List<Crystal> _crystalsOnLevel;
     [SerializeField] private StartField _startField;
     
+    private List<AbstractField> _path;
+    
     private AlgorithmAStar _algorithmAStar;
     private PreliminaryCrystalSearcher _preliminaryCrystalSearcher;
     
@@ -16,6 +18,7 @@ public class LevelAStarProcceder : MonoBehaviour
 
     public void Awake()
     {
+        _path = new List<AbstractField>();
         _algorithmAStar = new AlgorithmAStar();
         _preliminaryCrystalSearcher = new PreliminaryCrystalSearcher();
     }
@@ -32,10 +35,10 @@ public class LevelAStarProcceder : MonoBehaviour
     
     public List<AbstractField> LaunchAStar(Field targetField)
     {
-        List<AbstractField> path = _algorithmAStar.Launch(_startField, targetField);
+        _path = _algorithmAStar.Launch(_startField, targetField);
         
-        path.Reverse();
+        _path.Reverse();
         
-        return path;
+        return _path;
     }
 }

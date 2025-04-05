@@ -8,20 +8,26 @@ public class AlgorithmAStar
     private readonly EnergyWastedCalculator _energyWastedCalculator;
     private List<Field> _open;
     private List<Field> _closed;
+    private List<AbstractField> _path;
     private StartField _startField;
     private Field _targetField;
     
     
     public AlgorithmAStar()
     {
+        _open = new List<Field>();
+        _closed = new List<Field>();
+        _path = new List<AbstractField>();
         _heuristicDistanceCalculator = new HeuristicDistanceCalculator();
         _energyWastedCalculator = new EnergyWastedCalculator();
     }
 
     public List<AbstractField> Launch(StartField startField, Field targetField)
     {
-        _open = new List<Field>();
-        _closed = new List<Field>();
+        _open.Clear();
+        _closed.Clear();
+        _path.Clear();
+        
         _startField = startField;
         _targetField = targetField;
         
@@ -46,9 +52,7 @@ public class AlgorithmAStar
             
             if (currentFieldWithMinWeight == targetField)
             {
-                List<AbstractField> path = new List<AbstractField>();
-
-                path.Add(currentFieldWithMinWeight);
+                _path.Add(currentFieldWithMinWeight);
                 
                 bool foundPath = false;
 
@@ -56,13 +60,13 @@ public class AlgorithmAStar
                 {
                     if (currentFieldWithMinWeight.FieldNode.PreviousField != null)
                     {
-                        path.Add(currentFieldWithMinWeight.FieldNode.PreviousField);
+                        _path.Add(currentFieldWithMinWeight.FieldNode.PreviousField);
                         currentFieldWithMinWeight = currentFieldWithMinWeight.FieldNode.PreviousField;
                     }
                     else
                     {
-                        path.Add(startField);
-                        return path;
+                        _path.Add(startField);
+                        return _path;
                     }
                 }
             }
@@ -114,11 +118,12 @@ public class AlgorithmAStar
 
         foreach (Connection connection in currentField.ActiveConnections)
         {
-            if(connection.ConnectionLine.isActiveAndEnabled)
-                if(CheckCorrectCrystal(connection))
-                    if(СomparisonСolor(connection,_startField))
-                        if(_closed.IndexOf(connection.ConnectionAnotherField.MotherField) == -1)
-                            connections.Add(connection);
+            if (!connection.ConnectionLine.isActiveAndEnabled) continue;
+            if (!CheckCorrectCrystal(connection)) continue;
+            if (!СomparisonСolor(connection, _startField)) continue;
+            if (_closed.IndexOf(connection.ConnectionAnotherField.MotherField) != -1) continue;
+            
+            connections.Add(connection);
         }
         
         return connections;

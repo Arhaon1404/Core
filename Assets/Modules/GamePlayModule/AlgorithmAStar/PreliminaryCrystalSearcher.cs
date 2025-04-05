@@ -5,45 +5,73 @@ using UnityEngine;
 public class PreliminaryCrystalSearcher 
 {
     private StartField _startField;
-    
+
+    private List<Field> _untraveledFields;
+    private List<Field> _processedFields;
+    private List<Field> _traveledFields;
+
+    public PreliminaryCrystalSearcher()
+    {
+        _untraveledFields = new List<Field>();
+        _processedFields = new List<Field>();
+        _traveledFields = new List<Field>();
+    }
+
     public Field Search(StartField startField)
     {
-        _startField = startField;
+        _traveledFields.Clear();
+        _processedFields.Clear();
+        _untraveledFields.Clear();
         
-        List<Field> untraveledFields = new List<Field>();
-        List<Field> processedFields = new List<Field>();
-        List<Field> traveledFields = new List<Field>();
+        _startField = startField;
         
         foreach (Connection connection in startField.ActiveConnections)
         {
-            untraveledFields.Add(connection.ConnectionAnotherField.MotherField);
+            Field proceedField = connection.ConnectionAnotherField.MotherField;
+
+            if (CheckCrystalOnField(proceedField))
+            {
+                if (CheckCorrectCrystal(proceedField))
+                {
+                    return proceedField;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                _untraveledFields.Add(proceedField);
+            }
         }
         
-        while (untraveledFields.Count > 0)
+        while (_untraveledFields.Count > 0)
         {
-            foreach (Field untraveledField in untraveledFields)
+            foreach (Field untraveledField in _untraveledFields)
             {
-                processedFields.Add(untraveledField);
+                _processedFields.Add(untraveledField);
             }
             
-            untraveledFields.Clear();
+            _untraveledFields.Clear();
 
-            foreach (Field processedField in processedFields)
+            foreach (Field processedField in _processedFields)
             {
-                if (CheckCorrectCrystal(processedField))
+                if (CheckCorrectCrystal(processedField) == true)
                 {
                     return processedField;
                 }
-
-                traveledFields.Add(processedField);
+                
+                _traveledFields.Add(processedField);
                 
                 foreach (Connection connection in processedField.ActiveConnections)
                 {
-                    CheckCorrectWay(connection,traveledFields,untraveledFields);
-                }
+                    CheckCorrectWay(connection,_traveledFields,_untraveledFields);
+                }   
+                
             }
             
-            processedFields.Clear();
+            _processedFields.Clear();
         }
         
         return null;
@@ -52,8 +80,9 @@ public class PreliminaryCrystalSearcher
     private bool CheckCorrectCrystal(Field field)
     {
         if (CheckCrystalOnField(field))
-            if(field.CrystalOnField.Color == _startField.CoreOnField.Color)
-                return true;
+            if(field.CrystalOnField.IsActiveCrystal == true)
+                if(field.CrystalOnField.Color == _startField.CoreOnField.Color)
+                    return true;
         
         return false;
     }

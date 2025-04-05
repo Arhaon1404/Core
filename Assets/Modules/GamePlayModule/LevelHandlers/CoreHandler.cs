@@ -8,7 +8,8 @@ using UnityEngine;
 public class CoreHandler
 {
     private List<Vector3> _wayPoints = new List<Vector3>();
-    private StartField _coreStartField;
+    private StartField _startField;
+    private Field _endField;
     private Core _core;
     
     private int _wayPointCount; 
@@ -17,11 +18,14 @@ public class CoreHandler
     
     public void CollectCoordinates(List<AbstractField> path)
     {
+        _wayPoints.Clear();
+        
         _wayPointCount = 0;
         
-        _coreStartField = (StartField)path[0];
+        _startField = (StartField)path[0];
+        _endField = (Field)path[path.Count - 1];
         
-        _core = _coreStartField.CoreOnField;
+        _core = _startField.CoreOnField;
         
         foreach (AbstractField field in path)
         {
@@ -50,8 +54,8 @@ public class CoreHandler
         {
             _core.CoreMover.TargetReached -= MoveCore;
             
-            _coreStartField.ReleaseCore();
-            _coreStartField.enabled = false;
+            _startField.ReleaseCore(_startField.CoreOnField);
+            _endField.CrystalOnField.СonnectCoreToCrystal();
             
             MoveСompleted?.Invoke();
         }
