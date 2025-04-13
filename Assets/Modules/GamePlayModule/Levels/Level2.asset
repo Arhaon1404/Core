@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9150bd74ca353424da29169dc0c9d77b, type: 3}
+  m_Name: Level2
+  m_EditorClassIdentifier: 
+  _width: 3
+  _height: 3
+  _mapRows:
+  - _mapRow:
+    - _cellName: 1.1
+      _field: {fileID: 6166829001515327529, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+    - _cellName: 1.2
+      _field: {fileID: 6238716080698784788, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+    - _cellName: 1.3
+      _field: {fileID: 6166829001515327529, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+  - _mapRow:
+    - _cellName: 2.1
+      _field: {fileID: 6238716080698784788, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+    - _cellName: 2.2
+      _field: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+    - _cellName: 2.3
+      _field: {fileID: 6238716080698784788, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+  - _mapRow:
+    - _cellName: 3.1
+      _field: {fileID: 6166829001515327529, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+    - _cellName: 3.2
+      _field: {fileID: 6238716080698784788, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0
+    - _cellName: 3.3
+      _field: {fileID: 6166829001515327529, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0

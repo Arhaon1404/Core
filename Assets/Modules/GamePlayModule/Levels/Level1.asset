@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9150bd74ca353424da29169dc0c9d77b, type: 3}
-  m_Name: Level2
+  m_Name: Level1
   m_EditorClassIdentifier: 
-  _width: 2
-  _height: 2
+  _width: 1
+  _height: 1
   _mapRows:
   - _mapRow:
     - _cellName: 1.1
-      _field: {fileID: 3593858857076078497, guid: cefcec01d6e2bbe42a77675d945e5319, type: 3}
-    - _cellName: 1.2
-      _field: {fileID: 0}
-  - _mapRow:
-    - _cellName: 2.1
-      _field: {fileID: 0}
-    - _cellName: 2.2
-      _field: {fileID: 3593858857076078497, guid: cefcec01d6e2bbe42a77675d945e5319, type: 3}
+      _field: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      _isNotRight: 0
+      _isNotLeft: 0
+      _isNotUp: 0
+      _isNotDown: 0

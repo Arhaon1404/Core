@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FieldsPlacer : MonoBehaviour
 {
-    public void PlaceField(NodeInfo[,] map,float marginSpacing)
+    public Field[,] PlaceField(NodeInfo[,] map,float marginSpacing)
     {
         Field[,] mapCreatedFields = new Field[map.GetLength(0), map.GetLength(1)];
         
@@ -36,10 +36,16 @@ public class FieldsPlacer : MonoBehaviour
                     
                     mapCreatedFields[i,j] = newField;
                 }
+                else
+                {
+                    mapCreatedFields[i,j] = null;
+                }
             }
         }
         
         fieldsMap.transform.localPosition = transform.position;
+        
+        return mapCreatedFields;
     }
 
     private float CalculateCenterPoint(int countLenght, float marginSpacing)

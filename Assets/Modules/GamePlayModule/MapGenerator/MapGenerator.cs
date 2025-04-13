@@ -2,20 +2,26 @@ using System;
 using UnityEngine;
 
 [RequireComponent(typeof(FieldsPlacer))]
+[RequireComponent(typeof(RealizerOtherFeatures))]
 public class MapGenerator : MonoBehaviour
 {
     [SerializeField] private LevelInfo _levelInfo;
     [SerializeField] private CenterPoint _centerPoint;
     
     private FieldsPlacer _fieldsPlacer;
+    private ConnectLinker _connectLinker;
+    private RealizerOtherFeatures _realizerOtherFeatures;
 
     private float _marginSpacing;
     private NodeInfo[,] _map;
+    private Field[,] _filledMap;
     
     private void Awake()
     {
         _marginSpacing = 4.066f;
         _fieldsPlacer = GetComponent<FieldsPlacer>();
+        _connectLinker = new ConnectLinker();
+        _realizerOtherFeatures = GetComponent<RealizerOtherFeatures>();
         ProcessGeneration();
     }
 
@@ -23,7 +29,9 @@ public class MapGenerator : MonoBehaviour
     {
         ValidationArray();
         FillArray();
-        _fieldsPlacer.PlaceField(_map,_marginSpacing);
+        _filledMap = _fieldsPlacer.PlaceField(_map,_marginSpacing);
+        _connectLinker.ConnectConnections(_filledMap,_map);
+        _realizerOtherFeatures.Realize(_filledMap,_map);
     }
 
     private void ValidationArray()
@@ -55,7 +63,8 @@ public class MapGenerator : MonoBehaviour
         {
             for (int j = 0; j < _map.GetLength(1); j++)
             {
-                _map[i, j] = _levelInfo.MapRows[i].MapRow[j]; 
+                _map[i, j] = _levelInfo.MapRows[i].MapRow[j];
+                _map[i, j].FillListConnectionsToHide();
             }
         }
     }

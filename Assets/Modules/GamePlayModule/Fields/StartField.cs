@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartField : AbstractField
+public class StartField : Field
 {
-    [SerializeField] private List<Core> _listCores ;
+    [SerializeField] private List<Core> _listCores;
     [SerializeField] private Core _coreOnField;
     
     public Core CoreOnField => _coreOnField;
-    public List<Core> listCores => _listCores;
+    public List<Core> ListCores => _listCores;
 
     public void ReleaseCore(Core coreToRelease)
     {

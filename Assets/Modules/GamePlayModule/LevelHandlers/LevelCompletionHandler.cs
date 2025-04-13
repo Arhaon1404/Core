@@ -13,7 +13,7 @@ public class LevelCompletionHandler
         StartField startField = victoryFieldStorage.StartField;
         List<Field> specialVictoryFields = victoryFieldStorage.SpecialFields;
         
-        if (startField.listCores.Count == 0)
+        if (startField.ListCores.Count == 0)
         {
             if (specialVictoryFields.Count == 0)
             {
