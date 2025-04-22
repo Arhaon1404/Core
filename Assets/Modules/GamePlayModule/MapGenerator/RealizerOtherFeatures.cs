@@ -13,6 +13,10 @@ public class RealizerOtherFeatures : MonoBehaviour
                 {
                     RealizeFiaturesStartField((StartField)_filledMap[i,j],_map[i,j]);
                 }
+                else if (_filledMap[i,j] is RotateField)
+                {
+                    RealizeFiaturesRotateField((RotateField)_filledMap[i,j],_map[i,j]);
+                }
                 else
                 {
                     RealizeFiaturesField(_filledMap[i, j], _map[i, j]);
@@ -32,13 +36,20 @@ public class RealizerOtherFeatures : MonoBehaviour
             anotherField.ActiveConnections.Remove(connection.ConnectionAnotherField);
         }
 
+        bool isFirst = true;
+        
         foreach (Core core in currentNode.ListCores)
         {
             Core instantiatedCore = Instantiate(core,currentStartField.CenterPoint.transform.position,Quaternion.identity);
 
             instantiatedCore.transform.SetParent(transform);
             
-            if (currentNode.ListCores[0] != core)
+            if (isFirst)
+            {
+                currentStartField.SetStartCore(instantiatedCore);
+                isFirst = false;
+            }
+            else
             {
                 instantiatedCore.gameObject.SetActive(false);
             }
@@ -59,5 +70,46 @@ public class RealizerOtherFeatures : MonoBehaviour
             
             currentField.SetCrystal(instantiatedCrystal);
         }
+
+        if (currentNode.Mark != null)
+        {
+            Mark instantiatedMark = Instantiate(currentNode.Mark,currentField.transform);
+            
+            instantiatedMark.transform.localPosition = Vector3.zero;
+            
+            currentField.SetColor(instantiatedMark.Color);
+        }
+        
+        if (currentNode.ColorsConnections != null)
+        {
+            foreach (Connection connection in currentField.ActiveConnections)
+            {
+                if (currentNode.ColorsConnections.ContainsKey(connection.ConnectionType))
+                {
+                    Transform currentTransform = connection.ConnectionLine.transform;
+                    
+                    Destroy(connection.ConnectionLine.gameObject);
+                    
+                    ConnectionLine newConnectionLine = Instantiate(currentNode.ColorsConnections[connection.ConnectionType]);
+                    
+                    newConnectionLine.transform.SetParent(connection.transform);
+                    
+                    newConnectionLine.transform.position = connection.ConnectionLineCenterPoint.transform.position;
+                    newConnectionLine.transform.rotation = currentTransform.rotation;
+                    
+                    connection.SetNewConnectionLine(newConnectionLine);
+                }
+            }
+        }
+    }
+    
+    private void RealizeFiaturesRotateField(RotateField rotateField, NodeInfo nodeInfo)
+    {
+        foreach (Connection connection in rotateField.ActiveConnections)
+        {
+            rotateField.OrderAdjacentConnections.Add(connection);
+        }
+
+        RealizeFiaturesField(rotateField, nodeInfo);
     }
 }

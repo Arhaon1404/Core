@@ -30,6 +30,14 @@ public class Field : AbstractField
         
         _crystalOnField = crystal;
     }
+
+    public void SetColor(ColorType color)
+    {
+        if (_color != ColorType.Black)
+        {
+            _color = color;
+        }
+    }
 }
     
 

@@ -18,6 +18,12 @@ public class StartField : Field
         SetNextCore();
     }
 
+    public void SetStartCore(Core coreToSet)
+    {
+        if(_coreOnField == null)
+            _coreOnField = coreToSet;
+    }
+
     private void SetNextCore()
     {
         if (_listCores.Count != 0)

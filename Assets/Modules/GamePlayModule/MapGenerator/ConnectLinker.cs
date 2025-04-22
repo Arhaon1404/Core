@@ -11,8 +11,7 @@ public class ConnectLinker
     {
         ConnectInWidth(mapFields);
         ConnectInHeight(mapFields);
-        RemovingUnnecessaryConnections(mapFields);
-        HideUnnecessaryConnections(mapFields, _map);
+        RemovingUnnecessaryConnections(mapFields, _map);
     }
 
     private void ConnectInWidth(Field[,] mapFields)
@@ -71,7 +70,7 @@ public class ConnectLinker
         }
     }
     
-    private void RemovingUnnecessaryConnections(Field[,] mapFields)
+    private void RemovingUnnecessaryConnections(Field[,] mapFields,NodeInfo[,] _map)
     {
         for (int i = 0; i < mapFields.GetLength(0); i++)
         {
@@ -87,24 +86,27 @@ public class ConnectLinker
                         mapFields[i, j].ActiveConnections.Remove(mapFields[i, j].ActiveConnections[h]);
                     }
                 }
-            }
-        }
-    }
 
-    private void HideUnnecessaryConnections(Field[,] mapFields, NodeInfo[,] _map)
-    {
-        for (int i = 0; i < mapFields.GetLength(0); i++)
-        {
-            for (int j = 0; j < mapFields.GetLength(1); j++)
-            {
-                if (mapFields[i, j] != null) continue;
-                if (_map[i,j].ConnectionsToHide.Count != 0) continue;
-                foreach (ConnectionType connectionType in _map[i,j].ConnectionsToHide)
+                if (_map[i, j].ConnectionsToRemove.Count != 0)
                 {
-                    Connection connectionToHide = mapFields[i, j].ActiveConnections.Find(connection => connection.ConnectionType == connectionType);
-                    
-                    connectionToHide.ConnectionAnotherField.gameObject.SetActive(false);
-                    connectionToHide.gameObject.SetActive(false);
+                    foreach (ConnectionType connectionType in _map[i,j].ConnectionsToRemove)
+                    {
+                        Connection connectionToRemove = mapFields[i, j].ActiveConnections.Find(connection => connection.ConnectionType == connectionType);
+                        
+                        connectionToRemove.MotherField.ActiveConnections.Remove(connectionToRemove);
+                        connectionToRemove.gameObject.SetActive(false);
+                    }
+                }
+
+                if (_map[i, j].ConnectionsToHide.Count != 0)
+                {
+                    foreach (ConnectionType connectionType in _map[i,j].ConnectionsToHide)
+                    {
+                        Connection connectionToHide = mapFields[i, j].ActiveConnections.Find(connection => connection.ConnectionType == connectionType);
+                        
+                        connectionToHide.ConnectionAnotherField.ConnectionLine.gameObject.SetActive(false);
+                        connectionToHide.ConnectionLine.gameObject.SetActive(false);
+                    }
                 }
             }
         }

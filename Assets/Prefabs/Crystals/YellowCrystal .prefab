@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 4
-  _isActiveCrystal: 0
+  _isActiveCrystal: 1
 --- !u!114 &1271625126738611973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,5 +111,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25bbeaaff90bef94dba7ec7c2ad3a5f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactionDistance: 0
-  _speed: 0
+  _interactionDistance: 0.001
+  _speed: 5

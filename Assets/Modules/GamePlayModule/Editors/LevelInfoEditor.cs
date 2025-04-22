@@ -18,7 +18,9 @@ public class LevelInfoEditor : Editor
 
     private LevelInfo _levelInfo;
 
-    private bool _isActiveConnections;
+    private bool _isRemoveConnections;
+    private bool _isHideConnections;
+    private bool _isColorConnections;
 
     public void OnEnable()
     {
@@ -56,16 +58,43 @@ public class LevelInfoEditor : Editor
             
             EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_field"));
             
-            _isActiveConnections = EditorGUILayout.BeginFoldoutHeaderGroup(_isActiveConnections, "Connections");
+            _isRemoveConnections = EditorGUILayout.BeginFoldoutHeaderGroup(_isRemoveConnections, "Connections To Remove");
 
-            if (_isActiveConnections)
+            if (_isRemoveConnections)
             {
-                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isNotRight"));
-                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isNotLeft"));
-                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isNotUp"));
-                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isNotDown"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isRemoveRight"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isRemoveLeft"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isRemoveUp"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isRemoveDown"));
             }
             
+            EditorGUILayout.EndFoldoutHeaderGroup();
+
+            if (mapElement.FindPropertyRelative("_field").objectReferenceValue is RotateField)
+            {
+                _isHideConnections = EditorGUILayout.BeginFoldoutHeaderGroup(_isHideConnections, "Connections To Hide");
+
+                if (_isHideConnections)
+                {
+                    EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isHideRight"));
+                    EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isHideLeft"));
+                    EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isHideUp"));
+                    EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_isHideDown"));
+                }
+                
+                EditorGUILayout.EndFoldoutHeaderGroup();
+            }
+            
+            _isColorConnections = EditorGUILayout.BeginFoldoutHeaderGroup(_isColorConnections, "Colors Connections");
+
+            if (_isColorConnections)
+            {
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_rightConnectionLine"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_leftConnectionLine"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_upConnectionLine"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_downConnectionLine"));
+            }
+
             EditorGUILayout.EndFoldoutHeaderGroup();
             
             if (mapElement.FindPropertyRelative("_field").objectReferenceValue is StartField)
@@ -75,14 +104,14 @@ public class LevelInfoEditor : Editor
             else if (mapElement.FindPropertyRelative("_field").objectReferenceValue is Field)
             {
                 EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_crystalOnField"));
-                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_colorField"));
+                EditorGUILayout.PropertyField(mapElement.FindPropertyRelative("_mark"));
             }
         }
     }
     
     private void CreateArray()
     {
-        if (GUILayout.Button("CreateArray"))
+        if (GUILayout.Button("Clear Array"))
         {
             map.ClearArray();
             

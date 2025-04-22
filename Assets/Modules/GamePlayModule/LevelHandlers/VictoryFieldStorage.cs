@@ -9,4 +9,9 @@ public class VictoryFieldStorage : MonoBehaviour
     
     public StartField StartField => _startField;
     public List<Field> SpecialFields => _specialFields;
+
+    public void SetNewStartField(StartField startField)
+    {
+        _startField = startField;
+    }
 }

@@ -42,8 +42,11 @@ public class AlgorithmAStar
             heuristicDistance = _heuristicDistanceCalculator.Calculate(proceedField,targetField);
             
             proceedField.FieldNode.SetWeightNode(heuristicDistance);
-            
-            _open.Add(connection.ConnectionAnotherField.MotherField);
+
+            if (CheckCorrectCrystal(connection))
+            {
+                _open.Add(connection.ConnectionAnotherField.MotherField);    
+            }
         }
         
         while (_open.Count > 0)

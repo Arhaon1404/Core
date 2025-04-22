@@ -3,6 +3,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(FieldsPlacer))]
 [RequireComponent(typeof(RealizerOtherFeatures))]
+[RequireComponent(typeof(LevelAStarProcceder))]
+[RequireComponent(typeof(VictoryFieldStorage))]
 public class MapGenerator : MonoBehaviour
 {
     [SerializeField] private LevelInfo _levelInfo;
@@ -11,6 +13,8 @@ public class MapGenerator : MonoBehaviour
     private FieldsPlacer _fieldsPlacer;
     private ConnectLinker _connectLinker;
     private RealizerOtherFeatures _realizerOtherFeatures;
+    private LevelAStarProcceder _levelAStarProcceder;
+    private VictoryFieldStorage _victoryFieldStorage;
 
     private float _marginSpacing;
     private NodeInfo[,] _map;
@@ -18,10 +22,13 @@ public class MapGenerator : MonoBehaviour
     
     private void Awake()
     {
-        _marginSpacing = 4.066f;
+        _marginSpacing = 3.95f;
         _fieldsPlacer = GetComponent<FieldsPlacer>();
         _connectLinker = new ConnectLinker();
         _realizerOtherFeatures = GetComponent<RealizerOtherFeatures>();
+        _levelAStarProcceder = GetComponent<LevelAStarProcceder>();
+        _victoryFieldStorage = GetComponent<VictoryFieldStorage>();
+        
         ProcessGeneration();
     }
 
@@ -32,6 +39,7 @@ public class MapGenerator : MonoBehaviour
         _filledMap = _fieldsPlacer.PlaceField(_map,_marginSpacing);
         _connectLinker.ConnectConnections(_filledMap,_map);
         _realizerOtherFeatures.Realize(_filledMap,_map);
+        GenerateEnd();
     }
 
     private void ValidationArray()
@@ -64,7 +72,29 @@ public class MapGenerator : MonoBehaviour
             for (int j = 0; j < _map.GetLength(1); j++)
             {
                 _map[i, j] = _levelInfo.MapRows[i].MapRow[j];
+                _map[i, j].FillListConnectionsToRemove();
                 _map[i, j].FillListConnectionsToHide();
+                _map[i, j].FillListColorConnections();
+            }
+        }
+    }
+
+    private void GenerateEnd()
+    {
+        for (int i = 0; i < _filledMap.GetLength(0); i++)
+        {
+            for (int j = 0; j < _filledMap.GetLength(1); j++)
+            {
+                if (_filledMap[i, j] is StartField)
+                {
+                    _victoryFieldStorage.SetNewStartField((StartField)_filledMap[i, j]);
+                    _levelAStarProcceder.SetNewStartField((StartField)_filledMap[i, j]);
+                }
+
+                if (_map[i, j].Mark != null)
+                {
+                    _victoryFieldStorage.SpecialFields.Add(_filledMap[i, j]);
+                }
             }
         }
     }

@@ -37,7 +37,7 @@ public class PreliminaryCrystalSearcher
                 }
                 else
                 {
-                    return null;
+                    //return null;
                 }
             }
             else

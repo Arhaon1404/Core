@@ -41,4 +41,9 @@ public class LevelAStarProcceder : MonoBehaviour
         
         return _path;
     }
+
+    public void SetNewStartField(StartField startField)
+    {
+        _startField = startField;
+    }
 }
