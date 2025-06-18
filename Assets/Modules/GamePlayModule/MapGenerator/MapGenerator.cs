@@ -31,8 +31,8 @@ public class MapGenerator : MonoBehaviour
         
         ProcessGeneration();
     }
-
-    private void ProcessGeneration()
+    
+    public void ProcessGeneration()
     {
         ValidationArray();
         FillArray();

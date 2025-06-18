@@ -904,6 +904,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 2117630976}
   _centerPoint: {fileID: 1121325290}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 231587578}
   _color: 0
 --- !u!65 &49876787
@@ -2011,6 +2015,10 @@ MonoBehaviour:
   - {fileID: 969187110}
   - {fileID: 913439123}
   _centerPoint: {fileID: 1717616644}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 1430590425}
   _color: 0
 --- !u!65 &78259849
@@ -2129,6 +2137,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 359039533}
   _centerPoint: {fileID: 384502336}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 619807720}
   _color: 0
 --- !u!65 &81761245
@@ -2350,6 +2362,10 @@ MonoBehaviour:
   - {fileID: 62940827}
   - {fileID: 663858337}
   _centerPoint: {fileID: 1414353494}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &85292779
@@ -3683,13 +3699,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157254501}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45073023, y: -0, z: -0, w: 0.89266026}
-  m_LocalPosition: {x: 1.14, y: 11.26, z: 27.18}
+  m_LocalRotation: {x: 0.3187139, y: -0.63120633, z: 0.3187139, w: 0.63120633}
+  m_LocalPosition: {x: 12.41, y: 12.13, z: 40.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 53.581, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 53.581, y: -90, z: 0}
 --- !u!114 &157254505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3702,8 +3718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2d6594c7261c94e96619988c8c7aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectedFirstField: {fileID: 0}
-  _selectedSecondField: {fileID: 0}
   _levelAStarProcceder: {fileID: 628007050}
   _victoryFieldStorage: {fileID: 628007049}
 --- !u!1 &164190022
@@ -3968,8 +3982,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &168806436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4895,8 +4910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &231587579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5052,8 +5068,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &236206463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5271,6 +5288,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1134327390}
   _centerPoint: {fileID: 35467799}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 1776859773}
   _color: 0
 --- !u!65 &254794073
@@ -5543,6 +5564,10 @@ MonoBehaviour:
   - {fileID: 1096486849}
   - {fileID: 940534179}
   _centerPoint: {fileID: 1571095693}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 2055165079}
   _color: 0
 --- !u!65 &262286233
@@ -6897,6 +6922,10 @@ MonoBehaviour:
   - {fileID: 552850522}
   - {fileID: 2126845547}
   _centerPoint: {fileID: 105866589}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &346296388
@@ -7726,6 +7755,10 @@ MonoBehaviour:
   - {fileID: 1734553414}
   - {fileID: 1989250810}
   _centerPoint: {fileID: 1397120478}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &384242075
@@ -8490,6 +8523,10 @@ MonoBehaviour:
   - {fileID: 430084361}
   - {fileID: 380005699}
   _centerPoint: {fileID: 1484689650}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &402367695
@@ -9804,6 +9841,10 @@ MonoBehaviour:
   - {fileID: 430430205}
   - {fileID: 1235699062}
   _centerPoint: {fileID: 1652828717}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 1053514826}
   _color: 0
 --- !u!4 &441811307
@@ -10528,6 +10569,10 @@ MonoBehaviour:
   - {fileID: 18138155}
   - {fileID: 467309112}
   _centerPoint: {fileID: 1073102144}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _orderAdjacentConnections:
@@ -10897,6 +10942,10 @@ MonoBehaviour:
   - {fileID: 1262067791}
   - {fileID: 257626289}
   _centerPoint: {fileID: 1055882569}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &506844114
@@ -11072,6 +11121,10 @@ MonoBehaviour:
   - {fileID: 511477220}
   - {fileID: 1887314071}
   _centerPoint: {fileID: 415472604}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _orderAdjacentConnections:
@@ -12292,6 +12345,10 @@ MonoBehaviour:
   - {fileID: 116089867}
   - {fileID: 1545561342}
   _centerPoint: {fileID: 71006082}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &561305775
@@ -13185,8 +13242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 5
-  _isActiveCrystal: 0
 --- !u!23 &604252101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13392,6 +13450,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 591300814}
   _centerPoint: {fileID: 767364161}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &607867659
@@ -13617,8 +13679,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &619807721
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13669,108 +13732,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619807717}
   m_Mesh: {fileID: -1710425572717105975, guid: 18ecad350442c204cb428f1aa3f3bd7a, type: 3}
---- !u!1 &628007044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 628007046}
-  - component: {fileID: 628007045}
-  - component: {fileID: 628007050}
-  - component: {fileID: 628007049}
-  - component: {fileID: 628007047}
-  - component: {fileID: 628007048}
-  m_Layer: 0
-  m_Name: MapGenerator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &628007045
+--- !u!114 &628007049 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4344480888419641244, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+  m_PrefabInstance: {fileID: 2238343864636375933}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628007044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9048876b319307647a61072ac0dedd33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _levelInfo: {fileID: 11400000, guid: c5566326ff7576a4f86e25fd2dbd9b28, type: 2}
-  _centerPoint: {fileID: 1673405279}
---- !u!4 &628007046
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628007044}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.51, z: 40.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &628007047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628007044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9feeebbe2e34b4541b2d2a951cbbe00f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &628007048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628007044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d475fb0bbd2e0f43b78474dc87950e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &628007049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628007044}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a3b8e546db55334c9104ba07fbefa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _startField: {fileID: 0}
-  _specialFields: []
---- !u!114 &628007050
+--- !u!114 &628007050 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5043638553349793627, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+  m_PrefabInstance: {fileID: 2238343864636375933}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628007044}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a3f7ffaddda5fc47b2043bb62041e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalsOnLevel: []
-  _startField: {fileID: 0}
 --- !u!1 &630627622
 GameObject:
   m_ObjectHideFlags: 0
@@ -13967,6 +13950,10 @@ MonoBehaviour:
   - {fileID: 918241875}
   - {fileID: 946828125}
   _centerPoint: {fileID: 1913468585}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &636257402
@@ -14138,6 +14125,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1070469983}
   _centerPoint: {fileID: 1576284258}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &637475049
@@ -16051,6 +16042,10 @@ MonoBehaviour:
   - {fileID: 1863580384}
   - {fileID: 351937359}
   _centerPoint: {fileID: 1040053458}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &708205629
@@ -16557,6 +16552,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &722578645 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4829892716772725938, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+  m_PrefabInstance: {fileID: 921535633737755119}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &731046084
 GameObject:
   m_ObjectHideFlags: 0
@@ -16954,6 +16954,10 @@ MonoBehaviour:
   - {fileID: 1399026267}
   - {fileID: 2098171523}
   _centerPoint: {fileID: 1746454821}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 604252100}
   _color: 0
 --- !u!65 &742844895
@@ -17700,6 +17704,10 @@ MonoBehaviour:
   - {fileID: 1027858731}
   - {fileID: 1623088448}
   _centerPoint: {fileID: 854120805}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 5
 --- !u!65 &797318165
@@ -18402,6 +18410,10 @@ MonoBehaviour:
   - {fileID: 1444206554}
   - {fileID: 1240845601}
   _centerPoint: {fileID: 615862559}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &829318451
@@ -18658,6 +18670,10 @@ MonoBehaviour:
   - {fileID: 1525176755}
   - {fileID: 698852347}
   _centerPoint: {fileID: 879524516}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &844834999
@@ -19776,6 +19792,10 @@ MonoBehaviour:
   - {fileID: 1524499668}
   - {fileID: 164190023}
   _centerPoint: {fileID: 1705017190}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!4 &914700007
@@ -20023,6 +20043,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1088670366}
   _centerPoint: {fileID: 224981247}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &933490915
@@ -21267,6 +21291,10 @@ MonoBehaviour:
   - {fileID: 67561453}
   - {fileID: 2128725027}
   _centerPoint: {fileID: 576830775}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!4 &980905102
@@ -21388,6 +21416,10 @@ MonoBehaviour:
   - {fileID: 1948901765}
   - {fileID: 1766079616}
   _centerPoint: {fileID: 138368486}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &986611215
@@ -22526,8 +22558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 4
-  _isActiveCrystal: 0
 --- !u!23 &1053514827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23087,6 +23120,10 @@ MonoBehaviour:
   - {fileID: 967800927}
   - {fileID: 2010729324}
   _centerPoint: {fileID: 2137145045}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!4 &1085982633
@@ -23490,6 +23527,10 @@ MonoBehaviour:
   - {fileID: 1091911699}
   - {fileID: 404857335}
   _centerPoint: {fileID: 942666776}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1092034555
@@ -24904,6 +24945,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 291158162}
   _centerPoint: {fileID: 1997706276}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _listCores:
@@ -25367,6 +25412,10 @@ MonoBehaviour:
   - {fileID: 607788509}
   - {fileID: 1207327595}
   _centerPoint: {fileID: 631438769}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1204390084
@@ -27009,6 +27058,10 @@ MonoBehaviour:
   - {fileID: 1109582887}
   - {fileID: 1214206372}
   _centerPoint: {fileID: 993996761}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!4 &1284947361
@@ -27311,6 +27364,10 @@ MonoBehaviour:
   - {fileID: 2065327460}
   - {fileID: 1805167159}
   _centerPoint: {fileID: 1782834418}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _orderAdjacentConnections:
@@ -27491,6 +27548,10 @@ MonoBehaviour:
   - {fileID: 348938056}
   - {fileID: 9338659}
   _centerPoint: {fileID: 2103304918}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1293512991
@@ -27728,6 +27789,10 @@ MonoBehaviour:
   - {fileID: 448639454}
   - {fileID: 1857498450}
   _centerPoint: {fileID: 134885475}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 1772684483}
   _color: 0
   _orderAdjacentConnections:
@@ -27971,6 +28036,10 @@ MonoBehaviour:
   - {fileID: 71263678}
   - {fileID: 87883024}
   _centerPoint: {fileID: 650184754}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1310270789
@@ -28752,6 +28821,10 @@ MonoBehaviour:
   - {fileID: 189154508}
   - {fileID: 2043237404}
   _centerPoint: {fileID: 1719255015}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!4 &1343256098
@@ -28884,6 +28957,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1369437835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+  m_PrefabInstance: {fileID: 1801557161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1369437842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369437835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0.99437773, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1369437843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369437835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249a1a40501189d4fbc040814d6aa568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitionSpeed: 0
+  _minOulineWidth: 0
+  _maxOulineWidth: 0
 --- !u!1 &1373533608
 GameObject:
   m_ObjectHideFlags: 0
@@ -29042,8 +29153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &1377089058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29851,8 +29963,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &1430590426
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30215,6 +30328,10 @@ MonoBehaviour:
   - {fileID: 1738839724}
   - {fileID: 1335592153}
   _centerPoint: {fileID: 937231617}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1436646440
@@ -31679,6 +31796,10 @@ MonoBehaviour:
   - {fileID: 1897354291}
   - {fileID: 1877921185}
   _centerPoint: {fileID: 1878702402}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1489097160
@@ -31820,6 +31941,10 @@ MonoBehaviour:
   - {fileID: 1277982034}
   - {fileID: 408192323}
   _centerPoint: {fileID: 751727258}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 5
 --- !u!4 &1503025532
@@ -33064,6 +33189,10 @@ MonoBehaviour:
   - {fileID: 731901738}
   - {fileID: 229579991}
   _centerPoint: {fileID: 1537333376}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 1377089057}
   _color: 4
   _orderAdjacentConnections:
@@ -33249,6 +33378,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1881300587}
   _centerPoint: {fileID: 1865419178}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 236206462}
   _color: 0
 --- !u!65 &1596025055
@@ -33306,6 +33439,10 @@ MonoBehaviour:
   - {fileID: 1878641183}
   - {fileID: 149648973}
   _centerPoint: {fileID: 269589988}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 168806435}
   _color: 0
 --- !u!65 &1600268659
@@ -34296,50 +34433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
---- !u!1 &1673405278
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1673405280}
-  - component: {fileID: 1673405279}
-  m_Layer: 0
-  m_Name: CenterPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1673405279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673405278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1673405280
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673405278}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.64, z: 40}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677846121
 GameObject:
   m_ObjectHideFlags: 0
@@ -34764,6 +34857,10 @@ MonoBehaviour:
   - {fileID: 1221192412}
   - {fileID: 1969958852}
   _centerPoint: {fileID: 1048700555}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 1890454066}
   _color: 0
   _orderAdjacentConnections:
@@ -36173,8 +36270,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 5
-  _isActiveCrystal: 0
 --- !u!23 &1772684484
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36286,8 +36384,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &1776859774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36395,6 +36494,10 @@ MonoBehaviour:
   - {fileID: 808893434}
   - {fileID: 579423215}
   _centerPoint: {fileID: 1407341821}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1780406870
@@ -36647,6 +36750,93 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1235699063}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1801557161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1490141683146503777, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490141683146503777, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1490141683146503777, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
+    - target: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_Name
+      value: ColorlessCrystal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25.511446
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 25.511435
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 25.511435
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 62.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1369437842}
+    - targetCorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1369437843}
+  m_SourcePrefab: {fileID: 100100000, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
 --- !u!1 &1805167155
 GameObject:
   m_ObjectHideFlags: 0
@@ -38579,6 +38769,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1941066956}
   _centerPoint: {fileID: 239086258}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1881129496
@@ -38968,8 +39162,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 0
-  _isActiveCrystal: 0
 --- !u!23 &1890454067
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39144,6 +39339,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 237108344}
   _centerPoint: {fileID: 81550927}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _listCores:
@@ -39425,6 +39624,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 942129485}
   _centerPoint: {fileID: 1218109419}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!65 &1930792582
@@ -40072,6 +40275,10 @@ MonoBehaviour:
   - {fileID: 1960493590}
   - {fileID: 272812593}
   _centerPoint: {fileID: 75325121}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _orderAdjacentConnections:
@@ -40607,6 +40814,10 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1943604629}
   _centerPoint: {fileID: 1211062372}
+  _meshRenderer: {fileID: 0}
+  _defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
+  _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
 --- !u!4 &1979006229
@@ -42054,8 +42265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: 0}
+  _outlineSwicher: {fileID: 0}
   _color: 4
-  _isActiveCrystal: 0
 --- !u!23 &2055165080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43649,6 +43861,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4437358294909740554, guid: d2ef0b84ec7f46243ae731ecaf690753, type: 3}
+      propertyPath: "_aisle\u0421olors.Array.data[0]"
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43705,6 +43921,22 @@ PrefabInstance:
     - target: {fileID: 5490936346763387707, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      propertyPath: _meshRenderer
+      value: 
+      objectReference: {fileID: 722578645}
+    - target: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      propertyPath: _selectColor.b
+      value: 0.3537736
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      propertyPath: _selectColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      propertyPath: _selectColor.r
+      value: 0.98190284
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43865,6 +44097,71 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &2238343864636375933
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6084093929914735167, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_Name
+      value: MapGenerator
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084093929914735167, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6222337310257199686, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: _levelInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: c5566326ff7576a4f86e25fd2dbd9b28, type: 2}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785865714172462138, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
 --- !u!1 &2392740233160919404
 GameObject:
   m_ObjectHideFlags: 0
@@ -43949,7 +44246,7 @@ Transform:
   m_GameObject: {fileID: 3366077479383407515}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0, z: 39.56}
+  m_LocalPosition: {x: 0.22, y: 0.06, z: 39.56}
   m_LocalScale: {x: 0.524, y: 1, z: 0.5503}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44220,19 +44517,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.92387956
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.38268343
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -44240,7 +44537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -44322,7 +44619,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.287001
+      value: -9.29
       objectReference: {fileID: 0}
     - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44330,7 +44627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.58
+      value: -12.73
       objectReference: {fileID: 0}
     - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44760,7 +45057,7 @@ SceneRoots:
   - {fileID: 1056547788099060946}
   - {fileID: 1867006960}
   - {fileID: 1609898702}
-  - {fileID: 628007046}
-  - {fileID: 1673405280}
+  - {fileID: 2238343864636375933}
   - {fileID: 7478277814175043294}
   - {fileID: 843835607274550026}
+  - {fileID: 1801557161}

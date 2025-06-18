@@ -1,21 +1,31 @@
 using System;
 using UnityEngine;
 
-public class СlickHandler : MonoBehaviour
+public class СlickHandler : MonoBehaviour, IInputSource
     {
-        [SerializeField] private Field _selectedFirstField;
-        [SerializeField] private Field _selectedSecondField;
         [SerializeField] private LevelAStarProcceder _levelAStarProcceder;
         [SerializeField] private VictoryFieldStorage _victoryFieldStorage;
 
         private LevelStateMachine _levelStateMachine;
-        public event Action<Field,Field> FieldsReceived;
-    
+        private FieldSelector _fieldSelector;
+        public event Action<GameObject> GottenHit;
+        
         private void Awake()
         {
-            _levelStateMachine = new LevelStateMachine(this,_levelAStarProcceder,_victoryFieldStorage);
-        
+            _fieldSelector = new FieldSelector(this);
+            _levelStateMachine = new LevelStateMachine(_fieldSelector,_levelAStarProcceder,_victoryFieldStorage);
+            
             _levelStateMachine.EnterIn<StateWaitingFields>();
+        }
+
+        private void OnEnable()
+        {
+            _fieldSelector.Enable();
+        }
+
+        private void OnDisable()
+        {
+            _fieldSelector.Disable();
         }
 
         private void Update()
@@ -27,35 +37,8 @@ public class СlickHandler : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    FindFields(hit);
+                    GottenHit?.Invoke(hit.collider.gameObject);
                 }
-            }
-        }
-
-        public void ClearSelectedFields()
-        {
-            _selectedFirstField = null;
-            _selectedSecondField = null;
-        }
-
-        private void FindFields(RaycastHit hit)
-        {
-            if (hit.collider.TryGetComponent(out Field field))
-            {
-                if (_selectedFirstField == null)
-                {
-                    _selectedFirstField = field;
-                }
-                else
-                {
-                    _selectedSecondField = field;
-                    FieldsReceived?.Invoke(_selectedFirstField,_selectedSecondField);
-                }
-            }
-            else
-            {
-                _selectedFirstField = null;
-                _selectedSecondField = null;
             }
         }
     }

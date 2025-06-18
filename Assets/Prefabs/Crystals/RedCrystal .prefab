@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 1148686325524981005}
   - component: {fileID: 4329489605837985307}
   - component: {fileID: 1648774963770053700}
+  - component: {fileID: -4215062062964644211}
+  - component: {fileID: -9156843601932156924}
+  - component: {fileID: 112500493207921072}
   m_Layer: 0
   m_Name: 'RedCrystal '
   m_TagString: Untagged
@@ -97,8 +100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edf16bd6abbdc314c9cfe3efa4a5ee2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _crystalAnimator: {fileID: -4215062062964644211}
+  _outlineSwicher: {fileID: 112500493207921072}
   _color: 1
-  _isActiveCrystal: 1
 --- !u!114 &1648774963770053700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,3 +117,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactionDistance: 0.001
   _speed: 5
+--- !u!114 &-4215062062964644211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288564020708331560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c63c97d14add9949ba9a4b72610b829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _heightDiference: 0.1
+  _maxSpeedUpAndDown: 3
+  _minSpeedUpAndDown: 3
+  _maxSpeedRotating: 45
+  _minSpeedRotating: 35
+  _isPlaying: 1
+--- !u!114 &-9156843601932156924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288564020708331560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 0.96499115, b: 0.18396229, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &112500493207921072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288564020708331560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249a1a40501189d4fbc040814d6aa568, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitionSpeed: 1
+  _minOulineWidth: 2
+  _maxOulineWidth: 5

@@ -991,6 +991,10 @@ MonoBehaviour:
   - {fileID: 1126291328710122338}
   - {fileID: 7305260090691838284}
   _centerPoint: {fileID: 5176665869447430607}
+  _meshRenderer: {fileID: 3991121997815026458}
+  _defaultColor: {r: 0.9725491, g: 1, b: 1, a: 1}
+  _firstSelectColor: {r: 0.96933126, g: 1, b: 0, a: 0}
+  _secondSelectColor: {r: 1, g: 0, b: 0, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _orderAdjacentConnections: []

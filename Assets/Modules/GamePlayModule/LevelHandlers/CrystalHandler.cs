@@ -37,12 +37,17 @@ public class CrystalHandler
     {
         Crystal crystal = _startField.CrystalOnField;
 
+        if(_wayPointCount == 0)
+            crystal.PauseAnimation();
+        
         if (_wayPointCount >= _wayPoints.Length)
         {
             _startField.CrystalOnField.CrystalMover.TargetReached -= MoveCrystal;
             
             _startField.ReleaseCrystal(crystal);
             _endField.SetCrystal(crystal);
+            
+            crystal.PlayAnimation();
             
             MoveСompleted?.Invoke();
         }

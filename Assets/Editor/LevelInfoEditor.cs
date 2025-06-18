@@ -3,8 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.TerrainTools;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 [CustomEditor(typeof(LevelInfo))]

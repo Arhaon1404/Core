@@ -497,6 +497,8 @@ MonoBehaviour:
   - {fileID: 7004584249192029698}
   - {fileID: 7106479887796738591}
   _centerPoint: {fileID: 6344599444677303491}
+  _meshRenderer: {fileID: 4829892716772725938}
+  _selectColor: {r: 1, g: 0.9788865, b: 0.2028302, a: 0}
   _crystalOnField: {fileID: 0}
   _color: 0
   _listCores: []
