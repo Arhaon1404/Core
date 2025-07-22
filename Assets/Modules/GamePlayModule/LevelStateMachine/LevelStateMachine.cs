@@ -10,6 +10,8 @@ public class LevelStateMachine
     private LevelAStarProcceder _levelAStarProcceder;
     private VictoryFieldStorage _victoryFieldStorage;
     
+    
+    
     public LevelStateMachine(FieldSelector fieldSelector, LevelAStarProcceder levelAStarProcceder,VictoryFieldStorage victoryFieldStorage)
     {
         if(fieldSelector == null)

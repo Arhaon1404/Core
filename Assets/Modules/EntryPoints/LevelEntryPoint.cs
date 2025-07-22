@@ -8,6 +8,8 @@ public class LevelEntryPoint : MonoBehaviour
     [SerializeField] private LevelObjects _levelObjects;
     [SerializeField] private CenterPoint _centerPoint;
     
+    private MapGenerator _mapGenerator;
+    
     private void Awake()
     {
         CenterPoint instantiatedCenterPoint = Instantiate(_centerPoint);
@@ -16,7 +18,11 @@ public class LevelEntryPoint : MonoBehaviour
         
         LevelObjects instantiatedSceneObjects = Instantiate(_levelObjects,spawnPoint,Quaternion.identity);
         
-        instantiatedSceneObjects.StartMapGeneration();
+        LevelInfo CurrentLevel = ServiceLocator.GetService<LevelInformationManager>().CurrentLevel;
+        
+        instantiatedSceneObjects.StartMapGeneration(CurrentLevel);
+        
+        ServiceLocator.GetService<LevelCompletionManager>().Registration(instantiatedSceneObjects.NextLevelButton, instantiatedSceneObjects.RestartButton, instantiatedSceneObjects.StepsCounter);
         
         ServiceLocator.GetService<LoadingBackground>().TurnOff();
     }

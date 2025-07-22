@@ -7,7 +7,7 @@ public class PlayButton : MainMenuButton
 {
     public event Action<int> ElementClicked;
     
-    protected override void OnMouseUp()
+    protected virtual void OnMouseUp()
     {
         int currentLevelID = PlayerPrefs.GetInt("CurrentLevel");
         

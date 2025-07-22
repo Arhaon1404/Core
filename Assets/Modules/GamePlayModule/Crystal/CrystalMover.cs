@@ -43,8 +43,10 @@ public class CrystalMover : MonoBehaviour
             
             float step = _speed * Time.deltaTime;
 
-            transform.position = Vector3.MoveTowards(transform.position, target, step);
+            //transform.position = Vector3.MoveTowards(transform.position, target, step);
 
+            transform.position = Vector3.Lerp(transform.position, target, step);
+            
             float targetDistance = transform.position.SqrDistance(target);
             
             if (targetDistance < _interactionDistance)

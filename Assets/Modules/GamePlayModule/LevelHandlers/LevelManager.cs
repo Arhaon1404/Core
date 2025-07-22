@@ -38,7 +38,7 @@ public class LevelManager
 
     public void ProcessCrystal()
     {
-        _crystalHandler.CollectCoordinates(_rightWayConnection,_firstField,_secondField);
+        _crystalHandler.CollectCoordinates(_firstField,_secondField);
     }
 
     public void ProcessFieldsFeatures()

@@ -7,9 +7,9 @@ using UnityEngine;
 [RequireComponent(typeof(VictoryFieldStorage))]
 public class MapGenerator : MonoBehaviour
 {
-    [SerializeField] private LevelInfo _levelInfo;
     [SerializeField] private CenterPoint _centerPoint;
     
+    private LevelInfo _levelInfo;
     private FieldsPlacer _fieldsPlacer;
     private ConnectLinker _connectLinker;
     private RealizerOtherFeatures _realizerOtherFeatures;
@@ -19,6 +19,10 @@ public class MapGenerator : MonoBehaviour
     private float _marginSpacing;
     private NodeInfo[,] _map;
     private Field[,] _filledMap;
+
+    private StartField _startField;
+    
+    public StartField StartField => _startField;
     
     private void Awake()
     {
@@ -28,10 +32,18 @@ public class MapGenerator : MonoBehaviour
         _realizerOtherFeatures = GetComponent<RealizerOtherFeatures>();
         _levelAStarProcceder = GetComponent<LevelAStarProcceder>();
         _victoryFieldStorage = GetComponent<VictoryFieldStorage>();
-        
-        ProcessGeneration();
     }
-    
+
+    public void SetLevelInfo(LevelInfo levelInfo)
+    {
+        if (levelInfo == null)
+        {
+            throw new ArgumentNullException(nameof(levelInfo));
+        }
+
+        _levelInfo = levelInfo;
+    }
+
     public void ProcessGeneration()
     {
         ValidationArray();
@@ -41,7 +53,7 @@ public class MapGenerator : MonoBehaviour
         _realizerOtherFeatures.Realize(_filledMap,_map);
         GenerateEnd();
     }
-
+    
     private void ValidationArray()
     {
         if (_levelInfo.MapRows != null)
@@ -89,6 +101,7 @@ public class MapGenerator : MonoBehaviour
                 {
                     _victoryFieldStorage.SetNewStartField((StartField)_filledMap[i, j]);
                     _levelAStarProcceder.SetNewStartField((StartField)_filledMap[i, j]);
+                    _startField = (StartField)_filledMap[i, j];
                 }
 
                 if (_map[i, j].Mark != null)

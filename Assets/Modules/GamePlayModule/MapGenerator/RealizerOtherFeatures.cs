@@ -66,7 +66,7 @@ public class RealizerOtherFeatures : MonoBehaviour
             
             instantiatedCrystal.transform.position = currentField.CenterPoint.transform.position;
             
-            instantiatedCrystal.transform.SetParent(transform);
+            instantiatedCrystal.transform.SetParent(currentField.transform);
             
             currentField.SetCrystal(instantiatedCrystal);
         }

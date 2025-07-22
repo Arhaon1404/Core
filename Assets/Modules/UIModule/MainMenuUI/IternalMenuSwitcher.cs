@@ -28,7 +28,7 @@ public class IternalMenuSwitcher : MonoBehaviour
         _levelSelectionBackButton.ElementClicked += CloseSelectLevelMenu;
         _settingsButton.ElementClicked += OpenOptionsMenu;
         _settingsBackButton.ElementClicked += CloseOptionsMenu;
-
+        
         foreach (SelectLevelButton button in _levelSelectorVisualizer.SelectLevelButtons)
         {
             button.ElementClicked += OpenLevel;
@@ -51,6 +51,8 @@ public class IternalMenuSwitcher : MonoBehaviour
 
     public void OpenLevel(int levelID)
     {
+        ServiceLocator.GetService<LevelInformationManager>().CompareLevelID(levelID);
+        
         SceneManager.LoadScene("LevelScene");
         
         ServiceLocator.GetService<LoadingBackground>().TurnOn();

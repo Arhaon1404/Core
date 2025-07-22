@@ -8,6 +8,8 @@ public class StateCheckingLevelCompletion : ILevelState
     private readonly LevelManager _levelManager;
     private readonly VictoryFieldStorage _victoryFieldStorage;
     
+    public event Action OnLevelCompleted; 
+    
     public StateCheckingLevelCompletion(LevelStateMachine levelStateMachine, LevelManager levelManager, VictoryFieldStorage victoryFieldStorage)
     {
         if(levelStateMachine == null)
@@ -38,12 +40,12 @@ public class StateCheckingLevelCompletion : ILevelState
 
     private void CompliteLevel()
     {
-        Debug.Log("GG");
+        ServiceLocator.GetService<LevelCompletionManager>().ShowNextLevelButton();
     }
 
     private void LoseLevel()
     {
-        Debug.Log("Skill issue");
+        ServiceLocator.GetService<LevelCompletionManager>().RestartLevel();
     }
 
     private void ReturnPreviousState()

@@ -412,6 +412,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &18138153
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,12 +907,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 2117630976}
   _centerPoint: {fileID: 1121325290}
+  _crystalOnField: {fileID: 231587578}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 231587578}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &49876787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1111,6 +1116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &58012819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1001 &65956097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,6 +1971,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &78259846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,12 +2029,14 @@ MonoBehaviour:
   - {fileID: 969187110}
   - {fileID: 913439123}
   _centerPoint: {fileID: 1717616644}
+  _crystalOnField: {fileID: 1430590425}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 1430590425}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &78259849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2137,12 +2153,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 359039533}
   _centerPoint: {fileID: 384502336}
+  _crystalOnField: {fileID: 619807720}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 619807720}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &81761245
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2305,6 +2323,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &85292776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,12 +2383,14 @@ MonoBehaviour:
   - {fileID: 62940827}
   - {fileID: 663858337}
   _centerPoint: {fileID: 1414353494}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &85292779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3324,6 +3347,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &145413828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,6 +3447,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &149648972
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,6 +3950,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &168806432
 GameObject:
   m_ObjectHideFlags: 0
@@ -4220,6 +4252,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &189154507
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,6 +4577,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &211516376
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4592,11 +4630,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211516373}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &218699893 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-  m_PrefabInstance: {fileID: 4210171547712423950}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &223167405
 GameObject:
   m_ObjectHideFlags: 0
@@ -5288,12 +5321,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1134327390}
   _centerPoint: {fileID: 35467799}
+  _crystalOnField: {fileID: 1776859773}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 1776859773}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &254794073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5564,12 +5599,14 @@ MonoBehaviour:
   - {fileID: 1096486849}
   - {fileID: 940534179}
   _centerPoint: {fileID: 1571095693}
+  _crystalOnField: {fileID: 2055165079}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 2055165079}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &262286233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5688,6 +5725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &269589987
 GameObject:
   m_ObjectHideFlags: 0
@@ -5779,6 +5819,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &272535766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6525,6 +6568,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &320976345
 GameObject:
   m_ObjectHideFlags: 0
@@ -6622,6 +6668,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &331131231
 GameObject:
   m_ObjectHideFlags: 0
@@ -6823,6 +6872,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 05000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &342532715
 GameObject:
   m_ObjectHideFlags: 0
@@ -6922,12 +6974,14 @@ MonoBehaviour:
   - {fileID: 552850522}
   - {fileID: 2126845547}
   _centerPoint: {fileID: 105866589}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &346296388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7150,6 +7204,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &351937357
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,6 +7462,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &365646463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7552,6 +7612,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 05000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &380005697
 GameObject:
   m_ObjectHideFlags: 0
@@ -7755,12 +7818,14 @@ MonoBehaviour:
   - {fileID: 1734553414}
   - {fileID: 1989250810}
   _centerPoint: {fileID: 1397120478}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &384242075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8006,6 +8071,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &391154975
 GameObject:
   m_ObjectHideFlags: 0
@@ -8147,6 +8215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &393704652
 GameObject:
   m_ObjectHideFlags: 0
@@ -8356,6 +8427,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &394849151
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,12 +8597,14 @@ MonoBehaviour:
   - {fileID: 430084361}
   - {fileID: 380005699}
   _centerPoint: {fileID: 1484689650}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &402367695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8942,6 +9018,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 507498252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &419886895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+  m_PrefabInstance: {fileID: 586878643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422995903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9314,6 +9395,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &428521260
 GameObject:
   m_ObjectHideFlags: 0
@@ -9723,6 +9807,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &441454437
 GameObject:
   m_ObjectHideFlags: 0
@@ -9841,12 +9928,14 @@ MonoBehaviour:
   - {fileID: 430430205}
   - {fileID: 1235699062}
   _centerPoint: {fileID: 1652828717}
+  _crystalOnField: {fileID: 1053514826}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 1053514826}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &441811307
 Transform:
   m_ObjectHideFlags: 0
@@ -10299,6 +10388,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &462542091
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10523,6 +10615,7 @@ GameObject:
   - component: {fileID: 479143682}
   - component: {fileID: 479143683}
   - component: {fileID: 479143684}
+  - component: {fileID: 479143685}
   m_Layer: 0
   m_Name: 2.2 Rotate Disable
   m_TagString: Untagged
@@ -10569,17 +10662,21 @@ MonoBehaviour:
   - {fileID: 18138155}
   - {fileID: 467309112}
   _centerPoint: {fileID: 1073102144}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 18138155}
   - {fileID: 1246309354}
   - {fileID: 467309112}
   - {fileID: 521816419}
+  _rotatePointersBlinker: {fileID: 0}
+  _connectionsBlinker: {fileID: 0}
 --- !u!65 &479143684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10601,6 +10698,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0001683, y: 0.701759, z: 4.008389}
   m_Center: {x: -0.0043680267, y: 0.14912051, z: -0.0052926936}
+--- !u!114 &479143685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479143681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &486258927
 GameObject:
   m_ObjectHideFlags: 0
@@ -10775,6 +10885,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &497327591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10942,12 +11055,14 @@ MonoBehaviour:
   - {fileID: 1262067791}
   - {fileID: 257626289}
   _centerPoint: {fileID: 1055882569}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &506844114
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11085,6 +11200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 04000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &507498249
 GameObject:
   m_ObjectHideFlags: 0
@@ -11096,6 +11214,7 @@ GameObject:
   - component: {fileID: 507498252}
   - component: {fileID: 507498250}
   - component: {fileID: 507498251}
+  - component: {fileID: 507498253}
   m_Layer: 0
   m_Name: 3.2 Rotate Disable
   m_TagString: Untagged
@@ -11121,17 +11240,21 @@ MonoBehaviour:
   - {fileID: 511477220}
   - {fileID: 1887314071}
   _centerPoint: {fileID: 415472604}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 511477220}
   - {fileID: 768612272}
   - {fileID: 1887314071}
   - {fileID: 26406966}
+  _rotatePointersBlinker: {fileID: 0}
+  _connectionsBlinker: {fileID: 0}
 --- !u!65 &507498251
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11174,6 +11297,19 @@ Transform:
   - {fileID: 415472605}
   m_Father: {fileID: 519818147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &507498253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507498249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &510104029
 GameObject:
   m_ObjectHideFlags: 0
@@ -11770,6 +11906,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &532536722
 GameObject:
   m_ObjectHideFlags: 0
@@ -11911,6 +12050,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &540030046
 GameObject:
   m_ObjectHideFlags: 0
@@ -12195,6 +12337,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &555164477
 GameObject:
   m_ObjectHideFlags: 0
@@ -12292,6 +12437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 04000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &561305772
 GameObject:
   m_ObjectHideFlags: 0
@@ -12345,12 +12493,14 @@ MonoBehaviour:
   - {fileID: 116089867}
   - {fileID: 1545561342}
   _centerPoint: {fileID: 71006082}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &561305775
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12878,6 +13028,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1214206373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &586878643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1867006960}
+    m_Modifications:
+    - target: {fileID: 825364316079474123, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_Name
+      value: 'RotateField '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.7478
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3571821517715692076, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b7d0e6e20fd95545b5540e3d38ace19, type: 3}
 --- !u!1 &591300812
 GameObject:
   m_ObjectHideFlags: 0
@@ -13079,6 +13286,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &598562487
 GameObject:
   m_ObjectHideFlags: 0
@@ -13176,6 +13386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!4 &599033838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
@@ -13450,12 +13663,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 591300814}
   _centerPoint: {fileID: 767364161}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &607867659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13574,6 +13789,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &615862557
 GameObject:
   m_ObjectHideFlags: 0
@@ -13786,6 +14004,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &630627624
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13950,12 +14171,14 @@ MonoBehaviour:
   - {fileID: 918241875}
   - {fileID: 946828125}
   _centerPoint: {fileID: 1913468585}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &636257402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14009,6 +14232,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &636809575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14125,12 +14351,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1070469983}
   _centerPoint: {fileID: 1576284258}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &637475049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14243,6 +14471,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &644393976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14390,6 +14621,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &650184752
 GameObject:
   m_ObjectHideFlags: 0
@@ -14531,6 +14765,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &651966444
 GameObject:
   m_ObjectHideFlags: 0
@@ -14628,6 +14865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &656460411
 GameObject:
   m_ObjectHideFlags: 0
@@ -14725,6 +14965,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &663858335
 GameObject:
   m_ObjectHideFlags: 0
@@ -15201,6 +15444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &683002190
 GameObject:
   m_ObjectHideFlags: 0
@@ -15337,6 +15583,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &687275607
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15499,6 +15748,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &698223191
 GameObject:
   m_ObjectHideFlags: 0
@@ -15596,6 +15848,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &698337066
 GameObject:
   m_ObjectHideFlags: 0
@@ -15820,6 +16075,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &705015328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16042,12 +16300,14 @@ MonoBehaviour:
   - {fileID: 1863580384}
   - {fileID: 351937359}
   _centerPoint: {fileID: 1040053458}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &708205629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16654,6 +16914,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &731901737
 GameObject:
   m_ObjectHideFlags: 0
@@ -16899,6 +17162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 0500000004000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &742844892
 GameObject:
   m_ObjectHideFlags: 0
@@ -16954,12 +17220,14 @@ MonoBehaviour:
   - {fileID: 1399026267}
   - {fileID: 2098171523}
   _centerPoint: {fileID: 1746454821}
+  _crystalOnField: {fileID: 604252100}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 604252100}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &742844895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17078,6 +17346,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &749749451
 GameObject:
   m_ObjectHideFlags: 0
@@ -17307,6 +17578,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &767364159
 GameObject:
   m_ObjectHideFlags: 0
@@ -17704,12 +17978,14 @@ MonoBehaviour:
   - {fileID: 1027858731}
   - {fileID: 1623088448}
   _centerPoint: {fileID: 854120805}
+  _crystalOnField: {fileID: 0}
+  _color: 5
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 5
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &797318165
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17828,6 +18104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &803238230
 GameObject:
   m_ObjectHideFlags: 0
@@ -18260,6 +18539,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 04000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &824148598
 GameObject:
   m_ObjectHideFlags: 0
@@ -18357,6 +18639,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &829318448
 GameObject:
   m_ObjectHideFlags: 0
@@ -18410,12 +18695,14 @@ MonoBehaviour:
   - {fileID: 1444206554}
   - {fileID: 1240845601}
   _centerPoint: {fileID: 615862559}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &829318451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18564,6 +18851,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &838039592
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18670,12 +18960,14 @@ MonoBehaviour:
   - {fileID: 1525176755}
   - {fileID: 698852347}
   _centerPoint: {fileID: 879524516}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &844834999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18921,6 +19213,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &856725659
 GameObject:
   m_ObjectHideFlags: 0
@@ -19012,6 +19307,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &857398750
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19292,6 +19590,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &877814563
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19792,12 +20093,14 @@ MonoBehaviour:
   - {fileID: 1524499668}
   - {fileID: 164190023}
   _centerPoint: {fileID: 1705017190}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &914700007
 Transform:
   m_ObjectHideFlags: 0
@@ -19943,11 +20246,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918241873}
   m_Mesh: {fileID: -3944245691126379725, guid: 0f44ad79482304b40b610fb60d6f12da, type: 3}
---- !u!4 &923481384 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-  m_PrefabInstance: {fileID: 7103511582088508034}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &927749096
 GameObject:
   m_ObjectHideFlags: 0
@@ -20043,12 +20341,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1088670366}
   _centerPoint: {fileID: 224981247}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &933490915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20070,6 +20370,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.039115, y: 0.46008527, z: 4.053517}
   m_Center: {x: -0.03537059, y: 0.13600786, z: 0.0071235495}
+--- !u!4 &936019338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+  m_PrefabInstance: {fileID: 1546229942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &937231615
 GameObject:
   m_ObjectHideFlags: 0
@@ -20403,6 +20708,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &944976270
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20669,6 +20977,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &953437966
 GameObject:
   m_ObjectHideFlags: 0
@@ -20766,6 +21077,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &957783741
 GameObject:
   m_ObjectHideFlags: 0
@@ -21011,6 +21325,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &969187108
 GameObject:
   m_ObjectHideFlags: 0
@@ -21256,6 +21573,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 04000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &980905100
 GameObject:
   m_ObjectHideFlags: 0
@@ -21291,12 +21611,14 @@ MonoBehaviour:
   - {fileID: 67561453}
   - {fileID: 2128725027}
   _centerPoint: {fileID: 576830775}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &980905102
 Transform:
   m_ObjectHideFlags: 0
@@ -21416,12 +21738,14 @@ MonoBehaviour:
   - {fileID: 1948901765}
   - {fileID: 1766079616}
   _centerPoint: {fileID: 138368486}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &986611215
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21940,6 +22264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1027858729
 GameObject:
   m_ObjectHideFlags: 0
@@ -22141,6 +22468,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1032608914
 GameObject:
   m_ObjectHideFlags: 0
@@ -22497,6 +22827,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1053514823
 GameObject:
   m_ObjectHideFlags: 0
@@ -22752,6 +23085,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1069744173
 GameObject:
   m_ObjectHideFlags: 0
@@ -22849,6 +23185,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1070469981
 GameObject:
   m_ObjectHideFlags: 0
@@ -23120,12 +23459,14 @@ MonoBehaviour:
   - {fileID: 967800927}
   - {fileID: 2010729324}
   _centerPoint: {fileID: 2137145045}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &1085982633
 Transform:
   m_ObjectHideFlags: 0
@@ -23303,6 +23644,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1089004255
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23527,12 +23871,14 @@ MonoBehaviour:
   - {fileID: 1091911699}
   - {fileID: 404857335}
   _centerPoint: {fileID: 942666776}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1092034555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24687,6 +25033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1155271740
 GameObject:
   m_ObjectHideFlags: 0
@@ -24784,6 +25133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1156529272
 GameObject:
   m_ObjectHideFlags: 0
@@ -24881,6 +25233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1158342679
 GameObject:
   m_ObjectHideFlags: 0
@@ -24945,12 +25300,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 291158162}
   _centerPoint: {fileID: 1997706276}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _listCores:
   - {fileID: 1115678373}
   - {fileID: 1624972249}
@@ -25163,6 +25520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1197312754
 GameObject:
   m_ObjectHideFlags: 0
@@ -25260,6 +25620,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1204175171
 GameObject:
   m_ObjectHideFlags: 0
@@ -25357,6 +25720,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1204390081
 GameObject:
   m_ObjectHideFlags: 0
@@ -25412,12 +25778,14 @@ MonoBehaviour:
   - {fileID: 607788509}
   - {fileID: 1207327595}
   _centerPoint: {fileID: 631438769}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1204390084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26232,6 +26600,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1240845599
 GameObject:
   m_ObjectHideFlags: 0
@@ -26537,6 +26908,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 05000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1255022235
 GameObject:
   m_ObjectHideFlags: 0
@@ -26634,6 +27008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1259636299
 GameObject:
   m_ObjectHideFlags: 0
@@ -26731,6 +27108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1262067790
 GameObject:
   m_ObjectHideFlags: 0
@@ -27058,12 +27438,14 @@ MonoBehaviour:
   - {fileID: 1109582887}
   - {fileID: 1214206372}
   _centerPoint: {fileID: 993996761}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &1284947361
 Transform:
   m_ObjectHideFlags: 0
@@ -27138,6 +27520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1285016143
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -27318,6 +27703,7 @@ GameObject:
   - component: {fileID: 1288176906}
   - component: {fileID: 1288176907}
   - component: {fileID: 1288176908}
+  - component: {fileID: 1288176909}
   m_Layer: 0
   m_Name: 2.2 Rotate
   m_TagString: Untagged
@@ -27364,17 +27750,20 @@ MonoBehaviour:
   - {fileID: 2065327460}
   - {fileID: 1805167159}
   _centerPoint: {fileID: 1782834418}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 2065327460}
   - {fileID: 1870493040}
   - {fileID: 1805167159}
   - {fileID: 1509281827}
+  _rotatePointersBlinker: {fileID: 0}
 --- !u!65 &1288176908
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27396,6 +27785,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0857368, y: 0.46008527, z: 3.9725533}
   m_Center: {x: -0.020718373, y: 0.13600788, z: -0.04370755}
+--- !u!114 &1288176909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288176905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &1289366023
 GameObject:
   m_ObjectHideFlags: 0
@@ -27493,6 +27895,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 05000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1293512988
 GameObject:
   m_ObjectHideFlags: 0
@@ -27548,12 +27953,14 @@ MonoBehaviour:
   - {fileID: 348938056}
   - {fileID: 9338659}
   _centerPoint: {fileID: 2103304918}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1293512991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27755,6 +28162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 0500000004000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1303892127
 GameObject:
   m_ObjectHideFlags: 0
@@ -27766,6 +28176,7 @@ GameObject:
   - component: {fileID: 1303892129}
   - component: {fileID: 1303892128}
   - component: {fileID: 1303892130}
+  - component: {fileID: 1303892131}
   m_Layer: 0
   m_Name: 4.1 Rotate
   m_TagString: Untagged
@@ -27789,15 +28200,18 @@ MonoBehaviour:
   - {fileID: 448639454}
   - {fileID: 1857498450}
   _centerPoint: {fileID: 134885475}
+  _crystalOnField: {fileID: 1772684483}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 1772684483}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 448639454}
   - {fileID: 1857498450}
+  _rotatePointersBlinker: {fileID: 0}
 --- !u!4 &1303892129
 Transform:
   m_ObjectHideFlags: 0
@@ -27838,6 +28252,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0001683, y: 0.701759, z: 4.008389}
   m_Center: {x: -0.0043680267, y: 0.14912051, z: -0.0052926936}
+--- !u!114 &1303892131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303892127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &1308339657
 GameObject:
   m_ObjectHideFlags: 0
@@ -27935,6 +28362,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1309715743
 GameObject:
   m_ObjectHideFlags: 0
@@ -28036,12 +28466,14 @@ MonoBehaviour:
   - {fileID: 71263678}
   - {fileID: 87883024}
   _centerPoint: {fileID: 650184754}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1310270789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28297,6 +28729,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1317222202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28444,6 +28879,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1321501054
 GameObject:
   m_ObjectHideFlags: 0
@@ -28585,6 +29023,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1335592151
 GameObject:
   m_ObjectHideFlags: 0
@@ -28786,6 +29227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1343256096
 GameObject:
   m_ObjectHideFlags: 0
@@ -28821,12 +29265,14 @@ MonoBehaviour:
   - {fileID: 189154508}
   - {fileID: 2043237404}
   _centerPoint: {fileID: 1719255015}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &1343256098
 Transform:
   m_ObjectHideFlags: 0
@@ -28980,21 +29426,6 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!114 &1369437843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369437835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249a1a40501189d4fbc040814d6aa568, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transitionSpeed: 0
-  _minOulineWidth: 0
-  _maxOulineWidth: 0
 --- !u!1 &1373533608
 GameObject:
   m_ObjectHideFlags: 0
@@ -29092,6 +29523,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1377089054
 GameObject:
   m_ObjectHideFlags: 0
@@ -29495,6 +29929,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1407341819
 GameObject:
   m_ObjectHideFlags: 0
@@ -30157,6 +30594,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1435909031
 GameObject:
   m_ObjectHideFlags: 0
@@ -30328,12 +30768,14 @@ MonoBehaviour:
   - {fileID: 1738839724}
   - {fileID: 1335592153}
   _centerPoint: {fileID: 937231617}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1436646440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30535,6 +30977,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1441025754
 GameObject:
   m_ObjectHideFlags: 0
@@ -30632,6 +31077,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 05000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1444206552
 GameObject:
   m_ObjectHideFlags: 0
@@ -30877,6 +31325,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1450267533
 GameObject:
   m_ObjectHideFlags: 0
@@ -30974,6 +31425,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1451911622
 GameObject:
   m_ObjectHideFlags: 0
@@ -31369,6 +31823,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1476941872
 GameObject:
   m_ObjectHideFlags: 0
@@ -31510,6 +31967,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1484689648
 GameObject:
   m_ObjectHideFlags: 0
@@ -31796,12 +32256,14 @@ MonoBehaviour:
   - {fileID: 1897354291}
   - {fileID: 1877921185}
   _centerPoint: {fileID: 1878702402}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1489097160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31941,12 +32403,14 @@ MonoBehaviour:
   - {fileID: 1277982034}
   - {fileID: 408192323}
   _centerPoint: {fileID: 751727258}
+  _crystalOnField: {fileID: 0}
+  _color: 5
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 5
+  _freeFieldChecker: {fileID: 0}
 --- !u!4 &1503025532
 Transform:
   m_ObjectHideFlags: 0
@@ -32559,6 +33023,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1537023800
 GameObject:
   m_ObjectHideFlags: 0
@@ -32790,6 +33257,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545561340}
   m_Mesh: {fileID: -3944245691126379725, guid: b38ce2354e161a64c92ead8b122ae365, type: 3}
+--- !u!1001 &1546229942
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1867006960}
+    m_Modifications:
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6135508998483586124, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+      propertyPath: m_Name
+      value: OneStepField
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
 --- !u!1 &1563613551
 GameObject:
   m_ObjectHideFlags: 0
@@ -32905,6 +33429,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1564083246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33067,6 +33594,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1571095691
 GameObject:
   m_ObjectHideFlags: 0
@@ -33166,6 +33696,7 @@ GameObject:
   - component: {fileID: 1579356569}
   - component: {fileID: 1579356568}
   - component: {fileID: 1579356570}
+  - component: {fileID: 1579356571}
   m_Layer: 0
   m_Name: 2.5 Rotate Spec
   m_TagString: Untagged
@@ -33189,15 +33720,18 @@ MonoBehaviour:
   - {fileID: 731901738}
   - {fileID: 229579991}
   _centerPoint: {fileID: 1537333376}
+  _crystalOnField: {fileID: 1377089057}
+  _color: 4
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 1377089057}
-  _color: 4
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 731901738}
   - {fileID: 229579991}
+  _rotatePointersBlinker: {fileID: 0}
 --- !u!4 &1579356569
 Transform:
   m_ObjectHideFlags: 0
@@ -33239,6 +33773,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0001683, y: 0.701759, z: 4.008389}
   m_Center: {x: -0.0043680267, y: 0.14912051, z: -0.0052926936}
+--- !u!114 &1579356571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579356567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &1583368791
 GameObject:
   m_ObjectHideFlags: 0
@@ -33378,12 +33925,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1881300587}
   _centerPoint: {fileID: 1865419178}
+  _crystalOnField: {fileID: 236206462}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 236206462}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1596025055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33439,12 +33988,14 @@ MonoBehaviour:
   - {fileID: 1878641183}
   - {fileID: 149648973}
   _centerPoint: {fileID: 269589988}
+  _crystalOnField: {fileID: 168806435}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 168806435}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1600268659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33582,6 +34133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1609898701
 GameObject:
   m_ObjectHideFlags: 0
@@ -34063,6 +34617,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1629331525
 GameObject:
   m_ObjectHideFlags: 0
@@ -34204,6 +34761,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1652828716
 GameObject:
   m_ObjectHideFlags: 0
@@ -34433,6 +34993,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1677846121
 GameObject:
   m_ObjectHideFlags: 0
@@ -34803,6 +35366,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1693505854
 GameObject:
   m_ObjectHideFlags: 0
@@ -34814,6 +35380,7 @@ GameObject:
   - component: {fileID: 1693505855}
   - component: {fileID: 1693505856}
   - component: {fileID: 1693505857}
+  - component: {fileID: 1693505858}
   m_Layer: 0
   m_Name: 4.5 Rotate Spec
   m_TagString: Untagged
@@ -34857,15 +35424,18 @@ MonoBehaviour:
   - {fileID: 1221192412}
   - {fileID: 1969958852}
   _centerPoint: {fileID: 1048700555}
+  _crystalOnField: {fileID: 1890454066}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 1890454066}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 1221192412}
   - {fileID: 1969958852}
+  _rotatePointersBlinker: {fileID: 0}
 --- !u!65 &1693505857
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34887,6 +35457,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0001683, y: 0.701759, z: 4.008389}
   m_Center: {x: -0.0043680267, y: 0.14912051, z: -0.0052926936}
+--- !u!114 &1693505858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693505854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &1693876176
 GameObject:
   m_ObjectHideFlags: 0
@@ -34919,6 +35502,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1693876178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35164,6 +35750,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1705017189
 GameObject:
   m_ObjectHideFlags: 0
@@ -35393,6 +35982,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 05000000
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1719255014
 GameObject:
   m_ObjectHideFlags: 0
@@ -35578,6 +36170,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1732795785
 GameObject:
   m_ObjectHideFlags: 0
@@ -36494,12 +37089,14 @@ MonoBehaviour:
   - {fileID: 808893434}
   - {fileID: 579423215}
   _centerPoint: {fileID: 1407341821}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1780406870
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36706,6 +37303,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1795885951
 GameObject:
   m_ObjectHideFlags: 0
@@ -36788,15 +37388,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.42
+      value: 0.66
       objectReference: {fileID: 0}
     - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1.49
       objectReference: {fileID: 0}
     - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 62.21
+      value: 63.35
       objectReference: {fileID: 0}
     - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36831,11 +37431,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      insertIndex: -1
+      insertIndex: 6
       addedObject: {fileID: 1369437842}
-    - targetCorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1369437843}
   m_SourcePrefab: {fileID: 100100000, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
 --- !u!1 &1805167155
 GameObject:
@@ -37508,6 +38105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1852835985
 GameObject:
   m_ObjectHideFlags: 0
@@ -37730,11 +38330,6 @@ Transform:
   - {fileID: 733406070}
   m_Father: {fileID: 1303892129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1859761924 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-  m_PrefabInstance: {fileID: 3936361518225209565}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1863469190
 GameObject:
   m_ObjectHideFlags: 0
@@ -37832,6 +38427,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1863580382
 GameObject:
   m_ObjectHideFlags: 0
@@ -38009,10 +38607,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1365231005787559617}
-  - {fileID: 923481384}
-  - {fileID: 218699893}
-  - {fileID: 1859761924}
+  - {fileID: 4287820574090688461}
+  - {fileID: 419886895}
+  - {fileID: 936019338}
+  - {fileID: 7063201834750913424}
   - {fileID: 938781866}
   - {fileID: 3859933209074971932}
   - {fileID: 5510880753472945764}
@@ -38422,6 +39020,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1877147298
 GameObject:
   m_ObjectHideFlags: 0
@@ -38769,12 +39370,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1941066956}
   _centerPoint: {fileID: 239086258}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
 --- !u!65 &1881129496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39036,6 +39639,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1887870056
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39339,12 +39945,14 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 237108344}
   _centerPoint: {fileID: 81550927}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _listCores:
   - {fileID: 1842284318}
   - {fileID: 776550071}
@@ -39447,6 +40055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1913468583
 GameObject:
   m_ObjectHideFlags: 0
@@ -39624,12 +40235,15 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 942129485}
   _centerPoint: {fileID: 1218109419}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
+  _connectionsBlinker: {fileID: 0}
 --- !u!65 &1930792582
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39931,6 +40545,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1943604628
 GameObject:
   m_ObjectHideFlags: 0
@@ -40233,6 +40850,7 @@ GameObject:
   - component: {fileID: 1952352865}
   - component: {fileID: 1952352866}
   - component: {fileID: 1952352867}
+  - component: {fileID: 1952352868}
   m_Layer: 0
   m_Name: 2.1 Rotate
   m_TagString: Untagged
@@ -40275,15 +40893,18 @@ MonoBehaviour:
   - {fileID: 1960493590}
   - {fileID: 272812593}
   _centerPoint: {fileID: 75325121}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
   _orderAdjacentConnections:
   - {fileID: 1960493590}
   - {fileID: 272812593}
+  _rotatePointersBlinker: {fileID: 0}
 --- !u!65 &1952352867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40305,6 +40926,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.0001683, y: 0.701759, z: 4.008389}
   m_Center: {x: -0.0043680267, y: 0.14912051, z: -0.0052926936}
+--- !u!114 &1952352868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952352864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282191b45b1861a41a4ba4f86ce52bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rotatePointers: []
 --- !u!1 &1955313722
 GameObject:
   m_ObjectHideFlags: 0
@@ -40633,6 +41267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1963793014
 GameObject:
   m_ObjectHideFlags: 0
@@ -40814,12 +41451,15 @@ MonoBehaviour:
   _activeConnections:
   - {fileID: 1943604629}
   _centerPoint: {fileID: 1211062372}
+  _crystalOnField: {fileID: 0}
+  _color: 0
+  _areaParticleSystem: {fileID: 0}
   _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
-  _crystalOnField: {fileID: 0}
-  _color: 0
+  _freeFieldChecker: {fileID: 0}
+  _connectionsBlinker: {fileID: 0}
 --- !u!4 &1979006229
 Transform:
   m_ObjectHideFlags: 0
@@ -40956,6 +41596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &1980196974
 GameObject:
   m_ObjectHideFlags: 0
@@ -40988,6 +41631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &1980196976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41469,6 +42115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &2011155109
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41779,6 +42428,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &2035285165
 GameObject:
   m_ObjectHideFlags: 0
@@ -41811,6 +42463,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &2035285167
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41973,6 +42628,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &2043237403
 GameObject:
   m_ObjectHideFlags: 0
@@ -42459,6 +43117,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &2065327456
 GameObject:
   m_ObjectHideFlags: 0
@@ -42704,6 +43365,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &2084747293
 GameObject:
   m_ObjectHideFlags: 0
@@ -43006,6 +43670,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!1 &2098171521
 GameObject:
   m_ObjectHideFlags: 0
@@ -43809,6 +44476,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2392740233160919404}
   m_Mesh: {fileID: -8486607505056946558, guid: b849b8a08eaaeaa4d93ae74da24e4fcb, type: 3}
+--- !u!1001 &658936842634981539
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1867006960}
+    m_Modifications:
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.782001
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3279494319085830030, guid: 0f3e312db581797489126c00e561d406, type: 3}
+      propertyPath: m_Name
+      value: OneStepRotateField
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0f3e312db581797489126c00e561d406, type: 3}
 --- !u!1001 &843835607274550026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44008,11 +44732,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3366077479383407515}
   m_Mesh: {fileID: -5651998206257903543, guid: 6330758d1f3107243b63ad2cf1ff58ed, type: 3}
---- !u!4 &1365231005787559617 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5979302059770859081, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
-  m_PrefabInstance: {fileID: 7600908021739174276}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &1499525052883693059
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44495,63 +45214,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "_aisle\u0421olors": 
---- !u!1001 &3936361518225209565
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1867006960}
-    m_Modifications:
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.27
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -20.782001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.92387956
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.38268343
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 6099364096646550349, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6391719208600384379, guid: 0f3e312db581797489126c00e561d406, type: 3}
-      propertyPath: m_Name
-      value: OneStepRotateField
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0f3e312db581797489126c00e561d406, type: 3}
+  _maxAlphaBlink: 0
+  _minAlphaBlink: 0
+  _blinkspeed: 0
 --- !u!23 &4080773687791772948
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44609,63 +45274,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5510880753472945764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &4210171547712423950
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1867006960}
-    m_Modifications:
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.6969695
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -12.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490054385180761458, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6135508998483586124, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
-      propertyPath: m_Name
-      value: OneStepField
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 401b65e16aca904468a7189902dc3ef6, type: 3}
+--- !u!4 &4287820574090688461 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5979302059770859081, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+  m_PrefabInstance: {fileID: 7600908021739174276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!33 &4516763411644382034
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -44752,6 +45365,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3417235173957048956}
   m_Mesh: {fileID: -6266056771126324479, guid: 90f13062511884342937a3c148b62e2d, type: 3}
+--- !u!4 &7063201834750913424 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 980949179467684076, guid: 0f3e312db581797489126c00e561d406, type: 3}
+  m_PrefabInstance: {fileID: 658936842634981539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7093122237103611504
 Transform:
   m_ObjectHideFlags: 0
@@ -44767,63 +45385,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3859933209074971932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7103511582088508034
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1867006960}
-    m_Modifications:
-    - target: {fileID: 825364316079474123, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_Name
-      value: RotateField
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.277
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.708
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -16.725002
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3571821517715692076, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9515583caac32ca469574ed383ffe0fc, type: 3}
 --- !u!1001 &7478277814175043294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44889,6 +45450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1867006960}
     m_Modifications:
+    - target: {fileID: 154531753926577703, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2811939797201475046, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
       propertyPath: m_Name
       value: SimpleField

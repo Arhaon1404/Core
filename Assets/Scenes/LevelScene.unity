@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 542c86cc50f4aa4409abcbec695c77da, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec3a45d821decb49a4d68c01d4c113e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelObjects: {fileID: 1489968859246073393, guid: 795f79d7a3353704ab776179a90fc043, type: 3}
+  _levelObjects: {fileID: 1406634206248501794, guid: 79894d07d5c2fd24f86ed608f794d670, type: 3}
   _centerPoint: {fileID: 8654899865918469367, guid: b7414d845731e0d43b18e2b334bec4e2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

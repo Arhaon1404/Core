@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionDistance: 0.001
-  _speed: 5
+  _speed: 10
 --- !u!114 &7795769097218107684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,12 +129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c63c97d14add9949ba9a4b72610b829, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _heightDiference: 0.0001
-  _maxSpeedUpAndDown: 0
-  _minSpeedUpAndDown: 0
-  _maxSpeedRotating: 0
-  _minSpeedRotating: 0
-  _isPlaying: 0
+  _heightDiference: 0.08
+  _maxSpeedUpAndDown: 5
+  _minSpeedUpAndDown: 5
+  _maxSpeedRotating: 45
+  _minSpeedRotating: 35
+  _isPlaying: 1
 --- !u!114 &-8544845119265746091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a1a40501189d4fbc040814d6aa568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _transitionSpeed: 1
-  _minOulineWidth: 2
-  _maxOulineWidth: 5
+  _transitionSpeed: 4
+  _minOulineWidth: 4
+  _maxOulineWidth: 8.5

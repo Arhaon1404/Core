@@ -13,9 +13,10 @@ public class SelectLevelButton : PlayButton
     
     protected override void OnMouseUp()
     {
-        _levelID = PlayerPrefs.GetInt("CurrentLevel");
-        
-        ElementClicked?.Invoke(_levelID);
+        if (_levelID != 0)
+        {
+            ElementClicked?.Invoke(_levelID);
+        }
     }
 
     public void UpdateButtonData(int levelID)

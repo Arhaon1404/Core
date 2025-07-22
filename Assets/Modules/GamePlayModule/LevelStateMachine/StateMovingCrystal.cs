@@ -39,6 +39,8 @@ public class StateMovingCrystal : ILevelState
     {
         _fieldSelector.Clear();
         
+        ServiceLocator.GetService<LevelCompletionManager>().PassStep();
+        
         _levelStateMachine.EnterIn<StateProccesingFieldsFeatures>();
     }
 }

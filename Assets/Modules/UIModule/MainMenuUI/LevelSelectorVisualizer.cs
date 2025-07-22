@@ -32,7 +32,7 @@ public class LevelSelectorVisualizer : MonoBehaviour
     private void Awake()
     {
         _minListID = 1;
-        _maxListID = 41;
+        _maxListID = 51;
         _indentMinElement = 10;
             
         UpdateButtons(_minListID);
@@ -49,8 +49,6 @@ public class LevelSelectorVisualizer : MonoBehaviour
         
         foreach (SelectLevelButton button in _selectLevelButtons)
         {
-            Debug.Log(currentLevelID);
-            
             if (currentButtonID <= currentLevelID)
             {
                 button.UpdateButtonData(currentButtonID);

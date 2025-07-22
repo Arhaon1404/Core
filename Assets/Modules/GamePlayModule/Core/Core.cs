@@ -7,6 +7,7 @@ using UnityEngine;
 public class Core : MonoBehaviour
 {
     [SerializeField] private ColorType _color;
+    [SerializeField] private OutlineSwicher _outlineSwicher;
     private CoreMover _coreMover;
     
     public CoreMover CoreMover => _coreMover;
@@ -15,5 +16,15 @@ public class Core : MonoBehaviour
     public void Awake()
     {
         _coreMover = GetComponent<CoreMover>();
+    }
+    
+    public void TurnOnOutline()
+    {
+        _outlineSwicher.TurnOn();
+    }
+
+    public void TurnOffOutline()
+    {
+        _outlineSwicher.TurnOff();
     }
 }

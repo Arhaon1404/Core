@@ -27,6 +27,8 @@ public class CoreHandler
         
         _core = _startField.CoreOnField;
         
+        _core.TurnOnOutline();
+        
         foreach (AbstractField field in path)
         {
             int nextField = path.IndexOf(field);
@@ -37,8 +39,8 @@ public class CoreHandler
             {
                 Connection rightConnection = FindRightWay(field,path[nextField]);
                 
-                _wayPoints.Add(rightConnection.CenterPoint.transform.position);
-                _wayPoints.Add(rightConnection.ConnectionAnotherField.CenterPoint.transform.position);
+                //_wayPoints.Add(rightConnection.CenterPoint.transform.position);
+                //_wayPoints.Add(rightConnection.ConnectionAnotherField.CenterPoint.transform.position);
                 _wayPoints.Add(path[nextField].CenterPoint.transform.position);
             }
         }
@@ -56,6 +58,15 @@ public class CoreHandler
             
             _startField.ReleaseCore(_startField.CoreOnField);
             _endField.CrystalOnField.СonnectCoreToCrystal();
+            
+            _endField.AreaParticleSystem.SwitchLightMode();
+            _endField.AreaParticleSystem.Activate();
+            
+            _core.transform.SetParent(_endField.CrystalOnField.transform);
+            
+            _core.transform.localPosition = Vector3.zero;
+            
+            _core.TurnOffOutline();
             
             MoveСompleted?.Invoke();
         }

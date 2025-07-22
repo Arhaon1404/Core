@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionDistance: 0.001
-  _speed: 5
+  _speed: 10
 --- !u!114 &-279577531195953559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,5 +166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transitionSpeed: 4
-  _minOulineWidth: 5
-  _maxOulineWidth: 10
+  _minOulineWidth: 4
+  _maxOulineWidth: 8.5

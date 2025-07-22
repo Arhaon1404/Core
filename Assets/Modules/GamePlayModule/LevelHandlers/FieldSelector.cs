@@ -29,6 +29,8 @@ public class FieldSelector
         {
             _startField.ResetColorChanges();
             
+            ChangeStateFeaturesField(false);
+            
             if (_startField.CrystalOnField)
                 ChangeOutlineStateCrystal(_startField.CrystalOnField,false);
             
@@ -47,37 +49,61 @@ public class FieldSelector
     private void OnGottenHit(GameObject hitTarget)
     {
         hitTarget.TryGetComponent(out Field field);
-        
+
         switch (_state)
         {
             case State.None:
-                HandleStateNone(field);
+                PreliminaryFieldCheck(_state,field);
                 break;
             case State.HasStart:
-                HandleStateHasStart(field);
+                PreliminaryFieldCheck(_state,field);
                 break;
+        }
+    }
+
+    private void PreliminaryFieldCheck(State state,Field field)
+    {
+        if (field != null)
+        {
+            if (state == State.HasStart)
+            {
+                HandleStateHasStart(field);
+            }
+            else
+            {
+                if (field.CrystalOnField != null)
+                {
+                    if (field.CrystalOnField.IsActiveCrystal)
+                    {
+                        HandleStateNone(field);
+                    }
+                }
+                else
+                {
+                    HandleStateNone(field);
+                }
+            }
         }
     }
     
     private void HandleStateNone(Field field)
     {
-        if (field != null)
-        {
-            _startField = field;
-            _startField.ChangeColorFirstSelectField();
+        _startField = field;
+        _startField.ChangeColorFirstSelectField();
 
-            if (_startField.CrystalOnField)
-                ChangeOutlineStateCrystal(_startField.CrystalOnField,true);
+        ChangeStateFeaturesField(true);
+            
+        if (_startField.CrystalOnField)
+            ChangeOutlineStateCrystal(_startField.CrystalOnField,true);
                 
-            _state = State.HasStart;
-        }
-
+        _state = State.HasStart;
+        
         StateUpdated?.Invoke(_state, _startField, _endField);
     }
     
     private void HandleStateHasStart(Field field)
     {
-        if (field != null && _startField != field)
+        if (_startField != field)
         {
             _endField = field;
             _endField.ChangeColorSecondSelectField();
@@ -87,6 +113,8 @@ public class FieldSelector
         {
             _state = State.None;
             _startField.ResetColorChanges();
+            
+            ChangeStateFeaturesField(false);
             
             if (_startField.CrystalOnField)
                 ChangeOutlineStateCrystal(_startField.CrystalOnField,false);
@@ -106,6 +134,51 @@ public class FieldSelector
         else
         {
             crystal.TurnOffOutline();
+        }
+    }
+
+    private void ChangeStateFeaturesField(bool isEnabled)
+    {
+        if (_startField is RotateField)
+        {
+            if (isEnabled)
+            {
+                RotateField rotateField = (RotateField)_startField;
+                rotateField.PlayBlinker();
+            }
+            else
+            {
+                RotateField rotateField = (RotateField)_startField;
+                rotateField.StopBlinker();
+            }
+        }
+
+        if (_startField is DisappearingField)
+        {
+            if (isEnabled)
+            {
+                DisappearingField disappearingField = (DisappearingField)_startField;
+                disappearingField.PlayBlinker();
+            }
+            else
+            {
+                DisappearingField disappearingField = (DisappearingField)_startField;
+                disappearingField.StopBlinker();
+            }
+        }
+        
+        if (_startField is DisapearConnectRotateField)
+        {
+            if (isEnabled)
+            {
+                DisapearConnectRotateField disappearingField = (DisapearConnectRotateField)_startField;
+                disappearingField.PlayBlinker();
+            }
+            else
+            {
+                DisapearConnectRotateField disappearingField = (DisapearConnectRotateField)_startField;
+                disappearingField.StopBlinker();
+            }
         }
     }
 }

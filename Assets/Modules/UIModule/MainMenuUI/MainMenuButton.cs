@@ -1,17 +1,17 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Collider))]
 
 public class MainMenuButton : MonoBehaviour
 {
-    private Collider2D _collider;
+    private Collider _collider;
 
     public event Action ElementClicked;
 
     private void Awake()
     {
-        _collider = GetComponent<Collider2D>();
+        _collider = GetComponent<Collider>();
     }
 
     protected virtual void OnMouseUp()
