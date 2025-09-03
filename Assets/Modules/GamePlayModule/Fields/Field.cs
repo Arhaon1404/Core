@@ -5,9 +5,9 @@ using UnityEngine;
 public class Field : AbstractField
 {
     [SerializeField] private Crystal _crystalOnField;
+    [SerializeField] private Platform _platform;
     [SerializeField] private ColorType _color;
     [SerializeField] private AreaParticleSystem _areaParticleSystem;
-    [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private Color _defaultColor;
     [SerializeField] private Color _firstSelectColor;
     [SerializeField] private Color _secondSelectColor;
@@ -19,6 +19,9 @@ public class Field : AbstractField
     public FieldNode FieldNode => _fieldNode;
     public AreaParticleSystem AreaParticleSystem => _areaParticleSystem;
     public ColorType Color => _color;
+    public Platform Platform => _platform;
+    
+    public FreeFieldChecker FreeFieldChecker => _freeFieldChecker;
 
     private void Awake()
     {
@@ -50,19 +53,36 @@ public class Field : AbstractField
     
     public void ChangeColorFirstSelectField()
     {
-        _meshRenderer.material.color = _firstSelectColor;
+        _platform.ChangeColor(_firstSelectColor, true);
+        
         ActivateAreaEffect();
     }
     
     public void ChangeColorSecondSelectField()
     {
-        _meshRenderer.material.color = _secondSelectColor;
+        _platform.ChangeColor(_secondSelectColor, true);
     }
 
     public void ResetColorChanges()
     {
-        _meshRenderer.material.color = _defaultColor;
+        _platform.ChangeColor(_defaultColor,false);
+        
         DeactivateAreaEffect();
+    }
+
+    public void ActivateBacklight()
+    {
+        _platform.ActivateBacklight();
+    }
+
+    public void DeactivateBacklight()
+    {
+        _platform.DeactivateBacklight();
+    }
+
+    public void DeactivateAllEffects()
+    {
+        _areaParticleSystem.Deactivate();
     }
 
     private void ActivateAreaEffect()

@@ -24,6 +24,8 @@ public class LevelEntryPoint : MonoBehaviour
         
         ServiceLocator.GetService<LevelCompletionManager>().Registration(instantiatedSceneObjects.NextLevelButton, instantiatedSceneObjects.RestartButton, instantiatedSceneObjects.StepsCounter);
         
+        ServiceLocator.GetService<LevelUIActivityChanger>().Registration(instantiatedSceneObjects.WaitingIcon);
+        
         ServiceLocator.GetService<LoadingBackground>().TurnOff();
     }
 }

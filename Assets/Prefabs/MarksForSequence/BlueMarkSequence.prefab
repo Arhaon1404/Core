@@ -97,5 +97,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _colorType: 3
-  _startColor: {r: 0, g: 0.05759144, b: 1, a: 1}
-  _currentColor: {r: 0, g: 0, b: 0, a: 0}
+  _startColor: {r: 0.1745283, g: 0.64020604, b: 1, a: 1}

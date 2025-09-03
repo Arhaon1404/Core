@@ -151,7 +151,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382115757655255682}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -313,9 +313,9 @@ MonoBehaviour:
   - {fileID: 2478625582147775009}
   _centerPoint: {fileID: 4095642042359497718}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 2180390415451492342}
   _color: 0
   _areaParticleSystem: {fileID: 6679731574140167780}
-  _meshRenderer: {fileID: 1643282351911799129}
   _defaultColor: {r: 0.9843138, g: 1, b: 1, a: 1}
   _firstSelectColor: {r: 0.9676024, g: 1, b: 0, a: 0}
   _secondSelectColor: {r: 1, g: 0.08789868, b: 0, a: 0}
@@ -464,7 +464,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2912888457212634966}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -514,6 +514,8 @@ MonoBehaviour:
   _maxAlphaBlink: 1
   _minAlphaBlink: 0
   _blinkspeed: 1
+  _currentMaterial: {fileID: 2100000, guid: 73aa911d7d26ca641a7955eec1f1d238, type: 2}
+  _blinkMaterial: {fileID: 2100000, guid: 9c4110b44d778d240b24904aef1ca43f, type: 2}
 --- !u!1 &3104955603390528676
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +612,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3560336499037638684}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -714,7 +716,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3647980983337679017}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -854,6 +856,7 @@ GameObject:
   - component: {fileID: 5214864399125842161}
   - component: {fileID: 5214864399125842163}
   - component: {fileID: 5214864399125842162}
+  - component: {fileID: 8220106608195817936}
   m_Layer: 0
   m_Name: points_large
   m_TagString: Untagged
@@ -5750,6 +5753,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &8220106608195817936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5214864399125842160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2efedf718e2819549ae8bb8369173d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5748767481006115712
 GameObject:
   m_ObjectHideFlags: 0
@@ -10771,9 +10786,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _areaParticleSystem: {fileID: 6221454666978766358}
-  _areaSquare: {fileID: 0}
-  _areaSmallPoints: {fileID: 0}
-  _areaLargePoints: {fileID: 0}
+  _areaSquare: {fileID: 3671053661728271325}
+  _areaSmallPoints: {fileID: 3884689348824986918}
+  _areaLargePoints: {fileID: 8220106608195817936}
+  _switchColor: {r: 0.74509805, g: 0.1254902, b: 0.09411765, a: 0.7529412}
 --- !u!1 &6434759741234121804
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,7 +10842,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6434759741234121804}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -11047,7 +11063,7 @@ Transform:
   m_GameObject: {fileID: 7669476433568935381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1.0029235, y: 1.0029235, z: 1.0029235}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11076,6 +11092,7 @@ GameObject:
   - component: {fileID: 5330899747268563876}
   - component: {fileID: 1655620548814511848}
   - component: {fileID: 1643282351911799129}
+  - component: {fileID: 2180390415451492342}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Untagged
@@ -11114,7 +11131,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8228538160134939219}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -11148,6 +11165,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2180390415451492342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228538160134939219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f992ee38267ce14ab16f9bbc688c8d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _meshRenderer: {fileID: 1643282351911799129}
+  _defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  _backlightColor: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
+  _winningColor: {r: 0, g: 1, b: 0.11764706, a: 1}
+  _defaultEmissionColor: {r: 0.1469384, g: 0.24528301, b: 0.23741542, a: 1}
+  _backlightEmissionColor: {r: 0.24554999, g: 0.5849056, b: 0.5583935, a: 1}
+  _endEmissionColor: {r: 1, g: 0, b: 0, a: 1}
+  _selectEmissionColor: {r: 0.9427508, g: 1, b: 0, a: 1}
+  _winningEmmissionColor: {r: 0.14901961, g: 0.7372549, b: 0.34117648, a: 1}
 --- !u!1 &8401090443449843897
 GameObject:
   m_ObjectHideFlags: 0
@@ -11198,7 +11236,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8401090443449843897}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -11248,6 +11286,8 @@ MonoBehaviour:
   _maxAlphaBlink: 1
   _minAlphaBlink: 0
   _blinkspeed: 1
+  _currentMaterial: {fileID: 2100000, guid: 73aa911d7d26ca641a7955eec1f1d238, type: 2}
+  _blinkMaterial: {fileID: 2100000, guid: 9c4110b44d778d240b24904aef1ca43f, type: 2}
 --- !u!1 &8467355242766161586
 GameObject:
   m_ObjectHideFlags: 0
@@ -11259,6 +11299,7 @@ GameObject:
   - component: {fileID: 8467355242766161585}
   - component: {fileID: 8467355242766161591}
   - component: {fileID: 8467355242766161584}
+  - component: {fileID: 3884689348824986918}
   m_Layer: 0
   m_Name: points_small
   m_TagString: Untagged
@@ -16155,6 +16196,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &3884689348824986918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8467355242766161586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8abe790c029512429a2b9a13dc8ce7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8470775680114212332
 GameObject:
   m_ObjectHideFlags: 0
@@ -16205,7 +16258,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8470775680114212332}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -16255,6 +16308,8 @@ MonoBehaviour:
   _maxAlphaBlink: 1
   _minAlphaBlink: 0
   _blinkspeed: 1
+  _currentMaterial: {fileID: 2100000, guid: 73aa911d7d26ca641a7955eec1f1d238, type: 2}
+  _blinkMaterial: {fileID: 2100000, guid: 9c4110b44d778d240b24904aef1ca43f, type: 2}
 --- !u!1 &8733242010718510956
 GameObject:
   m_ObjectHideFlags: 0
@@ -16266,6 +16321,7 @@ GameObject:
   - component: {fileID: 8733242010718510957}
   - component: {fileID: 8733242010718510947}
   - component: {fileID: 8733242010718510946}
+  - component: {fileID: 3671053661728271325}
   m_Layer: 0
   m_Name: circle
   m_TagString: Untagged
@@ -21153,6 +21209,20 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &3671053661728271325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8733242010718510956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d4c6356bc522314084a3d1f116da03f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 8733242010718510947}
+  _switchColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &9067227031777398687
 GameObject:
   m_ObjectHideFlags: 0
@@ -21247,7 +21317,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9123159722756866462}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -21297,3 +21367,5 @@ MonoBehaviour:
   _maxAlphaBlink: 1
   _minAlphaBlink: 0
   _blinkspeed: 1
+  _currentMaterial: {fileID: 2100000, guid: 73aa911d7d26ca641a7955eec1f1d238, type: 2}
+  _blinkMaterial: {fileID: 2100000, guid: 9c4110b44d778d240b24904aef1ca43f, type: 2}

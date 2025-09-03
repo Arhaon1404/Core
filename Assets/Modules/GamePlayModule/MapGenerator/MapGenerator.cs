@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(FieldsPlacer))]
@@ -23,6 +24,7 @@ public class MapGenerator : MonoBehaviour
     private StartField _startField;
     
     public StartField StartField => _startField;
+    public Field[,] FilledMap => _filledMap;
     
     private void Awake()
     {
@@ -53,7 +55,35 @@ public class MapGenerator : MonoBehaviour
         _realizerOtherFeatures.Realize(_filledMap,_map);
         GenerateEnd();
     }
-    
+
+    public List<Crystal> ProvideListCrystals()
+    {
+        List<Crystal> crystals = new List<Crystal>();
+
+        foreach (Field field in _filledMap)
+        {
+            if (field == null) continue;
+            if(field.CrystalOnField != null)
+                crystals.Add(field.CrystalOnField);
+        }
+        
+        return crystals;
+    }
+
+    public List<Field> ProvideListFields()
+    {
+        List<Field> fields = new List<Field>();
+
+        foreach (Field field in _filledMap)
+        {
+            if (field == null) continue;
+            if(field != _startField)
+                fields.Add(field);
+        }
+        
+        return fields;
+    }
+
     private void ValidationArray()
     {
         if (_levelInfo.MapRows != null)
@@ -84,6 +114,7 @@ public class MapGenerator : MonoBehaviour
             for (int j = 0; j < _map.GetLength(1); j++)
             {
                 _map[i, j] = _levelInfo.MapRows[i].MapRow[j];
+                _map[i, j].ClearColorsConnectionsList();
                 _map[i, j].FillListConnectionsToRemove();
                 _map[i, j].FillListConnectionsToHide();
                 _map[i, j].FillListColorConnections();

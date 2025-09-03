@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9150bd74ca353424da29169dc0c9d77b, type: 3}
+  m_Name: 41
+  m_EditorClassIdentifier: 
+  _width: 2
+  _height: 5
+  _mapRows:
+  - _mapRow:
+    - _cellName: 1.1
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 1
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _leftConnectionLine: {fileID: 0}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 0}
+      _listCores: []
+      _crystalOnField: {fileID: 0}
+      _mark: {fileID: 0}
+    - _cellName: 1.2
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _leftConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _listCores: []
+      _crystalOnField: {fileID: 316737478333750204, guid: ac1778fa8894c5847862b60c1388b21f, type: 3}
+      _mark: {fileID: 0}
+    - _cellName: 1.3
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _leftConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _listCores: []
+      _crystalOnField: {fileID: 316737478333750204, guid: ac1778fa8894c5847862b60c1388b21f, type: 3}
+      _mark: {fileID: 0}
+    - _cellName: 1.4
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _leftConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _listCores: []
+      _crystalOnField: {fileID: 316737478333750204, guid: ac1778fa8894c5847862b60c1388b21f, type: 3}
+      _mark: {fileID: 0}
+    - _cellName: 1.5
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 1
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 0}
+      _leftConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 0}
+      _listCores: []
+      _crystalOnField: {fileID: 0}
+      _mark: {fileID: 0}
+  - _mapRow:
+    - _cellName: 2.1
+      _field: {fileID: 8311190695958622675, guid: 3fee89a9023df9744b838b5737633c3f, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 1
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 0}
+      _leftConnectionLine: {fileID: 0}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 0}
+      _listCores:
+      - {fileID: 2990581237042269752, guid: 0c37789b03ad44f449e4b379fc21a701, type: 3}
+      _crystalOnField: {fileID: 0}
+      _mark: {fileID: 0}
+    - _cellName: 2.2
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _leftConnectionLine: {fileID: 0}
+      _upConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _downConnectionLine: {fileID: 0}
+      _listCores: []
+      _crystalOnField: {fileID: 0}
+      _mark: {fileID: 0}
+    - _cellName: 2.3
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _leftConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _upConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _downConnectionLine: {fileID: 0}
+      _listCores: []
+      _crystalOnField: {fileID: 0}
+      _mark: {fileID: 0}
+    - _cellName: 2.4
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 0
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 0}
+      _leftConnectionLine: {fileID: 7408251331426839724, guid: c9dd550b0c64c4a45889565e411c818a, type: 3}
+      _upConnectionLine: {fileID: 7505281887805588868, guid: 7c6ba6d7ef3c0134383a214a9843d408, type: 3}
+      _downConnectionLine: {fileID: 0}
+      _listCores: []
+      _crystalOnField: {fileID: 0}
+      _mark: {fileID: 0}
+    - _cellName: 2.5
+      _field: {fileID: 4203172888644590768, guid: 47a2e24ce21207949abc58db9014d5fe, type: 3}
+      _isRemoveRight: 0
+      _isRemoveLeft: 0
+      _isRemoveUp: 1
+      _isRemoveDown: 0
+      _isHideRight: 0
+      _isHideLeft: 0
+      _isHideUp: 0
+      _isHideDown: 0
+      _rightConnectionLine: {fileID: 0}
+      _leftConnectionLine: {fileID: 0}
+      _upConnectionLine: {fileID: 0}
+      _downConnectionLine: {fileID: 0}
+      _listCores: []
+      _crystalOnField: {fileID: 4329489605837985307, guid: f2b0ff25741cd0d408a7f9ebc12648d2, type: 3}
+      _mark: {fileID: 0}

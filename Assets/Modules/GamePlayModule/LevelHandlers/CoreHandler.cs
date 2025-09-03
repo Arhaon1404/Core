@@ -60,6 +60,7 @@ public class CoreHandler
             _endField.CrystalOnField.СonnectCoreToCrystal();
             
             _endField.AreaParticleSystem.SwitchLightMode();
+            _endField.Platform.ActivateEndBacklight();
             _endField.AreaParticleSystem.Activate();
             
             _core.transform.SetParent(_endField.CrystalOnField.transform);

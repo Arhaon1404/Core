@@ -9,9 +9,9 @@ public class FreeFieldChecker : MonoBehaviour
         
         foreach (Connection connection in startField.ActiveConnections)
         {
-            if (connection.ConnectionLine.isActiveAndEnabled != true)
-                continue;    
-            
+            if (connection.ConnectionLine.isActiveAndEnabled == false)
+                continue;
+
             if (connection.ConnectionLine.AisleColors.Count == 0)
             {
                 if (connection.ConnectionAnotherField.MotherField.CrystalOnField == null)

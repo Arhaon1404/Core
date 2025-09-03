@@ -1,13 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayButton : MainMenuButton
 {
     public event Action<int> ElementClicked;
     
-    protected virtual void OnMouseUp()
+    public override void Click()
     {
         int currentLevelID = PlayerPrefs.GetInt("CurrentLevel");
         

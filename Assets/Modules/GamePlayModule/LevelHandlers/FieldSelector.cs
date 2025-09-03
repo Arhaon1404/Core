@@ -11,6 +11,7 @@ public class FieldSelector
     private State _state;
     
     public Action<State, Field, Field> StateUpdated;
+    public Action StateNoneAchieved;
     
     public FieldSelector(IInputSource inputSource)
     {
@@ -41,6 +42,8 @@ public class FieldSelector
         }
         
         _state = State.None;
+        
+        StateNoneAchieved?.Invoke();
         
         _startField = null;
         _endField = null;
@@ -75,12 +78,11 @@ public class FieldSelector
                 {
                     if (field.CrystalOnField.IsActiveCrystal)
                     {
-                        HandleStateNone(field);
+                        if (field.FreeFieldChecker.GetListFreeField(field).Count != 0)
+                        {
+                            HandleStateNone(field);
+                        }
                     }
-                }
-                else
-                {
-                    HandleStateNone(field);
                 }
             }
         }
@@ -89,13 +91,14 @@ public class FieldSelector
     private void HandleStateNone(Field field)
     {
         _startField = field;
-        _startField.ChangeColorFirstSelectField();
-
+        
         ChangeStateFeaturesField(true);
             
         if (_startField.CrystalOnField)
             ChangeOutlineStateCrystal(_startField.CrystalOnField,true);
                 
+        _startField.ChangeColorFirstSelectField();
+        
         _state = State.HasStart;
         
         StateUpdated?.Invoke(_state, _startField, _endField);

@@ -908,9 +908,9 @@ MonoBehaviour:
   - {fileID: 2117630976}
   _centerPoint: {fileID: 1121325290}
   _crystalOnField: {fileID: 231587578}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2030,9 +2030,9 @@ MonoBehaviour:
   - {fileID: 913439123}
   _centerPoint: {fileID: 1717616644}
   _crystalOnField: {fileID: 1430590425}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2154,9 +2154,9 @@ MonoBehaviour:
   - {fileID: 359039533}
   _centerPoint: {fileID: 384502336}
   _crystalOnField: {fileID: 619807720}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -2384,9 +2384,9 @@ MonoBehaviour:
   - {fileID: 663858337}
   _centerPoint: {fileID: 1414353494}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -4016,7 +4016,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &168806436
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4945,7 +4947,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &231587579
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5103,7 +5107,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &236206463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5322,9 +5328,9 @@ MonoBehaviour:
   - {fileID: 1134327390}
   _centerPoint: {fileID: 35467799}
   _crystalOnField: {fileID: 1776859773}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -5600,9 +5606,9 @@ MonoBehaviour:
   - {fileID: 940534179}
   _centerPoint: {fileID: 1571095693}
   _crystalOnField: {fileID: 2055165079}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -6294,6 +6300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 5
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &306165820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6975,9 +6982,9 @@ MonoBehaviour:
   - {fileID: 2126845547}
   _centerPoint: {fileID: 105866589}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -7819,9 +7826,9 @@ MonoBehaviour:
   - {fileID: 1989250810}
   _centerPoint: {fileID: 1397120478}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -8280,6 +8287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 5
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &393704656
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8492,6 +8500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 4
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &394849155
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8598,9 +8607,9 @@ MonoBehaviour:
   - {fileID: 380005699}
   _centerPoint: {fileID: 1484689650}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -9929,9 +9938,9 @@ MonoBehaviour:
   - {fileID: 1235699062}
   _centerPoint: {fileID: 1652828717}
   _crystalOnField: {fileID: 1053514826}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -10663,9 +10672,9 @@ MonoBehaviour:
   - {fileID: 467309112}
   _centerPoint: {fileID: 1073102144}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -11056,9 +11065,9 @@ MonoBehaviour:
   - {fileID: 257626289}
   _centerPoint: {fileID: 1055882569}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -11241,9 +11250,9 @@ MonoBehaviour:
   - {fileID: 1887314071}
   _centerPoint: {fileID: 415472604}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -11604,7 +11613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3f7ffaddda5fc47b2043bb62041e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalsOnLevel: []
   _startField: {fileID: 1174751103}
 --- !u!114 &519818149
 MonoBehaviour:
@@ -12494,9 +12502,9 @@ MonoBehaviour:
   - {fileID: 1545561342}
   _centerPoint: {fileID: 71006082}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -13457,7 +13465,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 5
+  _isActiveCrystal: 0
 --- !u!23 &604252101
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13664,9 +13674,9 @@ MonoBehaviour:
   - {fileID: 591300814}
   _centerPoint: {fileID: 767364161}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -13899,7 +13909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &619807721
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14172,9 +14184,9 @@ MonoBehaviour:
   - {fileID: 946828125}
   _centerPoint: {fileID: 1913468585}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -14352,9 +14364,9 @@ MonoBehaviour:
   - {fileID: 1070469983}
   _centerPoint: {fileID: 1576284258}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -16301,9 +16313,9 @@ MonoBehaviour:
   - {fileID: 351937359}
   _centerPoint: {fileID: 1040053458}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -17221,9 +17233,9 @@ MonoBehaviour:
   - {fileID: 2098171523}
   _centerPoint: {fileID: 1746454821}
   _crystalOnField: {fileID: 604252100}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -17874,6 +17886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 4
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &776550072
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17979,9 +17992,9 @@ MonoBehaviour:
   - {fileID: 1623088448}
   _centerPoint: {fileID: 854120805}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 5
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -18696,9 +18709,9 @@ MonoBehaviour:
   - {fileID: 1240845601}
   _centerPoint: {fileID: 615862559}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -18961,9 +18974,9 @@ MonoBehaviour:
   - {fileID: 698852347}
   _centerPoint: {fileID: 879524516}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -20094,9 +20107,9 @@ MonoBehaviour:
   - {fileID: 164190023}
   _centerPoint: {fileID: 1705017190}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -20342,9 +20355,9 @@ MonoBehaviour:
   - {fileID: 1088670366}
   _centerPoint: {fileID: 224981247}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -21612,9 +21625,9 @@ MonoBehaviour:
   - {fileID: 2128725027}
   _centerPoint: {fileID: 576830775}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -21739,9 +21752,9 @@ MonoBehaviour:
   - {fileID: 1766079616}
   _centerPoint: {fileID: 138368486}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -22893,7 +22906,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 4
+  _isActiveCrystal: 0
 --- !u!23 &1053514827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23460,9 +23475,9 @@ MonoBehaviour:
   - {fileID: 2010729324}
   _centerPoint: {fileID: 2137145045}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -23872,9 +23887,9 @@ MonoBehaviour:
   - {fileID: 404857335}
   _centerPoint: {fileID: 942666776}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -24484,6 +24499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 0
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &1115678374
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25301,9 +25317,9 @@ MonoBehaviour:
   - {fileID: 291158162}
   _centerPoint: {fileID: 1997706276}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -25314,6 +25330,7 @@ MonoBehaviour:
   - {fileID: 394849154}
   - {fileID: 393704655}
   _coreOnField: {fileID: 1115678373}
+  _iconSpinner: {fileID: 0}
 --- !u!4 &1174751104 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: da0875c924e916346a489bfbc7479eb5, type: 3}
@@ -25779,9 +25796,9 @@ MonoBehaviour:
   - {fileID: 1207327595}
   _centerPoint: {fileID: 631438769}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -27439,9 +27456,9 @@ MonoBehaviour:
   - {fileID: 1214206372}
   _centerPoint: {fileID: 993996761}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -27751,9 +27768,9 @@ MonoBehaviour:
   - {fileID: 1805167159}
   _centerPoint: {fileID: 1782834418}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -27954,9 +27971,9 @@ MonoBehaviour:
   - {fileID: 9338659}
   _centerPoint: {fileID: 2103304918}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -28201,9 +28218,9 @@ MonoBehaviour:
   - {fileID: 1857498450}
   _centerPoint: {fileID: 134885475}
   _crystalOnField: {fileID: 1772684483}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -28467,9 +28484,9 @@ MonoBehaviour:
   - {fileID: 87883024}
   _centerPoint: {fileID: 650184754}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -29266,9 +29283,9 @@ MonoBehaviour:
   - {fileID: 2043237404}
   _centerPoint: {fileID: 1719255015}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -29403,29 +29420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9120c7690ae4fb74c82d4cd8b1417b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1369437835 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-  m_PrefabInstance: {fileID: 1801557161}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1369437842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1369437835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 0.99437773, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1373533608
 GameObject:
   m_ObjectHideFlags: 0
@@ -29589,7 +29583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &1377089058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30402,7 +30398,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &1430590426
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -30769,9 +30767,9 @@ MonoBehaviour:
   - {fileID: 1335592153}
   _centerPoint: {fileID: 937231617}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -32257,9 +32255,9 @@ MonoBehaviour:
   - {fileID: 1877921185}
   _centerPoint: {fileID: 1878702402}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -32404,9 +32402,9 @@ MonoBehaviour:
   - {fileID: 408192323}
   _centerPoint: {fileID: 751727258}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 5
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -33721,9 +33719,9 @@ MonoBehaviour:
   - {fileID: 229579991}
   _centerPoint: {fileID: 1537333376}
   _crystalOnField: {fileID: 1377089057}
+  _platform: {fileID: 0}
   _color: 4
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -33926,9 +33924,9 @@ MonoBehaviour:
   - {fileID: 1881300587}
   _centerPoint: {fileID: 1865419178}
   _crystalOnField: {fileID: 236206462}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -33989,9 +33987,9 @@ MonoBehaviour:
   - {fileID: 149648973}
   _centerPoint: {fileID: 269589988}
   _crystalOnField: {fileID: 168806435}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -34470,6 +34468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 0
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &1624972250
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35425,9 +35424,9 @@ MonoBehaviour:
   - {fileID: 1969958852}
   _centerPoint: {fileID: 1048700555}
   _crystalOnField: {fileID: 1890454066}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -36867,7 +36866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 5
+  _isActiveCrystal: 0
 --- !u!23 &1772684484
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36981,7 +36982,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &1776859774
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37090,9 +37093,9 @@ MonoBehaviour:
   - {fileID: 579423215}
   _centerPoint: {fileID: 1407341821}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -37350,90 +37353,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1235699063}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1801557161
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1490141683146503777, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1490141683146503777, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 1490141683146503777, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 32a76832b79e84347ad9df08b12709c3, type: 2}
-    - target: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_Name
-      value: ColorlessCrystal
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 25.511446
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 25.511435
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 25.511435
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 63.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8617783332639549005, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5251164487944344909, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
-      insertIndex: 6
-      addedObject: {fileID: 1369437842}
-  m_SourcePrefab: {fileID: 100100000, guid: 0fb2b21e3f49bdb4eb02901357c86519, type: 3}
 --- !u!1 &1805167155
 GameObject:
   m_ObjectHideFlags: 0
@@ -37900,6 +37819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _color: 0
+  _outlineSwicher: {fileID: 0}
 --- !u!23 &1842284319
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39371,9 +39291,9 @@ MonoBehaviour:
   - {fileID: 1941066956}
   _centerPoint: {fileID: 239086258}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -39770,7 +39690,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 0
+  _isActiveCrystal: 0
 --- !u!23 &1890454067
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39946,9 +39868,9 @@ MonoBehaviour:
   - {fileID: 237108344}
   _centerPoint: {fileID: 81550927}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -39958,6 +39880,7 @@ MonoBehaviour:
   - {fileID: 776550071}
   - {fileID: 306165819}
   _coreOnField: {fileID: 1842284318}
+  _iconSpinner: {fileID: 0}
 --- !u!1 &1911327271
 GameObject:
   m_ObjectHideFlags: 0
@@ -40166,8 +40089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a3f7ffaddda5fc47b2043bb62041e4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _crystalsOnLevel:
-  - {fileID: 1430590425}
   _startField: {fileID: 1904114763}
 --- !u!114 &1913594167
 MonoBehaviour:
@@ -40236,9 +40157,9 @@ MonoBehaviour:
   - {fileID: 942129485}
   _centerPoint: {fileID: 1218109419}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -40894,9 +40815,9 @@ MonoBehaviour:
   - {fileID: 272812593}
   _centerPoint: {fileID: 75325121}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -41452,9 +41373,9 @@ MonoBehaviour:
   - {fileID: 1943604629}
   _centerPoint: {fileID: 1211062372}
   _crystalOnField: {fileID: 0}
+  _platform: {fileID: 0}
   _color: 0
   _areaParticleSystem: {fileID: 0}
-  _meshRenderer: {fileID: 0}
   _defaultColor: {r: 0, g: 0, b: 0, a: 0}
   _firstSelectColor: {r: 0, g: 0, b: 0, a: 0}
   _secondSelectColor: {r: 0, g: 0, b: 0, a: 0}
@@ -42925,7 +42846,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: 0}
   _outlineSwicher: {fileID: 0}
+  _backlightSwitcher: {fileID: 0}
   _color: 4
+  _isActiveCrystal: 0
 --- !u!23 &2055165080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44830,7 +44753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6084093929914735167, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6222337310257199686, guid: b23fb3e6d2716b44e874117de97fa178, type: 3}
       propertyPath: _levelInfo
@@ -45625,4 +45548,3 @@ SceneRoots:
   - {fileID: 2238343864636375933}
   - {fileID: 7478277814175043294}
   - {fileID: 843835607274550026}
-  - {fileID: 1801557161}

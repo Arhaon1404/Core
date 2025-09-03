@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: -4215062062964644211}
   - component: {fileID: -9156843601932156924}
   - component: {fileID: 112500493207921072}
+  - component: {fileID: -5322144077807914102}
+  - component: {fileID: 4250095880400124288}
   m_Layer: 0
   m_Name: 'RedCrystal '
   m_TagString: Untagged
@@ -32,8 +34,8 @@ Transform:
   m_GameObject: {fileID: 288564020708331560}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 44.769997, y: 1.7793617, z: 88.3}
-  m_LocalScale: {x: 38.413906, y: 38.41389, z: 38.41389}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 43, z: 43}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,7 +47,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288564020708331560}
-  m_Mesh: {fileID: -1710425572717105975, guid: 18ecad350442c204cb428f1aa3f3bd7a, type: 3}
+  m_Mesh: {fileID: 4702925393065980420, guid: 25b6280f29502ec4aa6fc68351db6009, type: 3}
 --- !u!23 &1148686325524981005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -54,7 +56,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288564020708331560}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -66,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c11aae7725d19c24ebe0e4312e590806, type: 2}
+  - {fileID: 2100000, guid: 25f72c4b46d6c3148854905708faf02d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -102,7 +104,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _crystalAnimator: {fileID: -4215062062964644211}
   _outlineSwicher: {fileID: 112500493207921072}
+  _backlightSwitcher: {fileID: -5322144077807914102}
+  _endGameFireLightUp: {fileID: 4250095880400124288}
   _color: 1
+  _isActiveCrystal: 0
 --- !u!114 &1648774963770053700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,8 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineMode: 1
-  outlineColor: {r: 1, g: 0.96499115, b: 0.18396229, a: 1}
-  outlineWidth: 2
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 0
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -165,6 +170,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 249a1a40501189d4fbc040814d6aa568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _currentCrystal: {fileID: 0}
   _transitionSpeed: 4
   _minOulineWidth: 4
   _maxOulineWidth: 8.5
+  _outlineColor: {r: 1, g: 0.95179456, b: 0, a: 1}
+--- !u!114 &-5322144077807914102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288564020708331560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9991ed45f4a176a4b81187540e58279c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitionSpeed: 5
+  _backlightDelay: 1
+  _startColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
+  _endColor: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 0}
+--- !u!114 &4250095880400124288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288564020708331560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84a8b00a903b5c44bb9371d05b8be084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _explosion: {fileID: 4876887177859551648, guid: 67a684e320da6e7439421a07e3fa265c, type: 3}
+  _endGameFire: {fileID: 8162312302592148721, guid: eca000ab44c908d4dab395f654753038, type: 3}

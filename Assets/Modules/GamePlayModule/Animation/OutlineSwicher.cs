@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -5,30 +6,39 @@ using UnityEngine;
 
 public class OutlineSwicher : MonoBehaviour
 {
+    [SerializeField] private Crystal _currentCrystal;
     [SerializeField] private float _transitionSpeed;
     [SerializeField] private float _minOulineWidth;
     [SerializeField] private float _maxOulineWidth;
+    [SerializeField] private Color _outlineColor;
     private Outline _outline;
     
     private Coroutine _outlineTransitionCoroutine;
     private bool _isCoroutineDone = true;
+    private bool _isDone;
+    
+    public event Action OnActived;
+    public event Action OnDeactivated;
     
     private void Awake()
     { 
         _outline = GetComponent<Outline>();
-            
-        _outline.enabled = false;
     }
 
     public void TurnOn()
     {
-        _outline.enabled = true;
+        OnActived?.Invoke();
+        
+        _isDone = false;
+        
         InitiateCoroutine();
     }
 
     public void TurnOff()
     {
-        _outline.enabled = false;
+        _isDone = true;
+        
+        OnDeactivated?.Invoke();
     }
     
     private void InitiateCoroutine()
@@ -50,9 +60,11 @@ public class OutlineSwicher : MonoBehaviour
     {
         _outline.OutlineWidth = _minOulineWidth;
         
+        _outline.OutlineColor = _outlineColor;
+        
         bool direction = true;
         
-        while (_outline.enabled)
+        while (_isDone == false)
         {
             yield return null;
             
@@ -80,10 +92,8 @@ public class OutlineSwicher : MonoBehaviour
                     direction = true;
                 }
             }
+            
+            _isCoroutineDone = true;
         }
-        
-        _isCoroutineDone = true;
     }
-    
-    
 }

@@ -7,11 +7,13 @@ public class StartField : Field
 {
     [SerializeField] private List<Core> _listCores;
     [SerializeField] private Core _coreOnField;
-
+    [SerializeField] private IconSpiner _iconSpinner;
+    
     public event Action IsCoreMoved;
     
     public Core CoreOnField => _coreOnField;
     public List<Core> ListCores => _listCores;
+    public IconSpiner IconSpinner => _iconSpinner;
 
     public void ReleaseCore(Core coreToRelease)
     {

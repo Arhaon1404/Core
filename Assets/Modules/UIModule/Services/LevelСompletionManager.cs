@@ -8,6 +8,9 @@ public class LevelCompletionManager : MonoBehaviour
     [SerializeField] private NextLevelButton _nextLevelButton;
     [SerializeField] private RestartButton _restartButton;
     [SerializeField] private StepsCounter _stepsCounter;
+
+    public event Action IsFirstStepComplited;
+    public event Action IsLevelCompleted;
     
     public void Registration(NextLevelButton nextLevelButton, RestartButton restartButton, StepsCounter stepsCounter)
     {
@@ -39,6 +42,14 @@ public class LevelCompletionManager : MonoBehaviour
     public void ShowNextLevelButton()
     {
         _nextLevelButton.MoveButton();
+        
+        IsLevelCompleted?.Invoke();
+    }
+
+    public void ShowRestartButton()
+    {
+        _restartButton.ShowButton();
+        IsFirstStepComplited?.Invoke();
     }
 
     public void PassStep()

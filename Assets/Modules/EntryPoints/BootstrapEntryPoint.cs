@@ -7,6 +7,7 @@ public class BootstrapEntryPoint : MonoBehaviour
     [SerializeField] private AudioBackground _audioBackground;
     [SerializeField] private LevelInformationManager _levelInformationManager;
     [SerializeField] private LevelCompletionManager _levelCompletionManager;
+    [SerializeField] private LevelUIActivityChanger _levelUIActivityChanger;
     
     private void Awake()
     {
@@ -31,19 +32,24 @@ public class BootstrapEntryPoint : MonoBehaviour
         
         ServiceLocator.Register(_levelCompletionManager);
         
+        _levelUIActivityChanger = Instantiate(_levelUIActivityChanger);
+        
+        ServiceLocator.Register(_levelUIActivityChanger);
+        
         InitializePlayerData();
         
         DontDestroyOnLoad(_levelInformationManager);
         DontDestroyOnLoad(_loadingBackground);
         DontDestroyOnLoad(_audioBackground);
         DontDestroyOnLoad(_levelCompletionManager);
+        DontDestroyOnLoad(_levelUIActivityChanger);
         
         SceneManager.LoadScene("MainMenuScene");
     }
 
     private void InitializePlayerData()
     {
-        PlayerPrefs.SetInt("CurrentLevel", 10);
+        PlayerPrefs.SetInt("CurrentLevel", 50);
         
         /*
         Debug.Log(PlayerPrefs.GetInt("CurrentLevel"));

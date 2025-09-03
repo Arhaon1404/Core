@@ -49,10 +49,10 @@ public class CrystalAnimator : MonoBehaviour
 
             transform.DOLocalRotate(targetRotate, randomRotatingSpeed,RotateMode.LocalAxisAdd).SetLoops(-1, LoopType.Yoyo);
             
-            movingUpAndDownSequence.Append(transform.DOLocalMoveY(transform.localPosition.y + _heightDiference, randomUpAndDownSpeed));
-            movingUpAndDownSequence.Append(transform.DOLocalMoveY(transform.localPosition.y - _heightDiference, randomUpAndDownSpeed));
-            movingUpAndDownSequence.Append(transform.DOLocalMoveY(transform.localPosition.y, randomUpAndDownSpeed));
-            movingUpAndDownSequence.SetLoops(-1, LoopType.Yoyo);
+            //movingUpAndDownSequence.Append(transform.DOLocalMoveY(transform.localPosition.y + _heightDiference, randomUpAndDownSpeed));
+            //movingUpAndDownSequence.Append(transform.DOLocalMoveY(transform.localPosition.y - _heightDiference, randomUpAndDownSpeed));
+            //movingUpAndDownSequence.Append(transform.DOLocalMoveY(transform.localPosition.y, randomUpAndDownSpeed));
+            //movingUpAndDownSequence.SetLoops(-1, LoopType.Yoyo);
         }
     }
     

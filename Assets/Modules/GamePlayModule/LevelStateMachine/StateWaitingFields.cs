@@ -4,10 +4,11 @@ using UnityEngine;
 public class StateWaitingFields : ILevelState
 {
     private readonly LevelStateMachine _levelStateMachine;
+    private readonly ClickHandler _clickHandler;
     private readonly FieldSelector _fieldSelector;
     private readonly LevelManager _levelManager;
     
-    public StateWaitingFields(LevelStateMachine levelStateMachine,LevelManager levelManager, FieldSelector fieldSelector)
+    public StateWaitingFields(LevelStateMachine levelStateMachine,LevelManager levelManager,ClickHandler clickHandler, FieldSelector fieldSelector)
     {
         if(levelStateMachine == null)
             throw new ArgumentNullException(nameof(levelStateMachine));
@@ -15,9 +16,13 @@ public class StateWaitingFields : ILevelState
         if(levelManager == null)
             throw new ArgumentNullException(nameof(levelManager));
         
+        if(clickHandler == null)
+            throw new ArgumentNullException(nameof(clickHandler));
+        
         if(fieldSelector == null)
             throw new ArgumentNullException(nameof(fieldSelector));
         
+        _clickHandler = clickHandler;
         _levelManager = levelManager;
         _levelStateMachine = levelStateMachine;
         _fieldSelector = fieldSelector;
@@ -38,6 +43,8 @@ public class StateWaitingFields : ILevelState
     {
         if (currentState == State.HasEnd)
         {
+            _clickHandler.TurnOff();
+            
             if(firstField == null)
                 throw new ArgumentNullException(nameof(firstField));
         

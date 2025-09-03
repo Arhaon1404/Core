@@ -11,7 +11,7 @@ public class SequenceControler : Spawner<SequenceMark>
     [SerializeField] private SpawnPoint _investigatorSpawnPoint;
     [SerializeField] private List<SequenceMark> _colorMarks;
     [SerializeField] private List<GridCell> _sequenceGrids;
-
+    
     [SerializeField] private List<Core> _startFieldListInfo;
     private int _currentCountCore;
     private GridCell _currentCell;
@@ -37,8 +37,6 @@ public class SequenceControler : Spawner<SequenceMark>
         InvestigatorSequence investigator = Instantiate(_prefabInvestigatorSequence,_investigatorSpawnPoint.transform);
         
         investigator.transform.localPosition = Vector3.zero;
-
-        //ChangeTransperent();
     }
     
     protected override SequenceMark CreateObject()
@@ -85,21 +83,6 @@ public class SequenceControler : Spawner<SequenceMark>
         }
     }
 
-    private void ChangeTransperent()
-    {
-        float transperentMultiplier = 1;
-        
-        foreach (GridCell gridCell in _sequenceGrids)
-        {
-            if (gridCell.Mark != null)
-            {
-                gridCell.Mark.ChangeAlphaColor(transperentMultiplier);
-            }
-
-            transperentMultiplier++;
-        }
-    }
-
     private void MoveCells()
     {
         int firstIndex = 0;
@@ -137,8 +120,6 @@ public class SequenceControler : Spawner<SequenceMark>
         _currentCell = _sequenceGrids[lastIndex];
         
         AddNewElement();
-
-        //ChangeTransperent();
         
         float shiftX = 40;
 

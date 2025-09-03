@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class SelectLevelButton : PlayButton
 {
-    [SerializeField] private Icon _icon;
+    [SerializeField] private Image _icon;
     [SerializeField] private TMP_Text _text;
     [SerializeField] private int _levelID;
     
     public event Action<int> ElementClicked;
     
-    protected override void OnMouseUp()
+    public override void Click()
     {
         if (_levelID != 0)
         {

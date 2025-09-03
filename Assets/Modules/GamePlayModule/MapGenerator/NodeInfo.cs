@@ -63,7 +63,12 @@ public class NodeInfo
         if(_isRemoveDown)
             _connectionsToRemove.Add(ConnectionType.down);
     }
-    
+
+    public void ClearColorsConnectionsList()
+    {
+        _colorsConnections.Clear();
+    }
+
     public void FillListConnectionsToHide()
     {
         _connectionsToHide.Clear();

@@ -15,5 +15,12 @@ public class StepsCounter : MonoBehaviour
     public void AddStep()
     {
         _stepsCount++;
+
+        int minStepToShiftRestart = 1;
+
+        if (_stepsCount == minStepToShiftRestart)
+        {
+            ServiceLocator.GetService<LevelCompletionManager>().ShowRestartButton();
+        }
     }
 }

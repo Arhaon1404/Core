@@ -7,13 +7,16 @@ public class Crystal : MonoBehaviour
 {
     [SerializeField] private CrystalAnimator _crystalAnimator;
     [SerializeField] private OutlineSwicher _outlineSwicher;
+    [SerializeField] private BacklightSwitcher _backlightSwitcher;
+    [SerializeField] private EndGameFireLightUp _endGameFireLightUp;
     [SerializeField] private ColorType _color; 
     private CrystalMover _crystalMover;
-    private bool _isActiveCrystal;
-    
+    [SerializeField] private bool _isActiveCrystal;
     
     public CrystalMover CrystalMover => _crystalMover;
     public ColorType Color => _color;
+    public OutlineSwicher OutlineSwicher => _outlineSwicher;
+    public EndGameFireLightUp EndGameFireLightUp => _endGameFireLightUp;
     
     public bool IsActiveCrystal => _isActiveCrystal;
     
@@ -46,5 +49,15 @@ public class Crystal : MonoBehaviour
     public void TurnOffOutline()
     {
         _outlineSwicher.TurnOff();
+    }
+
+    public void TurnOnBacklight()
+    {
+        _backlightSwitcher.TurnOn();
+    }
+    
+    public void TurnOffBacklight()
+    {
+        _backlightSwitcher.TurnOff();
     }
 }

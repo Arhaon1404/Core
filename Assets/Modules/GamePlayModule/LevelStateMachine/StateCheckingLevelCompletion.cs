@@ -40,6 +40,7 @@ public class StateCheckingLevelCompletion : ILevelState
 
     private void CompliteLevel()
     {
+        ServiceLocator.GetService<LevelUIActivityChanger>().TurnOffIcons();
         ServiceLocator.GetService<LevelCompletionManager>().ShowNextLevelButton();
     }
 

@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class LevelAStarProcceder : MonoBehaviour
 {
-    [SerializeField] private List<Crystal> _crystalsOnLevel;
     [SerializeField] private StartField _startField;
     
     private List<AbstractField> _path;
@@ -13,7 +12,6 @@ public class LevelAStarProcceder : MonoBehaviour
     private AlgorithmAStar _algorithmAStar;
     private PreliminaryCrystalSearcher _preliminaryCrystalSearcher;
     
-    public List<Crystal> CrystalsOnLevel => _crystalsOnLevel;
     public StartField StartField => _startField;
 
     public void Awake()
