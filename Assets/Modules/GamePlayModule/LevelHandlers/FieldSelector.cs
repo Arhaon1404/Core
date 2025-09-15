@@ -101,6 +101,8 @@ public class FieldSelector
         
         _state = State.HasStart;
         
+        ServiceLocator.GetService<AudioGameManager>().PlaySelectSound();
+        
         StateUpdated?.Invoke(_state, _startField, _endField);
     }
     
@@ -123,6 +125,8 @@ public class FieldSelector
                 ChangeOutlineStateCrystal(_startField.CrystalOnField,false);
             
             _startField = null;
+            
+            ServiceLocator.GetService<AudioGameManager>().PlayDeselectSound();
         }
         
         StateUpdated?.Invoke(_state, _startField, _endField);

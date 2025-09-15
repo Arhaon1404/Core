@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using YG;
 
 public class PlayButton : MainMenuButton
 {
@@ -7,7 +8,7 @@ public class PlayButton : MainMenuButton
     
     public override void Click()
     {
-        int currentLevelID = PlayerPrefs.GetInt("CurrentLevel");
+        int currentLevelID = YG2.saves.CurrentLevel;
         
         ElementClicked?.Invoke(currentLevelID);
     }

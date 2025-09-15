@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loadingBackground: {fileID: 5972148859047662254, guid: d2568a5a08ff2c940b02093cf0261112, type: 3}
-  _audioBackground: {fileID: 6940936162825151717, guid: 7a6aad71b191d7a41bf0bc8eaa0bd14d, type: 3}
+  _audioManager: {fileID: 6940936162825151717, guid: 7a6aad71b191d7a41bf0bc8eaa0bd14d, type: 3}
   _levelInformationManager: {fileID: 4502831365531068530, guid: aee0246fdb7a8094ba9c9cf582309492, type: 3}
   _levelCompletionManager: {fileID: 2054011859824728200, guid: c198afd3fcf1009408e03d640e729a49, type: 3}
   _levelUIActivityChanger: {fileID: 8111567935649187734, guid: fa249506b78ec674da42a2ed0e0275f6, type: 3}

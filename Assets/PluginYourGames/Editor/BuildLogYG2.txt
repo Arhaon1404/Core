@@ -1,0 +1,3 @@
+Build path: D:/UnityProjects/Core/Builds/Core v0.98 YG
+Build number: 15
+PluginYG version: 2.005

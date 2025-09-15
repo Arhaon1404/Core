@@ -42,6 +42,7 @@ public class StateCheckingLevelCompletion : ILevelState
     {
         ServiceLocator.GetService<LevelUIActivityChanger>().TurnOffIcons();
         ServiceLocator.GetService<LevelCompletionManager>().ShowNextLevelButton();
+        ServiceLocator.GetService<AudioGameManager>().PlayWinningSound();
     }
 
     private void LoseLevel()

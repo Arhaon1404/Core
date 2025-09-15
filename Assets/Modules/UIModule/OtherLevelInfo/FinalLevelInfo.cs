@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FinalLevelInfo : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class FinalLevelInfo : MonoBehaviour
     [SerializeField] private StepsCounter _stepsCounter;
     [SerializeField] private TextMeshProUGUI _textTime;
     [SerializeField] private TextMeshProUGUI _textSteps;
+    [SerializeField] private TextMeshProUGUI _textScore;
+    [SerializeField] private Image _newRecordImage;
     [SerializeField] private SpawnPoint _spawnPoint;
 
-    public void UpdateInfo()
+    public void UpdateInfo(int finaleLevelScore)
     {
         _timer.StopTimer();
 
@@ -43,7 +46,28 @@ public class FinalLevelInfo : MonoBehaviour
 
         _textSteps.text = _stepsCounter.StepsCount.ToString();
 
+        _textScore.text = finaleLevelScore.ToString();
+
         SmoothMove();
+    }
+
+    public void UpdateScore(int finaleLevelScore)
+    {
+        Debug.Log(finaleLevelScore);
+        
+        _textScore.text = finaleLevelScore.ToString();
+    }
+
+    public void IsShowNewRecordImage(bool isNewRecord)
+    {
+        if (isNewRecord == false)
+        {
+            _newRecordImage.gameObject.SetActive(false);
+        }
+        else
+        {
+            _newRecordImage.gameObject.SetActive(true);
+        }
     }
 
     private void SmoothMove()

@@ -41,8 +41,6 @@ public class LevelCompletionManager : MonoBehaviour
 
     public void ShowNextLevelButton()
     {
-        _nextLevelButton.MoveButton();
-        
         IsLevelCompleted?.Invoke();
     }
 

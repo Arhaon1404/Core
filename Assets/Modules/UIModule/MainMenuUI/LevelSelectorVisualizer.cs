@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 public class LevelSelectorVisualizer : MonoBehaviour
 {
@@ -42,7 +43,7 @@ public class LevelSelectorVisualizer : MonoBehaviour
     
     private void UpdateButtons(int firstElementID)
     {
-        int currentLevelID = PlayerPrefs.GetInt("CurrentLevel");
+        int currentLevelID = YG2.saves.CurrentLevel;
         int currentButtonID = firstElementID;
 
         _currentListID = currentButtonID;

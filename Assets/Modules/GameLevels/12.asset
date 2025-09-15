@@ -14,6 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _width: 2
   _height: 3
+  _maxLevelPoints: 150
+  _deductedMovePoints: 1
+  _maxDeductedMovePoints: 10
+  _pointsDeductedTenSeconds: 1
+  _maxPointsDeductedTenSeconds: 10
   _mapRows:
   - _mapRow:
     - _cellName: 1.1

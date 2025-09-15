@@ -28,7 +28,7 @@ public class Timer : MonoBehaviour
 
             if (_secondTime >= 60.0f)
             {
-                _secondTime = 0; 
+                _secondTime = 0;
                 _minuteTime++;
             }
         }
@@ -37,5 +37,14 @@ public class Timer : MonoBehaviour
     public void StopTimer()
     {
         _isActive = false;
+    }
+
+    public int GetFinaleSecondTime()
+    {
+        int finaleTime = Convert.ToInt32(_secondTime);
+        
+        finaleTime += Convert.ToInt32(_minuteTime * 60);
+
+        return finaleTime;
     }
 }

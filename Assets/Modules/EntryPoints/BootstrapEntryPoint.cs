@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class BootstrapEntryPoint : MonoBehaviour
 {
     [SerializeField] private LoadingBackground _loadingBackground;
-    [SerializeField] private AudioBackground _audioBackground;
+    [SerializeField] private AudioGameManager _audioManager;
     [SerializeField] private LevelInformationManager _levelInformationManager;
     [SerializeField] private LevelCompletionManager _levelCompletionManager;
     [SerializeField] private LevelUIActivityChanger _levelUIActivityChanger;
@@ -20,9 +21,9 @@ public class BootstrapEntryPoint : MonoBehaviour
         
         ServiceLocator.Register(_loadingBackground);
         
-        _audioBackground = Instantiate(_audioBackground);
+        _audioManager = Instantiate(_audioManager);
         
-        ServiceLocator.Register(_audioBackground);
+        ServiceLocator.Register(_audioManager);
         
         _levelInformationManager = Instantiate(_levelInformationManager);
         
@@ -40,7 +41,7 @@ public class BootstrapEntryPoint : MonoBehaviour
         
         DontDestroyOnLoad(_levelInformationManager);
         DontDestroyOnLoad(_loadingBackground);
-        DontDestroyOnLoad(_audioBackground);
+        DontDestroyOnLoad(_audioManager);
         DontDestroyOnLoad(_levelCompletionManager);
         DontDestroyOnLoad(_levelUIActivityChanger);
         
@@ -49,7 +50,9 @@ public class BootstrapEntryPoint : MonoBehaviour
 
     private void InitializePlayerData()
     {
-        PlayerPrefs.SetInt("CurrentLevel", 50);
+        YG2.saves.CurrentLevel = 50;
+        
+        //PlayerPrefs.SetInt("CurrentLevel", 50);
         
         /*
         Debug.Log(PlayerPrefs.GetInt("CurrentLevel"));

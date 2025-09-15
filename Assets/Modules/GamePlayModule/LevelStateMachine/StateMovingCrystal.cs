@@ -27,6 +27,8 @@ public class StateMovingCrystal : ILevelState
     {
         _levelManager.CrystalHandler.MoveСompleted += EnterNextState;
         
+        ServiceLocator.GetService<AudioGameManager>().PlayMovementSound();
+        
         _levelManager.ProcessCrystal();
     }
 

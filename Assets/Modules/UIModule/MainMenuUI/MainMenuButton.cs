@@ -7,6 +7,8 @@ public class MainMenuButton : MonoBehaviour
 
     public virtual void Click()
     {
+        ServiceLocator.GetService<AudioGameManager>().PlayButtonClickSound();
+        
         ElementClicked?.Invoke();
     }
 }

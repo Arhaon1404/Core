@@ -63,6 +63,8 @@ public class StateMovingCore : ILevelState
     {
         _levelManager.CoreHandler.MoveСompleted -= TransiteToNextState;
         
+        ServiceLocator.GetService<AudioGameManager>().PlayCoreUniteCrystalSound();
+        
         _levelStateMachine.EnterIn<StateCheckingLevelCompletion>();
     }
 }

@@ -11,6 +11,13 @@ public class LevelInfoEditor : Editor
 {
     SerializedProperty widthMap;
     SerializedProperty heightMap;
+
+    SerializedProperty maxLevelPoints;
+    SerializedProperty deductedMovePoints;
+    SerializedProperty maxDeductedMovePoints;
+    SerializedProperty pointsDeductedTenSeconds;
+    SerializedProperty maxPointsDeductedTenSeconds;
+    
     SerializedProperty map;
     SerializedProperty mapElement;
 
@@ -25,6 +32,13 @@ public class LevelInfoEditor : Editor
         _levelInfo = (LevelInfo)target;
         widthMap = serializedObject.FindProperty("_width");
         heightMap = serializedObject.FindProperty("_height");
+        
+        maxLevelPoints = serializedObject.FindProperty("_maxLevelPoints");
+        deductedMovePoints = serializedObject.FindProperty("_deductedMovePoints");
+        maxDeductedMovePoints = serializedObject.FindProperty("_maxDeductedMovePoints");
+        pointsDeductedTenSeconds = serializedObject.FindProperty("_pointsDeductedTenSeconds");
+        maxPointsDeductedTenSeconds = serializedObject.FindProperty("_maxPointsDeductedTenSeconds");
+        
         map = serializedObject.FindProperty("_mapRows");
     }
     
@@ -35,6 +49,12 @@ public class LevelInfoEditor : Editor
         EditorGUILayout.PropertyField(widthMap);
         EditorGUILayout.PropertyField(heightMap);
 
+        EditorGUILayout.PropertyField(maxLevelPoints);
+        EditorGUILayout.PropertyField(deductedMovePoints);
+        EditorGUILayout.PropertyField(maxDeductedMovePoints);
+        EditorGUILayout.PropertyField(pointsDeductedTenSeconds);
+        EditorGUILayout.PropertyField(maxPointsDeductedTenSeconds);
+        
         CreateArray();
         
         DrawMap();
