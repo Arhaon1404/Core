@@ -97,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4076812269245342783}
   - component: {fileID: 5972148859047662254}
+  - component: {fileID: 5611111454845283453}
   m_Layer: 0
   m_Name: UIBootLoader
   m_TagString: Untagged
@@ -132,6 +133,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 167bed7740dffe64986f56a3014e30d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5611111454845283453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650608427411334425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 838faca2868eb114da8fbd17af219387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ru: "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430..."
+  _en: Loading...
+  _tr: "Y\xFCkleniyor..."
+  _text: {fileID: 5632060647021138016}
 --- !u!1 &4789971255315468244
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,9 +16,12 @@ namespace YG
             {
                 CreateNewStorageData();
             }
-            
-            LevelPointsStorage[level - 1] = points;
 
+            if (LevelPointsStorage[level - 1] < points)
+            {
+                LevelPointsStorage[level - 1] = points;
+            }
+            
             int finalPointsCount = 0;
             
             for (int i = 0; i < LevelPointsStorage.Length; i++)
@@ -26,7 +29,7 @@ namespace YG
                 finalPointsCount += LevelPointsStorage[i];
             }
             
-            YG2.SetLeaderboard("ScoreLeaderboard", finalPointsCount);
+            YG2.SetLeaderboard("PointsLeaderboard", finalPointsCount);
         }
 
         public void SetADVView(int level)

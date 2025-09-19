@@ -40,6 +40,8 @@ public class LevelObjects : MonoBehaviour
     
     [SerializeField] private CameraPositioner _cameraPositioner;
     
+    [SerializeField] private TutorialHelper _tutorialHelper;
+    
     private LevelInfo _levelInfo;
 
     private int _finaleLevelScore;
@@ -88,6 +90,13 @@ public class LevelObjects : MonoBehaviour
         _backlighter.Initialize(_clickHandler.FieldSelector);
         
         _victoryScreen.Initialize(_mapGenerator.ProvideListCrystals());
+        
+        int level = int.Parse(_levelInfo.name);
+
+        if (_tutorialHelper.FirstLevelTutorial == level || _tutorialHelper.SecondLevelTutorial == level)
+        {
+            _tutorialHelper.Initialize(_mapGenerator.ProvideListFields(),_clickHandler.FieldSelector);    
+        }
     }
 
     private void BringLevelFinaleState()
@@ -106,7 +115,11 @@ public class LevelObjects : MonoBehaviour
 
         if (_advRecordCalculator.IsShowButton(level, _finaleLevelScore))
         {
-            _advButton.ShowButton();
+            _advButton.ActivateButton();
+        }
+        else
+        {
+            _advButton.DeactivateButton();
         }
 
         _restartButton.HideButton();
@@ -179,7 +192,7 @@ public class LevelObjects : MonoBehaviour
         
             _finalLevelInfo.IsShowNewRecordImage(isNewRecord);
             
-            _advButton.HideButton();
+            _advButton.DeactivateButton();
         });  
     }
 }

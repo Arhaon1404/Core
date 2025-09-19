@@ -26,8 +26,6 @@ public class IternalMenuSwitcher : MonoBehaviour
     [SerializeField] private MainMenuButton _leaderboardButton;
     [SerializeField] private MainMenuButton _leaderboardBackButton;
     
-    [SerializeField] private MainMenuButton _testUpdateButton;
-    
     [SerializeField] private LevelSelectorVisualizer _levelSelectorVisualizer;
     
     private void OnEnable()

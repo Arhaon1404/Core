@@ -15,6 +15,8 @@ public class FinalLevelInfo : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _textScore;
     [SerializeField] private Image _newRecordImage;
     [SerializeField] private SpawnPoint _spawnPoint;
+    [SerializeField] private FinalLevelScore _finalLevelScore;
+    [SerializeField] private SpawnPoint _spawnPointFinalScore;
 
     public void UpdateInfo(int finaleLevelScore)
     {
@@ -75,5 +77,6 @@ public class FinalLevelInfo : MonoBehaviour
         float duration = 0.5f;
         
         transform.DOLocalMove(_spawnPoint.transform.localPosition,duration);
+        _finalLevelScore.transform.DOLocalMove(_spawnPointFinalScore.transform.localPosition,duration);
     }
 }
