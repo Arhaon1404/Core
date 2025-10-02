@@ -33,7 +33,7 @@ public class LevelSelectorVisualizer : MonoBehaviour
     private void Awake()
     {
         _minListID = 1;
-        _maxListID = 51;
+        _maxListID = 40;
         _indentMinElement = 10;
             
         UpdateButtons(_minListID);
@@ -74,7 +74,7 @@ public class LevelSelectorVisualizer : MonoBehaviour
                 _leftScrollButton.gameObject.SetActive(true);
             }
             
-            if (_currentListID == _maxListID)
+            if (_currentListID >= _maxListID)
             {
                 _rightScrollButton.gameObject.SetActive(false);
             }

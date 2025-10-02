@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using YG;
 
-public class LoadingScreenLangChanger : MonoBehaviour
+public class TextLanguageChanger : MonoBehaviour
 {
     [SerializeField] private string _ru, _en, _tr;
 

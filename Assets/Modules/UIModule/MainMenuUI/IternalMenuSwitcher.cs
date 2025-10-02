@@ -13,11 +13,15 @@ public class IternalMenuSwitcher : MonoBehaviour
     [SerializeField] private MainMenuElement _selectLevel;
     [SerializeField] private MainMenuElement _settingsMenu;
     [SerializeField] private MainMenuElement _leaderboard;
+    [SerializeField] private MainMenuElement _authorization;
     
     [SerializeField] private PlayButton _startLevelButton;
     
     [SerializeField] private MainMenuButton _levelSelectionButton;
     [SerializeField] private MainMenuButton _levelSelectionBackButton;
+    
+    [SerializeField] private MainMenuButton _authorizationRejectButton;
+    [SerializeField] private MainMenuButton _authorizationConfirmButton;
     
     [SerializeField] private LeaderboardYG _leaderboardYG;
     [SerializeField] private MainMenuButton _settingsButton;
@@ -37,6 +41,8 @@ public class IternalMenuSwitcher : MonoBehaviour
         _settingsBackButton.ElementClicked += CloseOptionsMenu;
         _leaderboardButton.ElementClicked += OpenLeaderboard;
         _leaderboardBackButton.ElementClicked += CloseLeaderboard;
+        _authorizationConfirmButton.ElementClicked += PerformAuthorization;
+        _authorizationRejectButton.ElementClicked += CloseAuthorization;
         
         foreach (SelectLevelButton button in _levelSelectorVisualizer.SelectLevelButtons)
         {
@@ -53,6 +59,8 @@ public class IternalMenuSwitcher : MonoBehaviour
         _settingsBackButton.ElementClicked -= CloseOptionsMenu;
         _leaderboardButton.ElementClicked -= OpenLeaderboard;
         _leaderboardBackButton.ElementClicked -= CloseLeaderboard;
+        _authorizationConfirmButton.ElementClicked -= PerformAuthorization;
+        _authorizationRejectButton.ElementClicked -= CloseAuthorization;
         
         foreach (SelectLevelButton button in _levelSelectorVisualizer.SelectLevelButtons)
         {
@@ -94,12 +102,28 @@ public class IternalMenuSwitcher : MonoBehaviour
         _settingsMenu.gameObject.SetActive(false);
         _mainMenu.gameObject.SetActive(true);
     }
-    
+
+    public void PerformAuthorization()
+    {
+        YG2.OpenAuthDialog();
+        
+        _authorization.gameObject.SetActive(false);
+        _mainMenu.gameObject.SetActive(true);
+    }
+
+    public void CloseAuthorization()
+    {
+        _authorization.gameObject.SetActive(false);
+        _mainMenu.gameObject.SetActive(true);
+    }
+
+
     public void OpenLeaderboard()
     {
         if (YG2.player.auth == false)
         {
-            YG2.OpenAuthDialog();    
+            _mainMenu.gameObject.SetActive(false);
+            _authorization.gameObject.SetActive(true);
         }
         else
         {

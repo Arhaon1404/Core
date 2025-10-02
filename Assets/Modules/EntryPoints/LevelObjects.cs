@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using YG;
 
@@ -71,6 +72,8 @@ public class LevelObjects : MonoBehaviour
     
     public void StartMapGeneration(LevelInfo levelInfo)
     {
+        GraphicsSettings.useScriptableRenderPipelineBatching = false;
+        
         _levelInfo = levelInfo;
         
         _mapGenerator.SetLevelInfo(levelInfo);
@@ -170,6 +173,11 @@ public class LevelObjects : MonoBehaviour
         YG2.saves.SetNewRecordLeaderbord(level,_finaleLevelScore);
         
         YG2.InterstitialAdvShow();
+
+        if (YG2.saves.CurrentLevel == level)
+        {
+            YG2.saves.CurrentLevel++;
+        }
         
         YG2.SaveProgress();
         

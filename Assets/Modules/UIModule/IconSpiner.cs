@@ -44,7 +44,7 @@ public class IconSpiner : MonoBehaviour
         _spinSequence.Rewind();
         _spinSequence.Kill();
         
-        Vector3 target = new Vector3(_icon.transform.position.x,_icon.transform.position.y + 20,_icon.transform.position.z);
+        Vector3 target = new Vector3(_icon.transform.position.x,_icon.transform.position.y + 50,_icon.transform.position.z);
         
         _icon.transform.DOLocalMove(target,1f);
     }

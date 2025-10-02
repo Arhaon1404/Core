@@ -1,3 +1,3 @@
-Build path: D:/UnityProjects/Core/Builds/Core v0.99 YG
-Build number: 22
+Build path: D:/UnityProjects/Core/Builds/Core v1.0 YG
+Build number: 32
 PluginYG version: 2.005

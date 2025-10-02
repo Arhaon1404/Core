@@ -12,9 +12,10 @@ namespace YG
         
         public void SetNewRecordLeaderbord(int level, int points)
         {
-            if (LevelPointsStorage == null || LevelADVViewStorage == null)
+            if (LevelPointsStorage.Length == 0 || LevelADVViewStorage.Length == 0)
             {
-                CreateNewStorageData();
+                CreateNewStoragePoints();
+                CreateNewStorageADV();
             }
 
             if (LevelPointsStorage[level - 1] < points)
@@ -39,9 +40,9 @@ namespace YG
 
         public int GetCurrentPlayerScore()
         {
-            if (LevelPointsStorage == null || LevelADVViewStorage == null)
+            if (LevelPointsStorage == null)
             {
-                CreateNewStorageData();
+                CreateNewStoragePoints();
             }
             
             int playerScore = 0;
@@ -57,6 +58,11 @@ namespace YG
         public bool IsNewRecord(int level,int finaleLevelScore)
         {
             int ADVMultiplication = 2;
+            
+            if (LevelADVViewStorage == null)
+            {
+                CreateNewStorageADV();
+            }
             
             if (LevelADVViewStorage[level - 1] == 1)
             {
@@ -87,9 +93,13 @@ namespace YG
             return LevelPointsStorage[level - 1];
         }
 
-        private void CreateNewStorageData()
+        private void CreateNewStoragePoints()
         {
             LevelPointsStorage = new int[50];
+        }
+        
+        private void CreateNewStorageADV()
+        {
             LevelADVViewStorage = new int[50];
         }
     }

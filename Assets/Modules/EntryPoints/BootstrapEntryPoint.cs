@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 using YG;
 
@@ -9,6 +10,9 @@ public class BootstrapEntryPoint : MonoBehaviour
     [SerializeField] private LevelInformationManager _levelInformationManager;
     [SerializeField] private LevelCompletionManager _levelCompletionManager;
     [SerializeField] private LevelUIActivityChanger _levelUIActivityChanger;
+    [SerializeField] private PostProcessProfile _postProcessProfile;
+
+    private string settingOff;
     
     private void Awake()
     {
@@ -44,24 +48,38 @@ public class BootstrapEntryPoint : MonoBehaviour
         DontDestroyOnLoad(_audioManager);
         DontDestroyOnLoad(_levelCompletionManager);
         DontDestroyOnLoad(_levelUIActivityChanger);
+
+        settingOff = "AmbientOcclusion";
+        
+        if (YG2.envir.isMobile == true)
+        {
+            foreach (PostProcessEffectSettings effectSettings in _postProcessProfile.settings)
+            {
+                if (effectSettings.name == settingOff)
+                {
+                    effectSettings.enabled.value = false;
+                }
+            }
+        }
+        else
+        {
+            foreach (PostProcessEffectSettings effectSettings in _postProcessProfile.settings)
+            {
+                if (effectSettings.name == settingOff)
+                {
+                    effectSettings.enabled.value = true;
+                }
+            }
+        }
         
         SceneManager.LoadScene("MainMenuScene");
     }
 
     private void InitializePlayerData()
     {
-        YG2.saves.CurrentLevel = 50;
-        
-        //PlayerPrefs.SetInt("CurrentLevel", 50);
-        
-        /*
-        Debug.Log(PlayerPrefs.GetInt("CurrentLevel"));
-        
-        if (!PlayerPrefs.HasKey("CurrentLevel"))
+        if (YG2.saves.CurrentLevel == 0)
         {
-            PlayerPrefs.SetInt("CurrentLevel", 1);
-            PlayerPrefs.Save();
+            YG2.saves.CurrentLevel = 1;
         }
-        */
     }
 }
